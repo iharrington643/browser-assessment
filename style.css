@@ -3,3 +3,25 @@
 * {
     font-family: 'Inter';
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1.5fr;
+}
+
+.assessment-header {
+    background-color: lightblue;
+    grid-row: 1 / 2;
+}
+
+.assessment-body {
+    grid-row: 2 / 3;
+}
+
+.info-bar {
+    grid-row: 3 / 4;
+    background-color: gray;
+}
