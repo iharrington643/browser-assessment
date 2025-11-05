@@ -9,7 +9,7 @@ function loadIntroForm() {
     introText.classList.add("intro-text");
 
     const startButton = document.createElement("button");
-    startButton.type = "submit";
+    startButton.type = "button";
     startButton.textContent = "Start";
     startButton.classList.add("start-button");
 
