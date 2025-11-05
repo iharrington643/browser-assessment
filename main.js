@@ -17,6 +17,10 @@ function loadIntroForm() {
     introForm.appendChild(startButton);
 
     body.appendChild(introForm);
+
+    startButton.addEventListener('click', function() {
+        body.innerHTML = "";
+    })
 }
 
 loadIntroForm();
