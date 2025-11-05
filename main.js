@@ -13,7 +13,7 @@ function loadIntroForm() {
     startButton.textContent = "Start";
     startButton.classList.add("start-button");
 
-    introForm.appendChild("intro-text");
+    introForm.appendChild(introText);
     introForm.appendChild(startButton);
 }
 
