@@ -41,6 +41,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2.5%;
 }
 
 .intro-text {
@@ -49,17 +50,18 @@ body {
     padding-top: 20px;
     padding-bottom: 5px;
     text-align: center;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 18px;
 }
 
 .start-button {
     height: 80px;
     width: 250px;
-    border-radius: 10px;
-    font-size: 45px;
-    border-color: transparent;
+    border-radius: 15px;
+    font-size: 35px;
+    border: 4px solid rgba(212, 233, 241);
     background-color: rgba(22, 146, 182);
     color: white;
-    font-weight: 300;
+    font-weight: 100;
+    text-shadow: 1px 1px 2px rgb(17, 110, 136);
 }
