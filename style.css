@@ -12,16 +12,16 @@ body {
     grid-template-rows: 1fr 10fr 1.5fr;
 }
 
-.assessment-header {
+#assessment-header {
     background-color: lightblue;
     grid-row: 1 / 2;
 }
 
-.assessment-body {
+#assessment-body {
     grid-row: 2 / 3;
 }
 
-.info-bar {
+#info-bar {
     grid-row: 3 / 4;
     background-color: gray;
 }
