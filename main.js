@@ -47,6 +47,25 @@ function loadQuestion1() {
     const windowButtons = document.createElement('div');
     windowButtons.classList.add('window-buttons');
     tabBar.appendChild(windowButtons);
+
+    const hideButton = document.createElement('button');
+    hideButton.classList.add('hide-button');
+    hideButton.innerHTML = "-";
+    windowButtons.appendChild(hideButton);
+
+    const minButton = document.createElement('button');
+    minButton.classList.add('min-button');
+    minButton.innerHTML = "◻";
+    windowButtons.appendChild(minButton);
+
+    const closeButton = document.createElement('button');
+    closeButton.classList.add('close-button');
+    closeButton.innerHTML = "x";
+    windowButtons.appendChild(closeButton);
+
+    plusButton.addEventListener('click', function() {
+        browserBox.innerHTML = "";
+    })
 }
 
 loadIntroForm();
