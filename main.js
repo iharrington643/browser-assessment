@@ -15,6 +15,8 @@ function loadIntroForm() {
 
     introForm.appendChild(introText);
     introForm.appendChild(startButton);
+
+    body.appendChild(introForm);
 }
 
 loadIntroForm();
