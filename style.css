@@ -21,7 +21,14 @@ body {
     grid-row: 1 / 2;
     color: white;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 300;
+    gap: 7px;
+    border-left: 30px solid rgb(79, 79, 79);
+}
+
+.header-logo {
+    height: 45px;
+    width: 45px;
 }
 
 #assessment-body {
