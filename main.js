@@ -20,7 +20,20 @@ function loadIntroForm() {
 
     startButton.addEventListener('click', function() {
         body.innerHTML = "";
+        loadQuestion1();
     })
+}
+
+function loadQuestion1() {
+    const body = document.getElementById("assessment-body");
+
+    const browserBox = document.createElement("div");
+    browserBox.classList.add('browser-box');
+    body.appendChild(browserBox);
+
+    const tabBar = document.createElement('div');
+    tabBar.classList.add('tab-bar');
+    browserBox.appendChild(tabBar);
 }
 
 loadIntroForm();
