@@ -34,6 +34,19 @@ function loadQuestion1() {
     const tabBar = document.createElement('div');
     tabBar.classList.add('tab-bar');
     browserBox.appendChild(tabBar);
+
+    const tab = document.createElement('div');
+    tab.classList.add('tab');
+    tabBar.appendChild(tab);
+
+    const plusButton = document.createElement('button');
+    plusButton.classList.add('plus-button');
+    plusButton.innerHTML = "+";
+    tabBar.appendChild(plusButton);
+
+    const windowButtons = document.createElement('div');
+    windowButtons.classList.add('window-buttons');
+    tabBar.appendChild(windowButtons);
 }
 
 loadIntroForm();
