@@ -37,6 +37,7 @@ function loadQuestion1() {
 
     const tab = document.createElement('div');
     tab.classList.add('tab');
+    tab.innerHTML = "New Tab";
     tabBar.appendChild(tab);
 
     const plusButton = document.createElement('button');
@@ -63,9 +64,9 @@ function loadQuestion1() {
     closeButton.innerHTML = "x";
     windowButtons.appendChild(closeButton);
 
-    plusButton.addEventListener('click', function() {
-        browserBox.innerHTML = "";
-    })
+    const navigationBar = document.createElement('div');
+    navigationBar.classList.add('navigation-bar');
+    browserBox.appendChild(navigationBar);
 }
 
 loadIntroForm();

@@ -98,7 +98,7 @@ body {
     min-width: 600px;
     border: 4px solid rgb(79, 79, 79);
     display: grid;
-    grid-template-rows: 1.3fr 1fr 20fr;
+    grid-template-rows: 1.3fr 1fr 1fr 19fr;
 }
 
 .tab-bar {
@@ -107,7 +107,7 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: grid;
-    grid-template-columns: 1.5fr 0.2fr 2.5fr 70px;
+    grid-template-columns: 1fr 0.2fr 2.5fr 70px;
 }
 
 .tab {
@@ -118,6 +118,10 @@ body {
     margin-top: 5px;
     height: 25px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding-left: 8px;
 }
 
 .plus-button {
@@ -158,4 +162,9 @@ body {
 .hide-button {
     margin-top: 2px;
     font-weight: 300;
+}
+
+.navigation-bar {
+    grid-row: 2 / 3;
+    background-color: white;
 }
