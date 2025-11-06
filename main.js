@@ -56,12 +56,12 @@ function loadQuestion1() {
 
     const minButton = document.createElement('button');
     minButton.classList.add('min-button');
-    minButton.innerHTML = "◻";
+    minButton.innerHTML = "❐";
     windowButtons.appendChild(minButton);
 
     const closeButton = document.createElement('button');
     closeButton.classList.add('close-button');
-    closeButton.innerHTML = "x";
+    closeButton.innerHTML = "×";
     windowButtons.appendChild(closeButton);
 
     const navigationBar = document.createElement('div');
