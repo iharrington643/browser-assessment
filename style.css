@@ -166,6 +166,10 @@ body {
 .navigation-bar {
     grid-row: 2 / 3;
     background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .tab-text {
@@ -182,4 +186,19 @@ body {
     border-color: transparent;
     color: rgb(79, 79, 79);
     font-weight: 300;
+}
+
+.nav-container button {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(79, 79, 79);
+    height: 100%;
+}
+
+.refresh-button {
+    font-size: 19px;
+}
+
+.back-button, .forward-button {
+    font-size: 19px;
 }

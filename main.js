@@ -76,6 +76,41 @@ function loadQuestion1() {
     const navigationBar = document.createElement('div');
     navigationBar.classList.add('navigation-bar');
     browserBox.appendChild(navigationBar);
+
+    const navContainer = document.createElement('div');
+    navContainer.classList.add('nav-container');
+    navigationBar.appendChild(navContainer);
+
+    const backButton = document.createElement('button');
+    backButton.classList.add('back-button');
+    backButton.innerHTML = "⇽";
+    navContainer.appendChild(backButton);
+
+    const forwardButton = document.createElement('button');
+    forwardButton.classList.add('forward-button');
+    forwardButton.innerHTML = "⇾";
+    navContainer.appendChild(forwardButton);
+
+    const refreshButton = document.createElement('button');
+    refreshButton.classList.add('refresh-button');
+    refreshButton.innerHTML = "↺";
+    navContainer.appendChild(refreshButton);
+
+    const buttons = document.querySelectorAll('button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.color = '';
+                btn.style.textShadow = '';
+            })
+
+            this.classList.add('active');
+            this.style.color = "rgba(22, 146, 182)";
+            this.style.textShadow = "1px 1px 3px rgba(22, 146, 182)";
+        })
+    })
 }
 
 loadIntroForm();
