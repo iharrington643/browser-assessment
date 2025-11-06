@@ -37,8 +37,17 @@ function loadQuestion1() {
 
     const tab = document.createElement('div');
     tab.classList.add('tab');
-    tab.innerHTML = "New Tab";
     tabBar.appendChild(tab);
+
+    const tabText = document.createElement('p');
+    tabText.classList.add('tab-text');
+    tabText.innerHTML = "New Tab";
+    tab.appendChild(tabText);
+
+    const closeTabButton = document.createElement('button');
+    closeTabButton.classList.add('close-tab-button');
+    closeTabButton.innerHTML = "×";
+    tab.appendChild(closeTabButton);
 
     const plusButton = document.createElement('button');
     plusButton.classList.add('plus-button');
