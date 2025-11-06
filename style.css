@@ -169,12 +169,13 @@ body {
 }
 
 .tab-text {
+    white-space: nowrap;
     grid-column: 1 / 2;
     font-size: 12px;
 }
 
 .close-tab-button {
-    padding-left: 55%;
+    padding-left: clamp(55px, 6vw, 100px);
     grid-column: 3 / 4;
     font-size: 19px;
     background-color: transparent;
