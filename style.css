@@ -205,7 +205,7 @@ body {
 }
 
 .search-container {
-   width: clamp(400px, 35vw, 550px);
+   width: clamp(430px, 37vw, 585px);
    height: 70%;
    display: flex;
    align-items: center;
