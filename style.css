@@ -219,3 +219,7 @@ body {
 .search-input:focus {
     outline-color: transparent;
 }
+
+.search-input::-webkit-search-cancel-button {
+    appearance: none;
+}
