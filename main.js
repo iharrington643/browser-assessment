@@ -96,21 +96,15 @@ function loadQuestion1() {
     refreshButton.innerHTML = "↺";
     navContainer.appendChild(refreshButton);
 
-    const buttons = document.querySelectorAll('button');
+    const searchContainer = document.createElement('div');
+    searchContainer.classList.add('search-container');
+    navigationBar.appendChild(searchContainer);
 
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            buttons.forEach(btn => {
-                btn.classList.remove('active');
-                btn.style.color = '';
-                btn.style.textShadow = '';
-            })
-
-            this.classList.add('active');
-            this.style.color = "rgba(22, 146, 182)";
-            this.style.textShadow = "1px 1px 3px rgba(22, 146, 182)";
-        })
-    })
+    const searchInput = document.createElement('input');
+    searchInput.type = "search";
+    searchInput.classList.add('search-input');
+    searchInput.placeholder = "Search Moogle or type a URL";
+    searchContainer.appendChild(searchInput);
 }
 
 loadIntroForm();
