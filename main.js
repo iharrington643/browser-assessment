@@ -105,6 +105,11 @@ function loadQuestion1() {
     searchInput.classList.add('search-input');
     searchInput.placeholder = "Search Moogle or type a URL";
     searchContainer.appendChild(searchInput);
+
+    const bookmarkButton = document.createElement('button');
+    bookmarkButton.classList.add('bookmark-button');
+    bookmarkButton.innerHTML = "☆";
+    searchContainer.appendChild(bookmarkButton);
 }
 
 loadIntroForm();
