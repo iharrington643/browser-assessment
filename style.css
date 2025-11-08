@@ -300,4 +300,40 @@ button:focus {
     background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.moogle-logo {
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    width: 180px;
+    padding-bottom: 10px;
+}
+
+.search-container2 {
+   width: 400px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+   background-color: rgb(227, 227, 227);
+}
+
+.search-input2 {
+    width: 400px;
+    padding-left: 10px;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.search-input2:focus {
+    outline: none;
+}
+
+.search-input2::-webkit-search-cancel-button {
+    appearance: none;
 }

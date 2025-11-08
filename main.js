@@ -138,6 +138,25 @@ function loadQuestion1() {
     const mooglePage = document.createElement('div');
     mooglePage.classList.add('moogle-page');
     browserBox.appendChild(mooglePage);
+
+    const moogleSearchContainer = document.createElement('div');
+    moogleSearchContainer.classList.add('moogle-search-container');
+    mooglePage.appendChild(moogleSearchContainer);
+
+    const moogleLogo = document.createElement('img');
+    moogleLogo.classList.add('moogle-logo');
+    moogleLogo.src = "./icons/moogle-logo.png";
+    moogleSearchContainer.appendChild(moogleLogo);
+
+    const searchContainer2 = document.createElement('div');
+    searchContainer2.classList.add('search-container2');
+    moogleSearchContainer.appendChild(searchContainer2);
+
+    const searchInput2 = document.createElement('input');
+    searchInput2.type = "search";
+    searchInput2.classList.add('search-input2');
+    searchInput2.placeholder = "Search Moogle or type a URL";
+    searchContainer2.appendChild(searchInput2);
 }
 
 loadIntroForm();
