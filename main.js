@@ -110,6 +110,18 @@ function loadQuestion1() {
     bookmarkButton.classList.add('bookmark-button');
     bookmarkButton.innerHTML = "☆";
     searchContainer.appendChild(bookmarkButton);
+
+    const settingsContainer = document.createElement('div');
+    settingsContainer.classList.add('settings-container');
+    navigationBar.appendChild(settingsContainer);
+
+    const accountButton = document.createElement('button');
+    accountButton.classList.add('account-button');
+    navigationBar.appendChild(accountButton);
+
+    const menuButton = document.createElement('button');
+    menuButton.classList.add('menu-button');
+    navigationBar.appendChild(menuButton);
 }
 
 loadIntroForm();
