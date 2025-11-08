@@ -98,7 +98,7 @@ body {
     min-width: 600px;
     border: 4px solid rgb(79, 79, 79);
     display: grid;
-    grid-template-rows: 1.3fr 1.3fr 1fr 19fr;
+    grid-template-rows: 1.3fr 1.3fr 1.6fr 19fr;
 }
 
 .tab-bar {
@@ -262,3 +262,42 @@ button:focus {
     background-image: url("./icons/menu-vertical.svg");
 }
 
+.moogle-bar {
+    border-top: 0.5px solid rgb(163, 163, 163);
+    padding-right: 5px;
+    grid-row: 3 / 4;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+}
+
+.nine-dots-button, .account-dtl-button {
+    margin-top: 8px;
+    background-color: transparent;
+    border-color: transparent;
+    height: 100%;
+    border-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nine-dots-button {
+    background-size: 150%;
+    background-image: url("./icons/nine-dots.svg");
+}
+
+.account-dtl-button {
+    width: 35px;
+    background-size: contain;
+    background-image: url("./icons/user-profile.svg");
+}
+
+.moogle-page {
+    grid-row: 4 / 5;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

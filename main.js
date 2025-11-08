@@ -122,6 +122,22 @@ function loadQuestion1() {
     const menuButton = document.createElement('button');
     menuButton.classList.add('menu-button');
     navigationBar.appendChild(menuButton);
+
+    const moogleBar = document.createElement('div');
+    moogleBar.classList.add('moogle-bar');
+    browserBox.appendChild(moogleBar);
+
+    const nineDotsButton = document.createElement('button');
+    nineDotsButton.classList.add('nine-dots-button');
+    moogleBar.appendChild(nineDotsButton);
+
+    const accountDtlButton = document.createElement('button');
+    accountDtlButton.classList.add('account-dtl-button');
+    moogleBar.appendChild(accountDtlButton);
+
+    const mooglePage = document.createElement('div');
+    mooglePage.classList.add('moogle-page');
+    browserBox.appendChild(mooglePage);
 }
 
 loadIntroForm();
