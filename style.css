@@ -321,6 +321,7 @@ button:focus {
    justify-content: center;
    border-radius: 20px;
    background-color: rgb(227, 227, 227);
+   padding-right: 10px;
 }
 
 .search-input2 {
@@ -336,4 +337,23 @@ button:focus {
 
 .search-input2::-webkit-search-cancel-button {
     appearance: none;
+}
+
+.mic-button, .img-search-button {
+    background-color: transparent;
+    border-color: transparent;
+    height: 100%;
+    border-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mic-button {
+    margin-right: 3px;
+    background-image: url('./icons/microphone.svg');
+}
+
+.img-search-button {
+    background-image: url('./icons/image-search.svg');
 }

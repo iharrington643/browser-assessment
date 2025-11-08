@@ -157,6 +157,14 @@ function loadQuestion1() {
     searchInput2.classList.add('search-input2');
     searchInput2.placeholder = "Search Moogle or type a URL";
     searchContainer2.appendChild(searchInput2);
+
+    const micButton = document.createElement('button');
+    micButton.classList.add('mic-button');
+    searchContainer2.appendChild(micButton);
+
+    const imgSearchButton = document.createElement('button');
+    imgSearchButton.classList.add('img-search-button');
+    searchContainer2.appendChild(imgSearchButton);
 }
 
 loadIntroForm();
