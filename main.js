@@ -170,6 +170,14 @@ function loadQuestion1() {
     addShortcutButton.classList.add('add-shortcut-button');
     addShortcutButton.innerHTML = '+';
     moogleSearchContainer.appendChild(addShortcutButton);
+
+    const customizeBar = document.createElement('div');
+    customizeBar.classList.add('customize-bar');
+    browserBox.appendChild(customizeBar);
+
+    const customizeButton = document.createElement('button');
+    customizeButton.classList.add('customize-button');
+    customizeBar.appendChild(customizeButton);
 }
 
 loadIntroForm();
