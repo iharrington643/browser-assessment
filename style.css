@@ -36,6 +36,8 @@ body {
 #assessment-body {
     grid-row: 2 / 3;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     background-color: rgba(212, 233, 241);
@@ -416,4 +418,16 @@ button:focus {
     margin-right: 10px;
     margin-bottom: 10px;
     font-size: 12px;
+    color: rgb(79, 79, 79);
+}
+
+.question-one-box {
+    background-color: white;
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(79, 79, 79);
 }

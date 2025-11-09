@@ -27,6 +27,11 @@ function loadIntroForm() {
 function loadQuestion1() {
     const body = document.getElementById("assessment-body");
 
+    const questionOneBox = document.createElement('div');
+    questionOneBox.classList.add('question-one-box');
+    questionOneBox.innerHTML = "1. Select the button to refresh the page.";
+    body.appendChild(questionOneBox);
+
     const browserBox = document.createElement("div");
     browserBox.classList.add('browser-box');
     body.appendChild(browserBox);
