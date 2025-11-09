@@ -28,7 +28,7 @@ function loadQuestion1() {
     const body = document.getElementById("assessment-body");
 
     const questionOneBox = document.createElement('div');
-    questionOneBox.classList.add('question-one-box');
+    questionOneBox.classList.add('question-box');
     questionOneBox.innerHTML = "1. Select the button to refresh the page.";
     body.appendChild(questionOneBox);
 

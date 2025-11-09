@@ -421,7 +421,7 @@ button:focus {
     color: rgb(79, 79, 79);
 }
 
-.question-one-box {
+.question-box {
     background-color: white;
     width: 100vw;
     height: 60px;
