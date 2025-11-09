@@ -177,6 +177,7 @@ function loadQuestion1() {
 
     const customizeButton = document.createElement('button');
     customizeButton.classList.add('customize-button');
+    customizeButton.innerHTML = "✎ Customize"
     customizeBar.appendChild(customizeButton);
 }
 
