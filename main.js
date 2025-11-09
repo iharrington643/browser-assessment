@@ -165,6 +165,11 @@ function loadQuestion1() {
     const imgSearchButton = document.createElement('button');
     imgSearchButton.classList.add('img-search-button');
     searchContainer2.appendChild(imgSearchButton);
+
+    const addShortcutButton = document.createElement('button');
+    addShortcutButton.classList.add('add-shortcut-button');
+    addShortcutButton.innerHTML = '+';
+    moogleSearchContainer.appendChild(addShortcutButton);
 }
 
 loadIntroForm();
