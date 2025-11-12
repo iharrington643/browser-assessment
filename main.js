@@ -97,7 +97,7 @@ function loadQuestion1() {
     navContainer.appendChild(forwardButton);
 
     const refreshButton = document.createElement('button');
-    refreshButton.classList.add('refresh-button');
+    refreshButton.setAttribute('id', 'refresh-button');
     refreshButton.innerHTML = "↺";
     navContainer.appendChild(refreshButton);
 
@@ -184,6 +184,24 @@ function loadQuestion1() {
     customizeButton.classList.add('customize-button');
     customizeButton.innerHTML = "✎ Customize"
     customizeBar.appendChild(customizeButton);
+
+    question1Select();
+}
+
+function question1Select() {
+    const buttons = document.querySelectorAll('button');
+    const refreshButton = document.getElementById('refresh-button');
+
+    let selectedButton;
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            this.classList.add('active');
+            selectedButton = this;
+        })
+    })
 }
 
 loadIntroForm();
