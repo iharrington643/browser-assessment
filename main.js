@@ -21,7 +21,33 @@ function loadIntroForm() {
     startButton.addEventListener('click', function() {
         body.innerHTML = "";
         loadQuestion1();
+        loadToolbar();
     })
+}
+
+function loadToolbar() {
+    const infoBar = document.getElementById("info-bar");
+
+    const hintButton = document.createElement('button');
+    hintButton.classList.add('hint-button');
+    hintButton.innerHTML = "?";
+    infoBar.appendChild(hintButton);
+
+    const progressText = document.createElement('p');
+    progressText.classList.add('progress-text')
+
+    const progressBar = document.createElement('div');
+    progressBar.classList.add('progress-bar');
+    infoBar.appendChild(progressBar);
+
+    const innerBar = document.createElement('div');
+    innerBar.classList.add('inner-bar');
+    progressBar.appendChild(innerBar);
+
+    const skipButton = document.createElement('button');
+    skipButton.classList.add('skip-button');
+    skipButton.innerHTML = "⏭";
+    infoBar.appendChild(skipButton);
 }
 
 function loadQuestion1() {

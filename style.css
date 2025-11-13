@@ -46,6 +46,10 @@ body {
 #info-bar {
     grid-row: 3 / 4;
     background-color: rgb(79, 79, 79);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro-form {
@@ -430,4 +434,50 @@ button.active {
     font-weight: bold;
     font-size: 20px;
     color: rgb(79, 79, 79);
+}
+
+.skip-button {
+    height: 70px;
+    width: 10%;
+    border-radius: 15px;
+    font-size: 35px;
+    border-color: transparent;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgb(17, 110, 136);
+    transform: scaleY(0.98);
+    letter-spacing: -0.5px;
+}
+
+.hint-button {
+    border-radius: 50%;
+    font-size: 35px;
+    border-color: transparent;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgb(17, 110, 136);
+    transform: scaleY(0.98);
+    letter-spacing: -0.5px;
+    width: 60px;
+    height: 60px;
+}
+
+.progress-bar {
+    height: 15px;
+    width: 60%;
+    border-radius: 10px;;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    align-items: center;
+}
+
+.inner-bar {
+    height: 10px;
+    width: 3%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
