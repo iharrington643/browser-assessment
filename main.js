@@ -1,3 +1,5 @@
+const userScore = 0;
+
 function loadIntroForm() {
     const body = document.getElementById("assessment-body");
     
@@ -29,12 +31,12 @@ function loadToolbar() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
-    hintButton.classList.add('hint-button');
+    hintButton.setAttribute('id', 'hint-button');
     hintButton.innerHTML = "?";
     infoBar.appendChild(hintButton);
 
     const progressText = document.createElement('p');
-    progressText.classList.add('progress-text');
+    progressText.setAttribute('id', 'progress-text');
     progressText.innerHTML = "1 / 20";
     infoBar.appendChild(progressText);
 
@@ -43,13 +45,13 @@ function loadToolbar() {
     infoBar.appendChild(progressBar);
 
     const innerBar = document.createElement('div');
-    innerBar.classList.add('inner-bar');
+    innerBar.classList.setAttribute('id', 'inner-bar');
     progressBar.appendChild(innerBar);
 
-    const skipButton = document.createElement('button');
-    skipButton.classList.add('skip-button');
-    skipButton.innerHTML = "⏭";
-    infoBar.appendChild(skipButton);
+    const nextButton = document.createElement('button');
+    nextButton.setAttribute('id', 'next-button');
+    nextButton.innerHTML = "⏭";
+    infoBar.appendChild(nextButton);
 }
 
 function loadQuestion1() {
@@ -217,6 +219,9 @@ function loadQuestion1() {
 }
 
 function question1Select() {
+    const nextButton = document.getElementById('next-button');
+    const hintButton = document.getElementById('hint-button');
+
     const buttons = document.querySelectorAll('button');
     const refreshButton = document.getElementById('refresh-button');
 
@@ -229,6 +234,10 @@ function question1Select() {
             this.classList.add('active');
             selectedButton = this;
         })
+    })
+
+    nextButton.addEventListener('click', function() {
+
     })
 }
 

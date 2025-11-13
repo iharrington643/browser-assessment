@@ -436,7 +436,7 @@ button.active {
     color: rgb(79, 79, 79);
 }
 
-.skip-button {
+#next-button {
     height: 60px;
     width: 100px;
     border-radius: 15px;
@@ -450,13 +450,13 @@ button.active {
     letter-spacing: -0.5px;
 }
 
-.hint-button {
+#hint-button {
     border-radius: 50%;
     font-size: 35px;
     border-color: transparent;
     background-color: rgb(27, 27, 27);
     color: white;
-    font-weight: 400;
+    font-weight: 450;
     text-shadow: 1px 1px 2px rgb(17, 110, 136);
     transform: scaleY(0.98);
     letter-spacing: -0.5px;
@@ -473,7 +473,7 @@ button.active {
     align-items: center;
 }
 
-.inner-bar {
+#inner-bar {
     height: 10px;
     width: 3%;
     background-color: white;
@@ -482,7 +482,7 @@ button.active {
     margin-right: 3px;
 }
 
-.progress-text {
+#progress-text {
     color: white;
     font-weight: bold;
 }
