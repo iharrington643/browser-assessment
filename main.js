@@ -143,6 +143,7 @@ function loadQuestion1() {
 
     const bookmarkButton = document.createElement('button');
     bookmarkButton.classList.add('bookmark-button');
+    bookmarkButton.classList.add('answer-button');
     bookmarkButton.innerHTML = "☆";
     searchContainer.appendChild(bookmarkButton);
 
@@ -152,10 +153,12 @@ function loadQuestion1() {
 
     const accountButton = document.createElement('button');
     accountButton.classList.add('account-button');
+    accountButton.classList.add('answer-button');
     navigationBar.appendChild(accountButton);
 
     const menuButton = document.createElement('button');
     menuButton.classList.add('menu-button');
+    menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
     const moogleBar = document.createElement('div');
@@ -164,10 +167,12 @@ function loadQuestion1() {
 
     const nineDotsButton = document.createElement('button');
     nineDotsButton.classList.add('nine-dots-button');
+    nineDotsButton.classList.add('answer-button');
     moogleBar.appendChild(nineDotsButton);
 
     const accountDtlButton = document.createElement('button');
     accountDtlButton.classList.add('account-dtl-button');
+    accountDtlButton.classList.add('answer-button');
     moogleBar.appendChild(accountDtlButton);
 
     const mooglePage = document.createElement('div');
@@ -195,14 +200,17 @@ function loadQuestion1() {
 
     const micButton = document.createElement('button');
     micButton.classList.add('mic-button');
+    micButton.classList.add('answer-button');
     searchContainer2.appendChild(micButton);
 
     const imgSearchButton = document.createElement('button');
     imgSearchButton.classList.add('img-search-button');
+    imgSearchButton.classList.add('answer-button');
     searchContainer2.appendChild(imgSearchButton);
 
     const addShortcutButton = document.createElement('button');
     addShortcutButton.classList.add('add-shortcut-button');
+    addShortcutButton.classList.add('answer-button');
     addShortcutButton.innerHTML = '+';
     moogleSearchContainer.appendChild(addShortcutButton);
 
@@ -212,6 +220,7 @@ function loadQuestion1() {
 
     const customizeButton = document.createElement('button');
     customizeButton.classList.add('customize-button');
+    customizeButton.classList.add('answer-button');
     customizeButton.innerHTML = "✎ Customize"
     customizeBar.appendChild(customizeButton);
 
@@ -219,17 +228,19 @@ function loadQuestion1() {
 }
 
 function question1Select() {
+    const body = document.getElementById("assessment-body");
+
     const nextButton = document.getElementById('next-button');
     const hintButton = document.getElementById('hint-button');
 
-    const buttons = document.querySelectorAll('button');
+    const answerButtons = document.querySelectorAll('button');
     const refreshButton = document.getElementById('refresh-button');
 
     let selectedButton;
 
-    buttons.forEach(button => {
+    answerButtons.forEach(button => {
         button.addEventListener('click', function() {
-            buttons.forEach(btn => btn.classList.remove('active'));
+            answerButtons.forEach(btn => btn.classList.remove('active'));
 
             this.classList.add('active');
             selectedButton = this;
@@ -237,7 +248,11 @@ function question1Select() {
     })
 
     nextButton.addEventListener('click', function() {
+        if (selectedButton === refreshButton) {
+            userScore += 5;
+        }
 
+        body.innerHTML = "";
     })
 }
 
