@@ -95,7 +95,7 @@ body {
     letter-spacing: -0.5px;
 }
 
-.browser-box {
+#browser-box {
     border-radius: 10px;
     background-color: transparent;
     height: 80%;
