@@ -437,8 +437,8 @@ button.active {
 }
 
 .skip-button {
-    height: 70px;
-    width: 10%;
+    height: 60px;
+    width: 100px;
     border-radius: 15px;
     font-size: 35px;
     border-color: transparent;
@@ -480,4 +480,9 @@ button.active {
     border-radius: 10px;
     margin-left: 3px;
     margin-right: 3px;
+}
+
+.progress-text {
+    color: white;
+    font-weight: bold;
 }

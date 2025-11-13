@@ -34,7 +34,9 @@ function loadToolbar() {
     infoBar.appendChild(hintButton);
 
     const progressText = document.createElement('p');
-    progressText.classList.add('progress-text')
+    progressText.classList.add('progress-text');
+    progressText.innerHTML = "1 / 20";
+    infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
     progressBar.classList.add('progress-bar');
