@@ -1,6 +1,8 @@
 import { loadToolbar1, loadQuestion1, question1Select } from "./questions/question1.js";
 
-export let userScore = 0;
+export const userData = {
+    userScore: 0
+};
 
 function loadIntroForm() {
     const body = document.getElementById("assessment-body");
@@ -29,3 +31,5 @@ function loadIntroForm() {
         question1Select();
     })
 }
+
+loadIntroForm();

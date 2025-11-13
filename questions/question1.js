@@ -1,4 +1,4 @@
-import { userScore } from '../main.js';
+import { userData } from '../main.js';
 
 export function loadToolbar1() {
     const infoBar = document.getElementById("info-bar");
@@ -227,11 +227,12 @@ export function question1Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === refreshButton) {
-            userScore += 5;
+        if (selectedButton.id === 'refresh-button') {
+            userData.userScore += 5;
         }
 
         body.innerHTML = "";
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {
