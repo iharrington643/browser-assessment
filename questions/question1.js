@@ -227,7 +227,7 @@ export function question1Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton === refreshButton) {
+        if (selectedButton.id === refreshButton) {
             userScore += 5;
         }
 
@@ -241,7 +241,7 @@ export function question1Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<b>HINT</b><br>Remember that refreshing reloads the content of a page. Look for the button that implies a redo or reset.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that refreshing reloads the content of a page. Look for the button that implies a redo or reset.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
@@ -253,5 +253,9 @@ export function question1Select() {
         hintForm.appendChild(okayButton);
 
         body.appendChild(hintForm);
+
+        okayButton.addEventListener('click', function() {
+            hintForm.remove();
+        })
     })
 }

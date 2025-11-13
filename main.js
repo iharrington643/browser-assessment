@@ -29,5 +29,3 @@ function loadIntroForm() {
         question1Select();
     })
 }
-
-loadIntroForm();
