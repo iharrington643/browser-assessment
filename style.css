@@ -50,6 +50,7 @@ body {
     gap: 20px;
     align-items: center;
     justify-content: center;
+    min-height: 70px;
 }
 
 .intro-form {
@@ -437,10 +438,10 @@ button.active {
 }
 
 #next-button {
-    height: 60px;
-    width: 100px;
-    border-radius: 15px;
-    font-size: 35px;
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 25px;
     border-color: transparent;
     background-color: rgb(27, 27, 27);
     color: white;
@@ -452,7 +453,7 @@ button.active {
 
 #hint-button {
     border-radius: 50%;
-    font-size: 35px;
+    font-size: 25px;
     border-color: transparent;
     background-color: rgb(27, 27, 27);
     color: white;
@@ -460,8 +461,8 @@ button.active {
     text-shadow: 1px 1px 2px rgb(17, 110, 136);
     transform: scaleY(0.98);
     letter-spacing: -0.5px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .progress-bar {
@@ -485,4 +486,44 @@ button.active {
 #progress-text {
     color: white;
     font-weight: bold;
+}
+
+.hint-form {
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 4px solid rgba(22, 146, 182);
+    height: 60%;
+    min-width: 550px;
+    max-width: 900px;
+    min-height: 150px;
+    max-height: 175px;
+    width: 70%;
+}
+
+.hint-text {
+    font-size: 17px;
+    text-align: center;
+}
+
+.okay-button {
+    height: 60px;
+    width: 160px;
+    border-radius: 15px;
+    font-size: 30px;
+    border: 2px solid rgba(212, 233, 241);
+    background-color: rgba(22, 146, 182);
+    color: white;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgb(17, 110, 136);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transform: scaleY(0.98);
+    letter-spacing: -0.5px;
 }

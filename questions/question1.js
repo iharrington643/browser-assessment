@@ -233,4 +233,25 @@ export function question1Select() {
 
         body.innerHTML = "";
     })
+
+    hintButton.addEventListener('click', function() {
+        const body = document.getElementById("assessment-body");
+    
+        const hintForm = document.createElement("form");
+        hintForm.classList.add("hint-form");
+
+        const hintText = document.createElement("p");
+        hintText.innerHTML = "<b>HINT</b><br>Remember that refreshing reloads the content of a page. Look for the button that implies a redo or reset.";
+        hintText.classList.add("hint-text");
+
+        const okayButton = document.createElement("button");
+        okayButton.type = "button";
+        okayButton.textContent = "OKAY";
+        okayButton.classList.add("okay-button");
+
+        hintForm.appendChild(hintText);
+        hintForm.appendChild(okayButton);
+
+        body.appendChild(hintForm);
+    })
 }
