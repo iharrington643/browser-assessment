@@ -10,7 +10,7 @@ export function loadToolbar2() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "1 / 20";
+    progressText.innerHTML = "2 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -32,7 +32,7 @@ export function loadQuestion2() {
 
     const questionOneBox = document.createElement('div');
     questionOneBox.classList.add('question-box');
-    questionOneBox.innerHTML = "1. Select the button to refresh the page.";
+    questionOneBox.innerHTML = "2. Select the button to add a new shortcut to the page.";
     body.appendChild(questionOneBox);
 
     const browserBox = document.createElement("div");
@@ -202,18 +202,18 @@ export function loadQuestion2() {
     const customizeButton = document.createElement('button');
     customizeButton.classList.add('customize-button');
     customizeButton.classList.add('answer-button');
-    customizeButton.innerHTML = "✎ Customize"
+    customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
 }
 
 export function question2Select() {
     const body = document.getElementById("assessment-body");
+    const infoBar = document.getElementById("info-bar");
 
     const nextButton = document.getElementById('next-button');
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
-    const refreshButton = document.getElementById('refresh-button');
 
     let selectedButton;
 
@@ -232,6 +232,7 @@ export function question2Select() {
         }
 
         body.innerHTML = "";
+        infoBar.innerHTML = "";
         console.log(userData.userScore);
     })
 

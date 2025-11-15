@@ -209,12 +209,12 @@ export function loadQuestion1() {
 
 export function question1Select() {
     const body = document.getElementById("assessment-body");
+    const infoBar = document.getElementById("info-bar");
 
     const nextButton = document.getElementById('next-button');
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
-    const refreshButton = document.getElementById('refresh-button');
 
     let selectedButton;
 
@@ -233,6 +233,7 @@ export function question1Select() {
         }
 
         body.innerHTML = "";
+        infoBar.innerHTML = "";
         loadToolbar2();
         loadQuestion2();
         question2Select();
