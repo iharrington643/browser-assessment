@@ -19,6 +19,7 @@ export function loadToolbar2() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
+    innerBar.style.width = "10%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -243,7 +244,7 @@ export function question2Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that refreshing reloads the content of a page. Look for the button that implies a redo or reset.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that you are adding something to the page. Look for the symbol that represents addition.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
