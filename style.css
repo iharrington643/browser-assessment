@@ -384,7 +384,7 @@ button.active {
     background-image: url('./icons/image-search.svg');
 }
 
-.add-shortcut-button {
+#add-shortcut-button {
     border-radius: 50%;
     border-color: transparent;
     display: block;
@@ -394,6 +394,11 @@ button.active {
     background-color: rgb(227, 227, 227);
     font-size: 20px;
     color: rgb(79, 79, 79);
+}
+
+#add-shortcut-button.active {
+    color: rgba(22, 146, 182);
+    text-shadow: 0px 0px 2px rgb(53, 176, 214);
 }
 
 .img-search-button.active {

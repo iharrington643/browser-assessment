@@ -191,7 +191,7 @@ export function loadQuestion2() {
     searchContainer2.appendChild(imgSearchButton);
 
     const addShortcutButton = document.createElement('button');
-    addShortcutButton.classList.add('add-shortcut-button');
+    addShortcutButton.setAttribute('id', 'add-shortcut-button');
     addShortcutButton.classList.add('answer-button');
     addShortcutButton.innerHTML = '+';
     moogleSearchContainer.appendChild(addShortcutButton);
@@ -228,7 +228,7 @@ export function question2Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'refresh-button') {
+        if (selectedButton.id === 'add-shortcut-button') {
             userData.userScore += 5;
         }
 
