@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar3, loadQuestion3, question3Select } from './question3.js';
 
-export function loadToolbar2() {
+export function loadToolbar3() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -29,7 +28,7 @@ export function loadToolbar2() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion2() {
+export function loadQuestion3() {
     const body = document.getElementById("assessment-body");
 
     const questionOneBox = document.createElement('div');
@@ -208,7 +207,7 @@ export function loadQuestion2() {
     customizeBar.appendChild(customizeButton);
 }
 
-export function question2Select() {
+export function question3Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -235,9 +234,6 @@ export function question2Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar3();
-        loadQuestion3();
-        question3Select();
     })
 
     hintButton.addEventListener('click', function() {
