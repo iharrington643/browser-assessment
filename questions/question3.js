@@ -96,7 +96,7 @@ export function loadQuestion3() {
     navigationBar.appendChild(navContainer);
 
     const backButton = document.createElement('button');
-    backButton.classList.add('back-button');
+    backButton.setAttribute('id', 'back-button');
     backButton.classList.add('answer-button');
     backButton.innerHTML = "⇽";
     navContainer.appendChild(backButton);
@@ -143,19 +143,10 @@ export function loadQuestion3() {
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
-    const moogleBar = document.createElement('div');
-    moogleBar.classList.add('moogle-bar');
-    browserBox.appendChild(moogleBar);
-
-    const mooglePage = document.createElement('div');
-    mooglePage.classList.add('moogle-page');
-    mooglePage.style.backgroundImage = "url('./icons/wiki-demo.png')";
-    mooglePage.style.backgroundSize = "cover";
-    browserBox.appendChild(mooglePage);
-
-    const customizeBar = document.createElement('div');
-    customizeBar.classList.add('customize-bar');
-    browserBox.appendChild(customizeBar);
+    const webPage = document.createElement('img');
+    webPage.classList.add('web-page');
+    webPage.src = './icons/site-demo.jpg';
+    browserBox.appendChild(webPage);
 }
 
 export function question3Select() {

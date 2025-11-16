@@ -96,7 +96,7 @@ export function loadQuestion1() {
     navigationBar.appendChild(navContainer);
 
     const backButton = document.createElement('button');
-    backButton.classList.add('back-button');
+    backButton.setAttribute('id', 'back-button');
     backButton.classList.add('answer-button');
     backButton.innerHTML = "⇽";
     navContainer.appendChild(backButton);

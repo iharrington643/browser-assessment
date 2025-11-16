@@ -210,7 +210,7 @@ body {
     font-size: 21px;
 }
 
-.back-button, .forward-button {
+#back-button, .forward-button {
     font-size: 21px;
 }
 
@@ -328,6 +328,15 @@ button.active {
     display: flex;
     justify-content: center;
     padding-top: 10vh;
+}
+
+.web-page {
+    grid-row: 3 / 6;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    overflow-y: auto;
 }
 
 .moogle-logo {
