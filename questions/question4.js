@@ -176,7 +176,7 @@ export function loadQuestion4() {
 
     const searchInput2 = document.createElement('input');
     searchInput2.type = "search";
-    searchInput2.classList.add('search-input2');
+    searchInput2.setAttribute('id', 'search-input2');
     searchInput2.placeholder = "Search Moogle or type a URL";
     searchContainer2.appendChild(searchInput2);
 
@@ -211,6 +211,8 @@ export function question4Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
+    const searchInput2 = document.getElementById('search-input2')
+
     const nextButton = document.getElementById('next-button');
     const hintButton = document.getElementById('hint-button');
 
@@ -243,7 +245,7 @@ export function question4Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that the search bar and the address bar are two different things.  Also, you do not need to press enter, since the search bar does not actually function.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that the search bar and the address bar are two different things.  Also, there is no need to press enter, since the search bar doesn't work.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");

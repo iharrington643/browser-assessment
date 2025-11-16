@@ -177,7 +177,7 @@ export function loadQuestion2() {
 
     const searchInput2 = document.createElement('input');
     searchInput2.type = "search";
-    searchInput2.classList.add('search-input2');
+    searchInput2.setAttribute('id', 'search-input2');
     searchInput2.placeholder = "Search Moogle or type a URL";
     searchContainer2.appendChild(searchInput2);
 

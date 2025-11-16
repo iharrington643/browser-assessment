@@ -359,18 +359,18 @@ button.active {
    margin-bottom: 15px;
 }
 
-.search-input2 {
+#search-input2 {
     width: 400px;
     padding-left: 10px;
     border-color: transparent;
     background-color: transparent;
 }
 
-.search-input2:focus {
+#search-input2:focus {
     outline: none;
 }
 
-.search-input2::-webkit-search-cancel-button {
+#search-input2::-webkit-search-cancel-button {
     appearance: none;
 }
 
