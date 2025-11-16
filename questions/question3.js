@@ -120,7 +120,7 @@ export function loadQuestion3() {
     const searchInput = document.createElement('input');
     searchInput.type = "search";
     searchInput.classList.add('search-input');
-    searchInput.placeholder = "www.wikipedia.org";
+    searchInput.placeholder = "www.website.com";
     searchContainer.appendChild(searchInput);
 
     const bookmarkButton = document.createElement('button');
@@ -145,7 +145,7 @@ export function loadQuestion3() {
 
     const webPage = document.createElement('img');
     webPage.classList.add('web-page');
-    webPage.src = './icons/site-demo.jpg';
+    webPage.src = './icons/site-demo.png';
     browserBox.appendChild(webPage);
 }
 
@@ -170,12 +170,13 @@ export function question3Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'add-shortcut-button') {
+        if (selectedButton.id === 'back-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {
