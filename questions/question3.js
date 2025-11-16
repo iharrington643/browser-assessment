@@ -10,7 +10,7 @@ export function loadToolbar3() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "2 / 20";
+    progressText.innerHTML = "3 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -19,7 +19,7 @@ export function loadToolbar3() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "10%";
+    innerBar.style.width = "15%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -33,7 +33,7 @@ export function loadQuestion3() {
 
     const questionOneBox = document.createElement('div');
     questionOneBox.classList.add('question-box');
-    questionOneBox.innerHTML = "2. Select the button to add a new shortcut to the page.";
+    questionOneBox.innerHTML = "3. Select the button to return to the previous page.";
     body.appendChild(questionOneBox);
 
     const browserBox = document.createElement("div");
@@ -120,7 +120,7 @@ export function loadQuestion3() {
     const searchInput = document.createElement('input');
     searchInput.type = "search";
     searchInput.classList.add('search-input');
-    searchInput.placeholder = "Search Moogle or type a URL";
+    searchInput.placeholder = "www.wikipedia.org";
     searchContainer.appendChild(searchInput);
 
     const bookmarkButton = document.createElement('button');
@@ -147,64 +147,15 @@ export function loadQuestion3() {
     moogleBar.classList.add('moogle-bar');
     browserBox.appendChild(moogleBar);
 
-    const nineDotsButton = document.createElement('button');
-    nineDotsButton.classList.add('nine-dots-button');
-    nineDotsButton.classList.add('answer-button');
-    moogleBar.appendChild(nineDotsButton);
-
-    const accountDtlButton = document.createElement('button');
-    accountDtlButton.classList.add('account-dtl-button');
-    accountDtlButton.classList.add('answer-button');
-    moogleBar.appendChild(accountDtlButton);
-
     const mooglePage = document.createElement('div');
     mooglePage.classList.add('moogle-page');
+    mooglePage.style.backgroundImage = "url('./icons/wiki-demo.png')";
+    mooglePage.style.backgroundSize = "cover";
     browserBox.appendChild(mooglePage);
-
-    const moogleSearchContainer = document.createElement('div');
-    moogleSearchContainer.classList.add('moogle-search-container');
-    mooglePage.appendChild(moogleSearchContainer);
-
-    const moogleLogo = document.createElement('img');
-    moogleLogo.classList.add('moogle-logo');
-    moogleLogo.src = "./icons/moogle-logo.png";
-    moogleSearchContainer.appendChild(moogleLogo);
-
-    const searchContainer2 = document.createElement('div');
-    searchContainer2.classList.add('search-container2');
-    moogleSearchContainer.appendChild(searchContainer2);
-
-    const searchInput2 = document.createElement('input');
-    searchInput2.type = "search";
-    searchInput2.classList.add('search-input2');
-    searchInput2.placeholder = "Search Moogle or type a URL";
-    searchContainer2.appendChild(searchInput2);
-
-    const micButton = document.createElement('button');
-    micButton.classList.add('mic-button');
-    micButton.classList.add('answer-button');
-    searchContainer2.appendChild(micButton);
-
-    const imgSearchButton = document.createElement('button');
-    imgSearchButton.classList.add('img-search-button');
-    imgSearchButton.classList.add('answer-button');
-    searchContainer2.appendChild(imgSearchButton);
-
-    const addShortcutButton = document.createElement('button');
-    addShortcutButton.setAttribute('id', 'add-shortcut-button');
-    addShortcutButton.classList.add('answer-button');
-    addShortcutButton.innerHTML = '+';
-    moogleSearchContainer.appendChild(addShortcutButton);
 
     const customizeBar = document.createElement('div');
     customizeBar.classList.add('customize-bar');
     browserBox.appendChild(customizeBar);
-
-    const customizeButton = document.createElement('button');
-    customizeButton.classList.add('customize-button');
-    customizeButton.classList.add('answer-button');
-    customizeButton.innerHTML = "✎ Customize";
-    customizeBar.appendChild(customizeButton);
 }
 
 export function question3Select() {
@@ -243,7 +194,7 @@ export function question3Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that you are adding something to the page. Look for the symbol that represents addition.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that you need to go back.  Look for a symbol that points in the backwards direction.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
