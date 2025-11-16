@@ -10,7 +10,7 @@ export function loadToolbar4() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "3 / 20";
+    progressText.innerHTML = "4 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -19,7 +19,7 @@ export function loadToolbar4() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "15%";
+    innerBar.style.width = "20%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -227,7 +227,7 @@ export function question4Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'back-button') {
+        if (searchInput2.value === 'dogs') {
             userData.userScore += 5;
         }
 
