@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar3, loadQuestion3, question3Select } from './question3.js';
 
-export function loadToolbar2() {
+export function loadToolbar4() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -11,7 +10,7 @@ export function loadToolbar2() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "2 / 20";
+    progressText.innerHTML = "3 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +19,7 @@ export function loadToolbar2() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "10%";
+    innerBar.style.width = "15%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -29,13 +28,13 @@ export function loadToolbar2() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion2() {
+export function loadQuestion4() {
     const body = document.getElementById("assessment-body");
 
-    const questionTwoBox = document.createElement('div');
-    questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "2. Select the button to add a new shortcut to the page.";
-    body.appendChild(questionTwoBox);
+    const questionFourBox = document.createElement('div');
+    questionFourBox.classList.add('question-box');
+    questionFourBox.innerHTML = "4. Search for 'dogs' in the browser's <b>search bar</b>.";
+    body.appendChild(questionFourBox);
 
     const browserBox = document.createElement("div");
     browserBox.setAttribute('id', 'browser-box');
@@ -208,7 +207,7 @@ export function loadQuestion2() {
     customizeBar.appendChild(customizeButton);
 }
 
-export function question2Select() {
+export function question4Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -229,15 +228,12 @@ export function question2Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'add-shortcut-button') {
+        if (selectedButton.id === 'back-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar3();
-        loadQuestion3();
-        question3Select();
     })
 
     hintButton.addEventListener('click', function() {
@@ -247,7 +243,7 @@ export function question2Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that you are adding something to the page. Look for the symbol that represents addition.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that the search bar and the address bar are two different things.  Also, you do not need to press enter, since the search bar does not actually function.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");

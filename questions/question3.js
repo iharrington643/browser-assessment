@@ -1,4 +1,5 @@
 import { userData } from '../main.js';
+import { loadToolbar4, loadQuestion4, question4Select } from './question4.js';
 
 export function loadToolbar3() {
     const infoBar = document.getElementById("info-bar");
@@ -31,10 +32,10 @@ export function loadToolbar3() {
 export function loadQuestion3() {
     const body = document.getElementById("assessment-body");
 
-    const questionOneBox = document.createElement('div');
-    questionOneBox.classList.add('question-box');
-    questionOneBox.innerHTML = "3. Select the button to return to the previous page.";
-    body.appendChild(questionOneBox);
+    const questionThreeBox = document.createElement('div');
+    questionThreeBox.classList.add('question-box');
+    questionThreeBox.innerHTML = "3. Select the button to return to the previous page.";
+    body.appendChild(questionThreeBox);
 
     const browserBox = document.createElement("div");
     browserBox.setAttribute('id', 'browser-box');
@@ -176,7 +177,9 @@ export function question3Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        console.log(userData.userScore);
+        loadToolbar4();
+        loadQuestion4();
+        question4Select();
     })
 
     hintButton.addEventListener('click', function() {
