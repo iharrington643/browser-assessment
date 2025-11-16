@@ -218,14 +218,11 @@ export function question4Select() {
 
     const answerButtons = document.querySelectorAll('.answer-button');
 
-    let selectedButton;
-
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
             answerButtons.forEach(btn => btn.classList.remove('active'));
 
             this.classList.add('active');
-            selectedButton = this;
         })
     })
 
