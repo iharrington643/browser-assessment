@@ -166,68 +166,10 @@ export function loadQuestion5() {
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
-    const moogleBar = document.createElement('div');
-    moogleBar.classList.add('moogle-bar');
-    browserBox.appendChild(moogleBar);
-
-    const nineDotsButton = document.createElement('button');
-    nineDotsButton.classList.add('nine-dots-button');
-    nineDotsButton.classList.add('answer-button');
-    moogleBar.appendChild(nineDotsButton);
-
-    const accountDtlButton = document.createElement('button');
-    accountDtlButton.classList.add('account-dtl-button');
-    accountDtlButton.classList.add('answer-button');
-    moogleBar.appendChild(accountDtlButton);
-
-    const mooglePage = document.createElement('div');
-    mooglePage.classList.add('moogle-page');
-    browserBox.appendChild(mooglePage);
-
-    const moogleSearchContainer = document.createElement('div');
-    moogleSearchContainer.classList.add('moogle-search-container');
-    mooglePage.appendChild(moogleSearchContainer);
-
-    const moogleLogo = document.createElement('img');
-    moogleLogo.classList.add('moogle-logo');
-    moogleLogo.src = "./icons/moogle-logo.png";
-    moogleSearchContainer.appendChild(moogleLogo);
-
-    const searchContainer2 = document.createElement('div');
-    searchContainer2.classList.add('search-container2');
-    moogleSearchContainer.appendChild(searchContainer2);
-
-    const searchInput2 = document.createElement('input');
-    searchInput2.type = "search";
-    searchInput2.setAttribute('id', 'search-input2');
-    searchInput2.placeholder = "Search Moogle or type a URL";
-    searchContainer2.appendChild(searchInput2);
-
-    const micButton = document.createElement('button');
-    micButton.classList.add('mic-button');
-    micButton.classList.add('answer-button');
-    searchContainer2.appendChild(micButton);
-
-    const imgSearchButton = document.createElement('button');
-    imgSearchButton.classList.add('img-search-button');
-    imgSearchButton.classList.add('answer-button');
-    searchContainer2.appendChild(imgSearchButton);
-
-    const addShortcutButton = document.createElement('button');
-    addShortcutButton.setAttribute('id', 'add-shortcut-button');
-    addShortcutButton.classList.add('answer-button');
-    addShortcutButton.innerHTML = '+';
-    moogleSearchContainer.appendChild(addShortcutButton);
-
-    const customizeBar = document.createElement('div');
-    customizeBar.classList.add('customize-bar');
-    browserBox.appendChild(customizeBar);
-
-    const customizeButton = document.createElement('button');
-    customizeButton.classList.add('customize-button');
-    customizeButton.classList.add('answer-button');
-    customizeButton.innerHTML = "✎ Customize";
-    customizeBar.appendChild(customizeButton);
+    const wikiPage = document.createElement('img');
+    wikiPage.classList.add('wiki-page');
+    wikiPage.src = './icons/wiki-demo.png';
+    browserBox.appendChild(wikiPage);
 
     bookmarkButton.addEventListener('click', function() {
         bookmarkForm.style.visibility = "visible";
