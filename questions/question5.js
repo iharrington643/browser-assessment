@@ -19,7 +19,7 @@ export function loadToolbar5() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "15%";
+    innerBar.style.width = "25%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -141,11 +141,13 @@ export function loadQuestion5() {
     bookmarkForm.appendChild(bookmarkInput);
 
     const removeBookmarkBtn = document.createElement('button');
+    removeBookmarkBtn.type = 'button';
     removeBookmarkBtn.setAttribute('id', 'remove-bookmark-btn');
     removeBookmarkBtn.innerHTML = 'Remove';
     bookmarkForm.appendChild(removeBookmarkBtn);
 
     const saveBookmarkBtn = document.createElement('button');
+    saveBookmarkBtn.type = 'button';
     saveBookmarkBtn.setAttribute('id', 'save-bookmark-btn');
     saveBookmarkBtn.innerHTML = 'Save';
     bookmarkForm.appendChild(saveBookmarkBtn);
