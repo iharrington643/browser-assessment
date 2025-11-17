@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar5, loadQuestion5, question5Select } from './question5.js';
 
-export function loadToolbar4() {
+export function loadToolbar5() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -11,7 +10,7 @@ export function loadToolbar4() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "4 / 20";
+    progressText.innerHTML = "5 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +19,7 @@ export function loadToolbar4() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "20%";
+    innerBar.style.width = "15%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -29,13 +28,13 @@ export function loadToolbar4() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion4() {
+export function loadQuestion5() {
     const body = document.getElementById("assessment-body");
 
-    const questionFourBox = document.createElement('div');
-    questionFourBox.classList.add('question-box');
-    questionFourBox.innerHTML = "4. Search for 'dogs' in the browser's <b>search bar</b>.";
-    body.appendChild(questionFourBox);
+    const questionFiveBox = document.createElement('div');
+    questionFiveBox.classList.add('question-box');
+    questionFiveBox.innerHTML = "5. Bookmark the current page with the name 'Wiki'.";
+    body.appendChild(questionFiveBox);
 
     const browserBox = document.createElement("div");
     browserBox.setAttribute('id', 'browser-box');
@@ -208,35 +207,33 @@ export function loadQuestion4() {
     customizeBar.appendChild(customizeButton);
 }
 
-export function question4Select() {
+export function question5Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
-
-    const searchInput2 = document.getElementById('search-input2')
 
     const nextButton = document.getElementById('next-button');
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
 
+    let selectedButton;
+
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
             answerButtons.forEach(btn => btn.classList.remove('active'));
 
             this.classList.add('active');
+            selectedButton = this;
         })
     })
 
     nextButton.addEventListener('click', function() {
-        if (searchInput2.value === 'dogs') {
+        if (selectedButton.id === 'add-shortcut-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar5();
-        loadQuestion5();
-        question5Select();
     })
 
     hintButton.addEventListener('click', function() {
@@ -246,7 +243,7 @@ export function question4Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that the search bar and the address bar are two different things.  Also, there is no need to press enter, since the search bar doesn't work.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Think of bookmarking a page like marking it as your favorite.  Also, you'll know if you clicked the right button if a text input box pops up.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");

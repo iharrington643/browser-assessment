@@ -51,7 +51,7 @@ export function loadQuestion3() {
 
     const tabText = document.createElement('p');
     tabText.classList.add('tab-text');
-    tabText.innerHTML = "New Tab";
+    tabText.innerHTML = "My Website";
     tab.appendChild(tabText);
 
     const closeTabButton = document.createElement('button');
