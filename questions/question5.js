@@ -257,6 +257,7 @@ export function question5Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
+    const bookmarkInput = document.getElementById('bookmark-input');
 
     let selectedButton;
 
@@ -270,7 +271,7 @@ export function question5Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'add-shortcut-button') {
+        if (bookmarkInput.value === 'Wiki') {
             userData.userScore += 5;
         }
 
