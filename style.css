@@ -239,7 +239,7 @@ body {
     appearance: none;
 }
 
-.bookmark-button {
+#bookmark-button {
     background-color: transparent;
     border-color: transparent;
     font-weight: bold;

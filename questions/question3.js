@@ -125,7 +125,7 @@ export function loadQuestion3() {
     searchContainer.appendChild(searchInput);
 
     const bookmarkButton = document.createElement('button');
-    bookmarkButton.classList.add('bookmark-button');
+    bookmarkButton.setAttribute('id', 'bookmark-button');
     bookmarkButton.classList.add('answer-button');
     bookmarkButton.innerHTML = "☆";
     searchContainer.appendChild(bookmarkButton);
