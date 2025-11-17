@@ -129,6 +129,27 @@ export function loadQuestion5() {
     bookmarkButton.innerHTML = "☆";
     searchContainer.appendChild(bookmarkButton);
 
+    const bookmarkForm = document.createElement('form');
+    bookmarkForm.classList.add('bookmark-form');
+    bookmarkForm.style.visibility = "hidden";
+    browserBox.appendChild(bookmarkForm);
+
+    const bookmarkInput = document.createElement('input');
+    bookmarkInput.type = "text";
+    bookmarkInput.setAttribute('id', 'bookmark-input');
+    bookmarkInput.placeholder = "Name your bookmark...";
+    bookmarkForm.appendChild(bookmarkInput);
+
+    const removeBookmarkBtn = document.createElement('button');
+    removeBookmarkBtn.setAttribute('id', 'remove-bookmark-btn');
+    removeBookmarkBtn.innerHTML = 'Remove';
+    bookmarkForm.appendChild(removeBookmarkBtn);
+
+    const saveBookmarkBtn = document.createElement('button');
+    saveBookmarkBtn.setAttribute('id', 'save-bookmark-btn');
+    saveBookmarkBtn.innerHTML = 'Save';
+    bookmarkForm.appendChild(saveBookmarkBtn);
+
     const settingsContainer = document.createElement('div');
     settingsContainer.classList.add('settings-container');
     navigationBar.appendChild(settingsContainer);
@@ -205,6 +226,10 @@ export function loadQuestion5() {
     customizeButton.classList.add('answer-button');
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
+
+    bookmarkButton.addEventListener('click', function() {
+        bookmarkForm.style.visibility = "visible";
+    })
 }
 
 export function question5Select() {
