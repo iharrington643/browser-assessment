@@ -232,6 +232,21 @@ export function loadQuestion5() {
     bookmarkButton.addEventListener('click', function() {
         bookmarkForm.style.visibility = "visible";
     })
+
+    saveBookmarkBtn.addEventListener('click', function() {
+        bookmarkForm.style.visibility = 'hidden';
+    })
+
+    removeBookmarkBtn.addEventListener('click', function() {
+        bookmarkForm.style.visibility = 'hidden';
+        bookmarkInput.value = '';
+    })
+
+    bookmarkInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') { 
+            event.preventDefault();
+        }
+    });
 }
 
 export function question5Select() {
