@@ -120,7 +120,7 @@ export function loadQuestion5() {
     const searchInput = document.createElement('input');
     searchInput.type = "search";
     searchInput.classList.add('search-input');
-    searchInput.placeholder = "Search Moogle or type a URL";
+    searchInput.placeholder = "www.wikipedia.org";
     searchContainer.appendChild(searchInput);
 
     const bookmarkButton = document.createElement('button');
@@ -166,10 +166,20 @@ export function loadQuestion5() {
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
-    const wikiPage = document.createElement('img');
-    wikiPage.classList.add('wiki-page');
-    wikiPage.src = './icons/wiki-demo.png';
-    browserBox.appendChild(wikiPage);
+    const moogleBar = document.createElement('div');
+    moogleBar.classList.add('moogle-bar');
+    moogleBar.style.backgroundColor = 'white';
+    browserBox.appendChild(moogleBar);
+
+    const mooglePage = document.createElement('div');
+    mooglePage.classList.add('moogle-page');
+    mooglePage.style.backgroundImage = "url('./icons/wiki-demo.png')";
+    browserBox.appendChild(mooglePage);
+
+    const customizeBar = document.createElement('div');
+    customizeBar.classList.add('customize-bar');
+    customizeBar.style.backgroundColor = 'white';
+    browserBox.appendChild(customizeBar);
 
     bookmarkButton.addEventListener('click', function() {
         bookmarkForm.style.visibility = "visible";
