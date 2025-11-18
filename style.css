@@ -247,10 +247,6 @@ body {
     font-weight: bold;
 }
 
-#bookmark-button:active {
-    color: rgba(22, 146, 182);
-}
-
 .bookmark-form {
     position: absolute;
     top: 13%;

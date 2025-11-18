@@ -177,14 +177,10 @@ export function loadQuestion5() {
 
     saveBookmarkBtn.addEventListener('click', function() {
         bookmarkForm.style.visibility = 'hidden';
-        bookmarkButton.classList.remove('active');
-        bookmarkButton.style.color = 'rgba(22, 146, 182)';
     })
 
     removeBookmarkBtn.addEventListener('click', function() {
         bookmarkForm.style.visibility = 'hidden';
-        bookmarkButton.classList.remove('active')
-        bookmarkButton.style.color = 'rgb(79, 79, 79)';
         bookmarkInput.value = '';
     })
 
