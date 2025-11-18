@@ -227,12 +227,13 @@ export function question6Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (searchInput2.value.toLowerCase() === 'dogs') {
+        if (searchInput.value.toLowerCase() === 'https://bluebox.net') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {
