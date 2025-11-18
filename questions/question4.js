@@ -228,7 +228,7 @@ export function question4Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (searchInput2.value === 'dogs') {
+        if (searchInput2.value.toLowerCase() === 'dogs') {
             userData.userScore += 5;
         }
 
