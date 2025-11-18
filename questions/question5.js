@@ -201,8 +201,6 @@ export function question5Select() {
     const answerButtons = document.querySelectorAll('.answer-button');
     const bookmarkInput = document.getElementById('bookmark-input');
 
-    let selectedButton;
-
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
             answerButtons.forEach(btn => btn.classList.remove('active'));
@@ -213,7 +211,7 @@ export function question5Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (bookmarkInput.value === 'Wiki') {
+        if (bookmarkInput.value.toLowerCase() === 'Wiki') {
             userData.userScore += 5;
         }
 
