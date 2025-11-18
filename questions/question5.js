@@ -166,9 +166,8 @@ export function loadQuestion5() {
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
-    const wikiPage = document.createElement('img');
+    const wikiPage = document.createElement('div');
     wikiPage.classList.add('wiki-page');
-    wikiPage.src = './icons/wiki-demo.png';
     browserBox.appendChild(wikiPage);
 
     bookmarkButton.addEventListener('click', function() {
