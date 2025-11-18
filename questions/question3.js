@@ -120,7 +120,7 @@ export function loadQuestion3() {
 
     const searchInput = document.createElement('input');
     searchInput.type = "search";
-    searchInput.classList.add('search-input');
+    searchInput.setAttribute('id', 'search-input');
     searchInput.placeholder = "www.website.com";
     searchContainer.appendChild(searchInput);
 

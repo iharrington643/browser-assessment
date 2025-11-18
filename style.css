@@ -226,18 +226,18 @@ body {
    background-color: rgb(227, 227, 227);
 }
 
-.search-input {
+#search-input {
     width: 100%;
     padding-left: 10px;
     border-color: transparent;
     background-color: transparent;
 }
 
-.search-input:focus {
+#search-input:focus {
     outline: none;
 }
 
-.search-input::-webkit-search-cancel-button {
+#search-input::-webkit-search-cancel-button {
     appearance: none;
 }
 

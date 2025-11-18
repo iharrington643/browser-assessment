@@ -10,7 +10,7 @@ export function loadToolbar6() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "4 / 20";
+    progressText.innerHTML = "6 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -19,7 +19,7 @@ export function loadToolbar6() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "20%";
+    innerBar.style.width = "30%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -33,7 +33,7 @@ export function loadQuestion6() {
 
     const questionFourBox = document.createElement('div');
     questionFourBox.classList.add('question-box');
-    questionFourBox.innerHTML = "4. Search for 'dogs' in the browser's <b>search bar</b>.";
+    questionFourBox.innerHTML = "6. Enter the web address 'https://bluebox.net' in the browser's <b>address bar</b>.";
     body.appendChild(questionFourBox);
 
     const browserBox = document.createElement("div");
@@ -119,7 +119,7 @@ export function loadQuestion6() {
 
     const searchInput = document.createElement('input');
     searchInput.type = "search";
-    searchInput.classList.add('search-input');
+    searchInput.setAttribute('id', 'search-input');
     searchInput.placeholder = "Search Moogle or type a URL";
     searchContainer.appendChild(searchInput);
 
@@ -211,7 +211,7 @@ export function question6Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
-    const searchInput2 = document.getElementById('search-input2')
+    const searchInput = document.getElementById('search-input')
 
     const nextButton = document.getElementById('next-button');
     const hintButton = document.getElementById('hint-button');
@@ -233,9 +233,6 @@ export function question6Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar5();
-        loadQuestion5();
-        question5Select();
     })
 
     hintButton.addEventListener('click', function() {
@@ -245,7 +242,7 @@ export function question6Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that the search bar and the address bar are two different things.  Also, there is no need to press enter, since the search bar doesn't work.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that the search bar and the address bar are two different things.  Also, you have to type in the exact same address!!";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
