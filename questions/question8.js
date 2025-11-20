@@ -211,6 +211,23 @@ export function loadQuestion8() {
     customizeForm.style.visibility = "hidden";
     browserBox.appendChild(customizeForm);
 
+    const customizeCaption = document.createElement('div');
+    customizeCaption.innerHTML = "Appearance";
+    customizeCaption.classList.add('customize-caption');
+    customizeForm.appendChild(customizeCaption);
+
+    const lightModeBtn = document.createElement('button');
+    lightModeBtn.type = 'button';
+    lightModeBtn.setAttribute('id', 'light-mode-btn');
+    lightModeBtn.innerHTML = '☼ Light';
+    customizeForm.appendChild(lightModeBtn);
+
+    const darkModeBtn = document.createElement('button');
+    darkModeBtn.type = 'button';
+    darkModeBtn.setAttribute('id', 'dark-mode-btn');
+    darkModeBtn.innerHTML = '☾ Dark';
+    customizeForm.appendChild(darkModeBtn);
+
     customizeButton.addEventListener('click', function() {
         customizeForm.style.visibility = "visible";
     })
