@@ -207,7 +207,7 @@ export function loadQuestion8() {
     customizeBar.appendChild(customizeButton);
 
     const customizeForm = document.createElement('form');
-    customizeForm.classList.add('bookmark-form');
+    customizeForm.classList.add('customize-form');
     customizeForm.style.visibility = "hidden";
     browserBox.appendChild(customizeForm);
 
