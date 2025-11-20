@@ -560,10 +560,6 @@ button.active {
     background-color: rgb(30, 125, 154);
 }
 
-#light-mode-btn.active {
-    background-color: rgb(207, 207, 207);
-}
-
 #light-mode-btn {
     grid-column: 2 / 3;
     background-color: rgb(227, 227, 227);
@@ -604,6 +600,11 @@ button.active {
     border-top: 0px solid transparent;
     border-right: 0px solid transparent;
     border-bottom: 0px solid transparent;
+    opacity: 0.75;
+}
+
+#pink-theme-btn.active, #orange-theme-btn.active, #yellow-theme-btn.active, #green-theme-btn.active, #blue-theme-btn.active, #purple-theme-btn.active {
+    opacity: 1;
 }
 
 #pink-theme-btn {
@@ -660,6 +661,10 @@ button.active {
     color: white;
     margin-bottom: 20px;
     font-weight: bold;
+}
+
+#save-theme-button.active {
+    background-color: rgb(30, 125, 154);
 }
 
 .question-box {
