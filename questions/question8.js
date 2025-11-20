@@ -313,7 +313,7 @@ export function question8Select() {
 
     themeButtons.forEach(button => {
         button.addEventListener('click', function() {
-            themeButtons.forEach(btn => btn.style.opacity = '0.65');
+            themeButtons.forEach(btn => btn.style.opacity = '0.5');
 
             selectedTheme = this;
             this.style.opacity = '1';
