@@ -228,6 +228,46 @@ export function loadQuestion8() {
     darkModeBtn.innerHTML = '☾ Dark';
     customizeForm.appendChild(darkModeBtn);
 
+    const themeBtnContainer = document.createElement('div');
+    themeBtnContainer.setAttribute('id', 'theme-btn-container');
+    customizeForm.appendChild(themeBtnContainer);
+
+    const pinkThemeBtn = document.createElement('button');
+    pinkThemeBtn.type = 'button';
+    pinkThemeBtn.setAttribute('id', 'pink-theme-btn');
+    themeBtnContainer.appendChild(pinkThemeBtn);
+
+    const orangeThemeBtn = document.createElement('button');
+    orangeThemeBtn.type = 'button';
+    orangeThemeBtn.setAttribute('id', 'orange-theme-btn');
+    themeBtnContainer.appendChild(orangeThemeBtn);
+
+    const yellowThemeBtn = document.createElement('button');
+    yellowThemeBtn.type = 'button';
+    yellowThemeBtn.setAttribute('id', 'yellow-theme-btn');
+    themeBtnContainer.appendChild(yellowThemeBtn);
+
+    const greenThemeBtn = document.createElement('button');
+    greenThemeBtn.type = 'button';
+    greenThemeBtn.setAttribute('id', 'green-theme-btn');
+    themeBtnContainer.appendChild(greenThemeBtn);
+
+    const blueThemeBtn = document.createElement('button');
+    blueThemeBtn.type = 'button';
+    blueThemeBtn.setAttribute('id', 'blue-theme-btn');
+    themeBtnContainer.appendChild(blueThemeBtn);
+
+    const purpleThemeBtn = document.createElement('button');
+    purpleThemeBtn.type = 'button';
+    purpleThemeBtn.setAttribute('id', 'purple-theme-btn');
+    themeBtnContainer.appendChild(purpleThemeBtn);
+
+    const saveThemeButton = document.createElement('button');
+    saveThemeButton.type = 'button';
+    saveThemeButton.setAttribute('id', 'save-theme-button');
+    saveThemeButton.innerHTML = 'Save';
+    customizeForm.appendChild(saveThemeButton);
+
     customizeButton.addEventListener('click', function() {
         customizeForm.style.visibility = "visible";
     })
