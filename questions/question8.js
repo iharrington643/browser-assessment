@@ -10,7 +10,7 @@ export function loadToolbar8() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "7 / 20";
+    progressText.innerHTML = "8 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -19,7 +19,7 @@ export function loadToolbar8() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "35%";
+    innerBar.style.width = "40%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -33,7 +33,7 @@ export function loadQuestion8() {
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "7. Select the button to close out of your entire browser window.";
+    questionTwoBox.innerHTML = "8. Change your browser's theme color to blue.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
