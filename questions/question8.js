@@ -289,6 +289,30 @@ export function loadQuestion8() {
     saveThemeButton.addEventListener('click', function() {
         customizeForm.style.visibility = "hidden";
     })
+
+    pinkThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "pink";
+    })
+
+    orangeThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(255, 203, 157)";
+    })
+
+    yellowThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(255, 244, 189)";
+    })
+
+    greenThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(200, 227, 173)";
+    })
+
+    blueThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "lightblue";
+    })
+
+    purpleThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(203, 203, 255)";
+    })
 }
 
 export function question8Select() {
