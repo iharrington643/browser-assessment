@@ -161,7 +161,7 @@ button:hover {
     color: rgb(79, 79, 79);
 }
 
-.close-button {
+#close-button {
     font-size: 19px;
     font-weight: 300;
 }
