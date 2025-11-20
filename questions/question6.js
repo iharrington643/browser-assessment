@@ -1,4 +1,5 @@
 import { userData } from '../main.js';
+import { loadToolbar7, loadQuestion7, question7Select } from './question7.js';
 
 export function loadToolbar6() {
     const infoBar = document.getElementById("info-bar");
@@ -82,7 +83,7 @@ export function loadQuestion6() {
     windowButtons.appendChild(minButton);
 
     const closeButton = document.createElement('button');
-    closeButton.classList.add('close-button');
+    closeButton.setAttribute('id', 'close-button');
     closeButton.classList.add('answer-button');
     closeButton.innerHTML = "×";
     windowButtons.appendChild(closeButton);
@@ -233,7 +234,9 @@ export function question6Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        console.log(userData.userScore);
+        loadToolbar7();
+        loadQuestion7();
+        question7Select();
     })
 
     hintButton.addEventListener('click', function() {

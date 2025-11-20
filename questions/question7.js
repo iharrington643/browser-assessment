@@ -1,7 +1,7 @@
 import { userData } from '../main.js';
-import { loadToolbar4, loadQuestion4, question4Select } from './question4.js';
+import { loadToolbar3, loadQuestion3, question3Select } from './question3.js';
 
-export function loadToolbar3() {
+export function loadToolbar7() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -11,7 +11,7 @@ export function loadToolbar3() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "3 / 20";
+    progressText.innerHTML = "7 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +20,7 @@ export function loadToolbar3() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "15%";
+    innerBar.style.width = "35%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -29,13 +29,13 @@ export function loadToolbar3() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion3() {
+export function loadQuestion7() {
     const body = document.getElementById("assessment-body");
 
-    const questionThreeBox = document.createElement('div');
-    questionThreeBox.classList.add('question-box');
-    questionThreeBox.innerHTML = "3. Select the button to return to the previous page.";
-    body.appendChild(questionThreeBox);
+    const questionTwoBox = document.createElement('div');
+    questionTwoBox.classList.add('question-box');
+    questionTwoBox.innerHTML = "7. Select the button to close out of your entire browser window.";
+    body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
     browserBox.setAttribute('id', 'browser-box');
@@ -51,7 +51,7 @@ export function loadQuestion3() {
 
     const tabText = document.createElement('p');
     tabText.classList.add('tab-text');
-    tabText.innerHTML = "My Website";
+    tabText.innerHTML = "New Tab";
     tab.appendChild(tabText);
 
     const closeTabButton = document.createElement('button');
@@ -121,7 +121,7 @@ export function loadQuestion3() {
     const searchInput = document.createElement('input');
     searchInput.type = "search";
     searchInput.setAttribute('id', 'search-input');
-    searchInput.placeholder = "www.website.com";
+    searchInput.placeholder = "Search Moogle or type a URL";
     searchContainer.appendChild(searchInput);
 
     const bookmarkButton = document.createElement('button');
@@ -144,13 +144,71 @@ export function loadQuestion3() {
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
-    const webPage = document.createElement('img');
-    webPage.classList.add('web-page');
-    webPage.src = './icons/site-demo.png';
-    browserBox.appendChild(webPage);
+    const moogleBar = document.createElement('div');
+    moogleBar.classList.add('moogle-bar');
+    browserBox.appendChild(moogleBar);
+
+    const nineDotsButton = document.createElement('button');
+    nineDotsButton.classList.add('nine-dots-button');
+    nineDotsButton.classList.add('answer-button');
+    moogleBar.appendChild(nineDotsButton);
+
+    const accountDtlButton = document.createElement('button');
+    accountDtlButton.classList.add('account-dtl-button');
+    accountDtlButton.classList.add('answer-button');
+    moogleBar.appendChild(accountDtlButton);
+
+    const mooglePage = document.createElement('div');
+    mooglePage.classList.add('moogle-page');
+    browserBox.appendChild(mooglePage);
+
+    const moogleSearchContainer = document.createElement('div');
+    moogleSearchContainer.classList.add('moogle-search-container');
+    mooglePage.appendChild(moogleSearchContainer);
+
+    const moogleLogo = document.createElement('img');
+    moogleLogo.classList.add('moogle-logo');
+    moogleLogo.src = "./icons/moogle-logo.png";
+    moogleSearchContainer.appendChild(moogleLogo);
+
+    const searchContainer2 = document.createElement('div');
+    searchContainer2.classList.add('search-container2');
+    moogleSearchContainer.appendChild(searchContainer2);
+
+    const searchInput2 = document.createElement('input');
+    searchInput2.type = "search";
+    searchInput2.setAttribute('id', 'search-input2');
+    searchInput2.placeholder = "Search Moogle or type a URL";
+    searchContainer2.appendChild(searchInput2);
+
+    const micButton = document.createElement('button');
+    micButton.classList.add('mic-button');
+    micButton.classList.add('answer-button');
+    searchContainer2.appendChild(micButton);
+
+    const imgSearchButton = document.createElement('button');
+    imgSearchButton.classList.add('img-search-button');
+    imgSearchButton.classList.add('answer-button');
+    searchContainer2.appendChild(imgSearchButton);
+
+    const addShortcutButton = document.createElement('button');
+    addShortcutButton.setAttribute('id', 'add-shortcut-button');
+    addShortcutButton.classList.add('answer-button');
+    addShortcutButton.innerHTML = '+';
+    moogleSearchContainer.appendChild(addShortcutButton);
+
+    const customizeBar = document.createElement('div');
+    customizeBar.classList.add('customize-bar');
+    browserBox.appendChild(customizeBar);
+
+    const customizeButton = document.createElement('button');
+    customizeButton.classList.add('customize-button');
+    customizeButton.classList.add('answer-button');
+    customizeButton.innerHTML = "✎ Customize";
+    customizeBar.appendChild(customizeButton);
 }
 
-export function question3Select() {
+export function question7Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -171,15 +229,12 @@ export function question3Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'back-button') {
+        if (selectedButton.id === 'add-shortcut-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar4();
-        loadQuestion4();
-        question4Select();
     })
 
     hintButton.addEventListener('click', function() {
@@ -189,7 +244,7 @@ export function question3Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that you need to go back.  Look for a symbol that points in the backwards direction.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that a tab and a window are two separate things.  Closing out of a tab will not have the same effect as closing a window.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");

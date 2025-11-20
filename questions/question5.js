@@ -34,7 +34,7 @@ export function loadQuestion5() {
 
     const questionFiveBox = document.createElement('div');
     questionFiveBox.classList.add('question-box');
-    questionFiveBox.innerHTML = "5. Bookmark the current page with the name 'Wiki'.";
+    questionFiveBox.innerHTML = "5. Bookmark the current page with the name 'Hotel'.";
     body.appendChild(questionFiveBox);
 
     const browserBox = document.createElement("div");
@@ -83,7 +83,7 @@ export function loadQuestion5() {
     windowButtons.appendChild(minButton);
 
     const closeButton = document.createElement('button');
-    closeButton.classList.add('close-button');
+    closeButton.setAttribute('id', 'close-button');
     closeButton.classList.add('answer-button');
     closeButton.innerHTML = "×";
     windowButtons.appendChild(closeButton);
@@ -167,9 +167,9 @@ export function loadQuestion5() {
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
-    const wikiPage = document.createElement('div');
-    wikiPage.classList.add('wiki-page');
-    browserBox.appendChild(wikiPage);
+    const travelPage = document.createElement('div');
+    travelPage.classList.add('travel-page');
+    browserBox.appendChild(travelPage);
 
     bookmarkButton.addEventListener('click', function() {
         bookmarkForm.style.visibility = "visible";
@@ -211,7 +211,7 @@ export function question5Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (bookmarkInput.value.toLowerCase() === 'Wiki') {
+        if (bookmarkInput.value.toLowerCase() === 'hotel') {
             userData.userScore += 5;
         }
 

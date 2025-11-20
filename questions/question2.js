@@ -83,7 +83,7 @@ export function loadQuestion2() {
     windowButtons.appendChild(minButton);
 
     const closeButton = document.createElement('button');
-    closeButton.classList.add('close-button');
+    closeButton.setAttribute('id', 'close-button');
     closeButton.classList.add('answer-button');
     closeButton.innerHTML = "×";
     windowButtons.appendChild(closeButton);
