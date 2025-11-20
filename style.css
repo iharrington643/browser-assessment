@@ -600,7 +600,7 @@ button.active {
     border-top: 0px solid transparent;
     border-right: 0px solid transparent;
     border-bottom: 0px solid transparent;
-    opacity: 0.75;
+    opacity: 0.65;
 }
 
 #pink-theme-btn.active, #orange-theme-btn.active, #yellow-theme-btn.active, #green-theme-btn.active, #blue-theme-btn.active, #purple-theme-btn.active {
@@ -663,7 +663,7 @@ button.active {
     font-weight: bold;
 }
 
-#save-theme-button.active {
+#save-theme-button:active {
     background-color: rgb(30, 125, 154);
 }
 

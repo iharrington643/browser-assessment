@@ -238,47 +238,56 @@ export function loadQuestion8() {
     pinkThemeBtn.type = 'button';
     pinkThemeBtn.setAttribute('id', 'pink-theme-btn');
     pinkThemeBtn.classList.add('answer-button');
+    pinkThemeBtn.classList.add('theme-button');
     themeBtnContainer.appendChild(pinkThemeBtn);
 
     const orangeThemeBtn = document.createElement('button');
     orangeThemeBtn.type = 'button';
     orangeThemeBtn.setAttribute('id', 'orange-theme-btn');
     orangeThemeBtn.classList.add('answer-button');
+    orangeThemeBtn.classList.add('theme-button');
     themeBtnContainer.appendChild(orangeThemeBtn);
 
     const yellowThemeBtn = document.createElement('button');
     yellowThemeBtn.type = 'button';
     yellowThemeBtn.setAttribute('id', 'yellow-theme-btn');
     yellowThemeBtn.classList.add('answer-button');
+    yellowThemeBtn.classList.add('theme-button');
     themeBtnContainer.appendChild(yellowThemeBtn);
 
     const greenThemeBtn = document.createElement('button');
     greenThemeBtn.type = 'button';
     greenThemeBtn.setAttribute('id', 'green-theme-btn');
     greenThemeBtn.classList.add('answer-button');
+    greenThemeBtn.classList.add('theme-button');
     themeBtnContainer.appendChild(greenThemeBtn);
 
     const blueThemeBtn = document.createElement('button');
     blueThemeBtn.type = 'button';
     blueThemeBtn.setAttribute('id', 'blue-theme-btn');
     blueThemeBtn.classList.add('answer-button');
+    blueThemeBtn.classList.add('theme-button');
     themeBtnContainer.appendChild(blueThemeBtn);
 
     const purpleThemeBtn = document.createElement('button');
     purpleThemeBtn.type = 'button';
     purpleThemeBtn.setAttribute('id', 'purple-theme-btn');
     purpleThemeBtn.classList.add('answer-button');
+    purpleThemeBtn.classList.add('theme-button');
     themeBtnContainer.appendChild(purpleThemeBtn);
 
     const saveThemeButton = document.createElement('button');
     saveThemeButton.type = 'button';
     saveThemeButton.setAttribute('id', 'save-theme-button');
-    saveThemeButton.classList.add('answer-button');
     saveThemeButton.innerHTML = 'Save';
     customizeForm.appendChild(saveThemeButton);
 
     customizeButton.addEventListener('click', function() {
         customizeForm.style.visibility = "visible";
+    })
+
+    saveThemeButton.addEventListener('click', function() {
+        customizeForm.style.visibility = "hidden";
     })
 }
 
@@ -290,20 +299,26 @@ export function question8Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
+    const themeButtons = document.querySelectorAll('.theme-button');
 
-    let selectedButton;
+    let selectedTheme;
 
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
             answerButtons.forEach(btn => btn.classList.remove('active'));
 
             this.classList.add('active');
-            selectedButton = this;
+        })
+    })
+
+    themeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            selectedTheme = this;
         })
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'close-button') {
+        if (selectedTheme.id === 'blue-theme-btn') {
             userData.userScore += 5;
         }
 
