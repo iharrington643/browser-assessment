@@ -624,14 +624,14 @@ button.active {
 #yellow-theme-btn {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
-    background-color: rgb(255, 250, 224);
+    background-color: rgb(255, 244, 189);
     border-left: 6px solid rgb(225, 204, 137);
 }
 
 #green-theme-btn {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    background-color: rgba(222, 228, 216);
+    background-color: rgb(200, 227, 173);
     border-left: 6px solid rgb(148, 191, 157);
 }
 
@@ -645,7 +645,7 @@ button.active {
 #purple-theme-btn {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
-    background-color: lavender;
+    background-color: rgb(203, 203, 255);
     border-left: 6px solid rgb(170, 170, 241);
 }
 
