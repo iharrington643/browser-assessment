@@ -229,12 +229,13 @@ export function question7Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'add-shortcut-button') {
+        if (selectedButton.id === 'close-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {

@@ -206,7 +206,6 @@ export function question5Select() {
             answerButtons.forEach(btn => btn.classList.remove('active'));
 
             this.classList.add('active');
-            selectedButton = this;
         })
     })
 
