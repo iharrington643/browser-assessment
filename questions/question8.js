@@ -219,12 +219,14 @@ export function loadQuestion8() {
     const lightModeBtn = document.createElement('button');
     lightModeBtn.type = 'button';
     lightModeBtn.setAttribute('id', 'light-mode-btn');
+    lightModeBtn.classList.add('answer-button');
     lightModeBtn.innerHTML = '☼ Light';
     customizeForm.appendChild(lightModeBtn);
 
     const darkModeBtn = document.createElement('button');
     darkModeBtn.type = 'button';
     darkModeBtn.setAttribute('id', 'dark-mode-btn');
+    darkModeBtn.classList.add('answer-button');
     darkModeBtn.innerHTML = '☾ Dark';
     customizeForm.appendChild(darkModeBtn);
 

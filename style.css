@@ -213,9 +213,8 @@ button {
 }
 
 .nav-container {
-    margin-left: 5px;
     width: auto;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 #refresh-button {
@@ -329,8 +328,8 @@ button.active {
 }
 
 .account-button, .menu-button {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-color: transparent;
     border-color: transparent;
     background-repeat: no-repeat;
@@ -555,6 +554,14 @@ button.active {
     border-radius: 20px;
     border-color: transparent;
     grid-row: 2 / 3;
+}
+
+#dark-mode-btn.active {
+    background-color: rgb(30, 125, 154);
+}
+
+#light-mode-btn.active {
+    background-color: rgb(207, 207, 207);
 }
 
 #light-mode-btn {
