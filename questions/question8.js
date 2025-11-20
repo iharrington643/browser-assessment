@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar8, loadQuestion8, question8Select } from './question8.js';
 
-export function loadToolbar7() {
+export function loadToolbar8() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -29,7 +28,7 @@ export function loadToolbar7() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion7() {
+export function loadQuestion8() {
     const body = document.getElementById("assessment-body");
 
     const questionTwoBox = document.createElement('div');
@@ -206,9 +205,18 @@ export function loadQuestion7() {
     customizeButton.classList.add('answer-button');
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
+
+    const customizeForm = document.createElement('form');
+    customizeForm.classList.add('bookmark-form');
+    customizeForm.style.visibility = "hidden";
+    browserBox.appendChild(customizeForm);
+
+    customizeButton.addEventListener('click', function() {
+        customizeForm.style.visibility = "visible";
+    })
 }
 
-export function question7Select() {
+export function question8Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -235,9 +243,7 @@ export function question7Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar8();
-        loadQuestion8();
-        question8Select();
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {
