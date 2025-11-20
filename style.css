@@ -18,6 +18,10 @@ button:hover {
     cursor: pointer;
 }
 
+button {
+    font-family: "Segoe UI Symbol", Poppins, sans-serif;
+}
+
 #assessment-header {
     padding-left: 20px;
     display: flex;
@@ -192,7 +196,7 @@ button:hover {
 }
 
 .close-tab-button {
-    padding-left: clamp(55px, 6vw, 100px);
+    padding-left: clamp(75px, 6vw, 107px);
     grid-column: 3 / 4;
     font-size: 19px;
     background-color: transparent;
@@ -209,19 +213,25 @@ button:hover {
 }
 
 .nav-container {
-    width: 86px;
+    margin-left: 5px;
+    width: auto;
+    margin-bottom: 4px;
 }
 
 #refresh-button {
+    height: 30px;
     font-size: 21px;
+    width: 33%;
 }
 
 #back-button, .forward-button {
+    height: 30px;
     font-size: 21px;
+    width: 33%;
 }
 
 .search-container {
-   width: clamp(515px, 37.7vw, 600px);
+   width: clamp(505px, 38.7vw, 600px);
    height: 70%;
    display: flex;
    align-items: center;
@@ -249,6 +259,10 @@ button:hover {
     background-color: transparent;
     border-color: transparent;
     font-weight: bold;
+    height: 30px;
+    width: 30px;
+    margin-right: 2px;
+    font-size: 14.5px;
 }
 
 .bookmark-form {
@@ -315,16 +329,17 @@ button.active {
 }
 
 .account-button, .menu-button {
-    height: 100%;
+    height: 30px;
+    width: 30px;
     background-color: transparent;
     border-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 160%;
+    width: auto;
 }
 
 .account-button {
-    margin-left: 1px;
     background-image: url("./icons/user-profile.svg");
 }
 
@@ -450,7 +465,7 @@ button.active {
 .mic-button, .img-search-button {
     background-color: transparent;
     border-color: transparent;
-    height: 100%;
+    height: 30px;
     border-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -530,12 +545,12 @@ button.active {
 }
 
 #dark-mode-btn, #light-mode-btn {
-    margin-top: 20px;
+    margin-top: 15px;
     padding-top: 3px;
     padding-bottom: 3px;
-    width: 80%;
+    width: 70%;
     height: 70%;
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 20px;
     border-color: transparent;
     grid-row: 2 / 3;
@@ -575,8 +590,8 @@ button.active {
 
 #pink-theme-btn, #orange-theme-btn, #yellow-theme-btn, #green-theme-btn, #blue-theme-btn, #purple-theme-btn {
     border-radius: 30%;
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
     font-size: 20px;
     font-weight: 300;
     border-top: 0px solid transparent;
