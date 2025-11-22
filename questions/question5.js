@@ -55,7 +55,7 @@ export function loadQuestion5() {
     tab.appendChild(tabText);
 
     const closeTabButton = document.createElement('button');
-    closeTabButton.classList.add('close-tab-button');
+    closeTabButton.setAttribute('id', 'close-tab-button');
     closeTabButton.classList.add('answer-button');
     closeTabButton.innerHTML = "×";
     tab.appendChild(closeTabButton);

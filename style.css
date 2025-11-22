@@ -195,7 +195,7 @@ button {
     font-size: 12px;
 }
 
-.close-tab-button {
+#close-tab-button {
     padding-left: clamp(75px, 6vw, 107px);
     grid-column: 3 / 4;
     font-size: 19px;
