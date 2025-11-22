@@ -244,7 +244,7 @@ export function question9Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that a tab and a window are two separate things.  Closing out of a tab will not have the same effect as closing a window.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Again, remember that a tab and a window are two separate things.  A tab is a part of a window.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
