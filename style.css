@@ -205,6 +205,10 @@ button {
     font-weight: 300;
 }
 
+#close-tab-button.active {
+    color: rgba(22, 146, 182);
+}
+
 .nav-container button {
     background-color: transparent;
     border-color: transparent;

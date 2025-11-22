@@ -121,7 +121,7 @@ export function loadQuestion5() {
     const searchInput = document.createElement('input');
     searchInput.type = "search";
     searchInput.setAttribute('id', 'search-input');
-    searchInput.placeholder = "https://thegrand.com";
+    searchInput.placeholder = "thegrand.com";
     searchContainer.appendChild(searchInput);
 
     const bookmarkButton = document.createElement('button');
