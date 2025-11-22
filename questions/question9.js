@@ -33,7 +33,7 @@ export function loadQuestion9() {
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "9. Select the button to close out of the tab.";
+    questionTwoBox.innerHTML = "9. Select the button to close out of current tab.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
@@ -228,7 +228,7 @@ export function question9Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'close-button') {
+        if (selectedButton.id === 'close-tab-button') {
             userData.userScore += 5;
         }
 
