@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar9, loadQuestion9, question9Select } from './question9.js';
 
-export function loadToolbar8() {
+export function loadToolbar9() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -11,7 +10,7 @@ export function loadToolbar8() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "8 / 20";
+    progressText.innerHTML = "9 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +19,7 @@ export function loadToolbar8() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "40%";
+    innerBar.style.width = "45%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -29,12 +28,12 @@ export function loadToolbar8() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion8() {
+export function loadQuestion9() {
     const body = document.getElementById("assessment-body");
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "8. Change your browser's theme color to blue.";
+    questionTwoBox.innerHTML = "9. Select the button to close out of your entire browser window.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
@@ -206,117 +205,9 @@ export function loadQuestion8() {
     customizeButton.classList.add('answer-button');
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
-
-    const customizeForm = document.createElement('form');
-    customizeForm.classList.add('customize-form');
-    customizeForm.style.visibility = "hidden";
-    browserBox.appendChild(customizeForm);
-
-    const customizeCaption = document.createElement('div');
-    customizeCaption.innerHTML = "Appearance";
-    customizeCaption.classList.add('customize-caption');
-    customizeForm.appendChild(customizeCaption);
-
-    const lightModeBtn = document.createElement('button');
-    lightModeBtn.type = 'button';
-    lightModeBtn.setAttribute('id', 'light-mode-btn');
-    lightModeBtn.classList.add('answer-button');
-    lightModeBtn.innerHTML = '☼ Light';
-    customizeForm.appendChild(lightModeBtn);
-
-    const darkModeBtn = document.createElement('button');
-    darkModeBtn.type = 'button';
-    darkModeBtn.setAttribute('id', 'dark-mode-btn');
-    darkModeBtn.classList.add('answer-button');
-    darkModeBtn.innerHTML = '☾ Dark';
-    customizeForm.appendChild(darkModeBtn);
-
-    const themeBtnContainer = document.createElement('div');
-    themeBtnContainer.setAttribute('id', 'theme-btn-container');
-    customizeForm.appendChild(themeBtnContainer);
-
-    const pinkThemeBtn = document.createElement('button');
-    pinkThemeBtn.type = 'button';
-    pinkThemeBtn.setAttribute('id', 'pink-theme-btn');
-    pinkThemeBtn.classList.add('answer-button');
-    pinkThemeBtn.classList.add('theme-button');
-    themeBtnContainer.appendChild(pinkThemeBtn);
-
-    const orangeThemeBtn = document.createElement('button');
-    orangeThemeBtn.type = 'button';
-    orangeThemeBtn.setAttribute('id', 'orange-theme-btn');
-    orangeThemeBtn.classList.add('answer-button');
-    orangeThemeBtn.classList.add('theme-button');
-    themeBtnContainer.appendChild(orangeThemeBtn);
-
-    const yellowThemeBtn = document.createElement('button');
-    yellowThemeBtn.type = 'button';
-    yellowThemeBtn.setAttribute('id', 'yellow-theme-btn');
-    yellowThemeBtn.classList.add('answer-button');
-    yellowThemeBtn.classList.add('theme-button');
-    themeBtnContainer.appendChild(yellowThemeBtn);
-
-    const greenThemeBtn = document.createElement('button');
-    greenThemeBtn.type = 'button';
-    greenThemeBtn.setAttribute('id', 'green-theme-btn');
-    greenThemeBtn.classList.add('answer-button');
-    greenThemeBtn.classList.add('theme-button');
-    themeBtnContainer.appendChild(greenThemeBtn);
-
-    const blueThemeBtn = document.createElement('button');
-    blueThemeBtn.type = 'button';
-    blueThemeBtn.setAttribute('id', 'blue-theme-btn');
-    blueThemeBtn.classList.add('answer-button');
-    blueThemeBtn.classList.add('theme-button');
-    themeBtnContainer.appendChild(blueThemeBtn);
-
-    const purpleThemeBtn = document.createElement('button');
-    purpleThemeBtn.type = 'button';
-    purpleThemeBtn.setAttribute('id', 'purple-theme-btn');
-    purpleThemeBtn.classList.add('answer-button');
-    purpleThemeBtn.classList.add('theme-button');
-    themeBtnContainer.appendChild(purpleThemeBtn);
-
-    const saveThemeButton = document.createElement('button');
-    saveThemeButton.type = 'button';
-    saveThemeButton.setAttribute('id', 'save-theme-button');
-    saveThemeButton.innerHTML = 'Save';
-    customizeForm.appendChild(saveThemeButton);
-
-    customizeButton.addEventListener('click', function() {
-        customizeForm.style.visibility = "visible";
-    })
-
-    saveThemeButton.addEventListener('click', function() {
-        customizeForm.style.visibility = "hidden";
-    })
-
-    pinkThemeBtn.addEventListener('click', function() {
-        tabBar.style.backgroundColor = "pink";
-    })
-
-    orangeThemeBtn.addEventListener('click', function() {
-        tabBar.style.backgroundColor = "rgb(255, 203, 157)";
-    })
-
-    yellowThemeBtn.addEventListener('click', function() {
-        tabBar.style.backgroundColor = "rgb(255, 241, 189)";
-    })
-
-    greenThemeBtn.addEventListener('click', function() {
-        tabBar.style.backgroundColor = "rgb(200, 227, 173)";
-    })
-
-    blueThemeBtn.addEventListener('click', function() {
-        tabBar.style.backgroundColor = "lightblue";
-    })
-
-    purpleThemeBtn.addEventListener('click', function() {
-        tabBar.style.backgroundColor = "rgb(203, 203, 255)";
-    })
 }
 
-export function question8Select() {
+export function question9Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -324,37 +215,26 @@ export function question8Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
-    const themeButtons = document.querySelectorAll('.theme-button');
 
-    let selectedTheme;
+    let selectedButton;
 
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
             answerButtons.forEach(btn => btn.classList.remove('active'));
 
             this.classList.add('active');
-        })
-    })
-
-    themeButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            themeButtons.forEach(btn => btn.style.opacity = '0.5');
-
-            selectedTheme = this;
-            this.style.opacity = '1';
+            selectedButton = this;
         })
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedTheme.id === 'blue-theme-btn') {
+        if (selectedButton.id === 'close-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar9();
-        loadQuestion9();
-        question9Select();
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {

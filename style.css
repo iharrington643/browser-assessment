@@ -624,7 +624,7 @@ button.active {
 #yellow-theme-btn {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
-    background-color: rgb(255, 244, 189);
+    background-color: rgb(255, 241, 189);
     border-left: 6px solid rgb(225, 204, 137);
 }
 
