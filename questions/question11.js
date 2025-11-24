@@ -348,18 +348,18 @@ export function question11Select() {
         button.addEventListener('click', function() {
             modeButtons.forEach(btn => {
                 if (btn.id == 'light-mode-btn') {
-                    btn.style.backgroundColor = 'rgb(194, 194, 194)';
+                    btn.style.backgroundColor = 'rgb(227, 227, 227)';
                 } else {
-                    btn.style.backgroundColor = 'rgb(30, 125, 154)'
+                    btn.style.backgroundColor = 'rgba(22, 146, 182)';
                 }
             });
 
             selectedMode = this;
             
-            if (btn.id == 'light-mode-btn') {
-                btn.style.backgroundColor = 'rgb(227, 227, 227)';
+            if (this.id == 'light-mode-btn') {
+                this.style.backgroundColor = 'rgba(206, 206, 206, 1)';
             } else {
-                btn.style.backgroundColor = 'rgba(22, 146, 182)';
+                this.style.backgroundColor = 'rgb(30, 125, 154)';
             }
         })
     })
