@@ -228,7 +228,7 @@ export function question1Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'refresh-button') {
+        if (selectedButton && selectedButton.id === 'refresh-button') {
             userData.userScore += 5;
         }
 

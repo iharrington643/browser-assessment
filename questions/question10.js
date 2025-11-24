@@ -298,6 +298,8 @@ export function loadQuestion10() {
     nineDotsButton.addEventListener('click', function() {
         appForm.style.visibility = "visible";
     })
+
+    userAccButton.add
 }
 
 export function question10Select() {
@@ -322,12 +324,14 @@ export function question10Select() {
 
     appButtons.forEach(button => {
         button.addEventListener('click', function() {
+            appButtons.forEach(btn => btn.style.backgroundColor = 'rgb(227, 227, 227)')
+
             selectedApp = this;
         })
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedTheme.id === 'blue-theme-btn') {
+        if (selectedApp.id === 'email-button') {
             userData.userScore += 5;
         }
 

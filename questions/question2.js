@@ -229,7 +229,7 @@ export function question2Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'add-shortcut-button') {
+        if (selectedButton && selectedButton.id === 'add-shortcut-button') {
             userData.userScore += 5;
         }
 

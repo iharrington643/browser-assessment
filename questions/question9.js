@@ -229,7 +229,7 @@ export function question9Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'close-tab-button') {
+        if (selectedButton && selectedButton.id === 'close-tab-button') {
             userData.userScore += 5;
         }
 

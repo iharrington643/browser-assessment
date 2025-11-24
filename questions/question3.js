@@ -171,7 +171,7 @@ export function question3Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'back-button') {
+        if (selectedButton && selectedButton.id === 'back-button') {
             userData.userScore += 5;
         }
 

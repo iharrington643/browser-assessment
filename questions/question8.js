@@ -346,7 +346,7 @@ export function question8Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedTheme.id === 'blue-theme-btn') {
+        if (selectedTheme && selectedTheme.id === 'blue-theme-btn') {
             userData.userScore += 5;
         }
 

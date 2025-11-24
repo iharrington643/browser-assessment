@@ -778,7 +778,7 @@ button.active {
     position: absolute;
     top: 21%;
     right: 6%;
-    width: 200px;
+    width: 170px;
     height: 150px;
     border-radius: 10px;
     background-color: white;
@@ -788,14 +788,13 @@ button.active {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
-    column-gap: 7px;
     z-index: 9999;
 }
 
 .user-acc-container, .gps-container, .email-container, .calendar-container, .photos-container, .mootube-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -852,6 +851,7 @@ button.active {
     border-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
 #user-acc-button {
