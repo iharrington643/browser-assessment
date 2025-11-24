@@ -228,13 +228,13 @@ export function question12Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton && selectedButton.id === 'close-tab-button') {
+        if (selectedButton && selectedButton.id === 'hide-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        console.log(userData.userScore);o
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {

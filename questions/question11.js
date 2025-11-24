@@ -1,4 +1,5 @@
 import { userData } from '../main.js';
+import { loadToolbar12, loadQuestion12, question12Select } from './question12.js';
 
 export function loadToolbar11() {
     const infoBar = document.getElementById("info-bar");
@@ -371,7 +372,9 @@ export function question11Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        console.log(userData.userScore);
+        loadToolbar12();
+        loadQuestion12();
+        question12Select();
     })
 
     hintButton.addEventListener('click', function() {
