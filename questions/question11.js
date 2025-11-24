@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar9, loadQuestion9, question9Select } from './question9.js';
 
-export function loadToolbar8() {
+export function loadToolbar11() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -29,7 +28,7 @@ export function loadToolbar8() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion8() {
+export function loadQuestion11() {
     const body = document.getElementById("assessment-body");
 
     const questionTwoBox = document.createElement('div');
@@ -220,14 +219,14 @@ export function loadQuestion8() {
     const lightModeBtn = document.createElement('button');
     lightModeBtn.type = 'button';
     lightModeBtn.setAttribute('id', 'light-mode-btn');
-    lightModeBtn.classList.add('answer-button');
+    lightModeBtn.classList.add('mode-button');
     lightModeBtn.innerHTML = '☼ Light';
     customizeForm.appendChild(lightModeBtn);
 
     const darkModeBtn = document.createElement('button');
     darkModeBtn.type = 'button';
     darkModeBtn.setAttribute('id', 'dark-mode-btn');
-    darkModeBtn.classList.add('answer-button');
+    darkModeBtn.classList.add('mode-button');
     darkModeBtn.innerHTML = '☾ Dark';
     customizeForm.appendChild(darkModeBtn);
 
@@ -316,7 +315,7 @@ export function loadQuestion8() {
     })
 }
 
-export function question8Select() {
+export function question11Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -340,17 +339,28 @@ export function question8Select() {
     themeButtons.forEach(button => {
         button.addEventListener('click', function() {
             themeButtons.forEach(btn => btn.style.opacity = '0.5');
-            
+
             this.style.opacity = '1';
         })
     })
 
     modeButtons.forEach(button => {
         button.addEventListener('click', function() {
-            modeButtons.forEach(btn => btn.style.opacity = '0.5');
+            modeButtons.forEach(btn => {
+                if (btn.id == 'light-mode-btn') {
+                    btn.style.backgroundColor = 'rgb(194, 194, 194)';
+                } else {
+                    btn.style.backgroundColor = 'rgb(30, 125, 154)'
+                }
+            });
 
             selectedMode = this;
-            this.style.opacity = '1';
+            
+            if (btn.id == 'light-mode-btn') {
+                btn.style.backgroundColor = 'rgb(227, 227, 227)';
+            } else {
+                btn.style.backgroundColor = 'rgba(22, 146, 182)';
+            }
         })
     })
 

@@ -361,7 +361,7 @@ export function question10Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedApp.id === 'email-button') {
+        if (selectedApp && selectedApp.id === 'email-button') {
             userData.userScore += 5;
         }
 
