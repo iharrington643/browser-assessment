@@ -776,8 +776,8 @@ button.active {
 
 .app-form {
     position: absolute;
-    top: 8%;
-    right: 2%;
+    top: 21%;
+    right: 6%;
     width: 200px;
     height: 150px;
     border-radius: 10px;
@@ -790,4 +790,57 @@ button.active {
     justify-content: center;
     column-gap: 7px;
     z-index: 9999;
+}
+
+.user-acc-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: auto;
+    height: auto;
+}
+
+.gps-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: auto;
+    height: auto;
+}
+
+.email-container {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: auto;
+    height: auto;
+}
+
+.calendar-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: auto;
+    height: auto;
+}
+
+.photos-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: auto;
+    height: auto;
+}
+
+.mootube-container {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: auto;
+    height: auto;
+}
+
+.user-acc-text, .gps-text, .email-text, .calendar-text, .photos-text, .mootube-text {
+    font-size: 8px;
+}
+
+.user-acc-button, .gps-button, .email-button, .calendar-button, .photos-button, .mootube-button {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-color: transparent;
 }
