@@ -371,6 +371,7 @@ export function question11Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {
