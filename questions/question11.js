@@ -1,7 +1,7 @@
 import { userData } from '../main.js';
-import { loadToolbar11, loadQuestion11, question11Select } from './question11.js';
+import { loadToolbar9, loadQuestion9, question9Select } from './question9.js';
 
-export function loadToolbar10() {
+export function loadToolbar8() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -11,7 +11,7 @@ export function loadToolbar10() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "10 / 20";
+    progressText.innerHTML = "8 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +20,7 @@ export function loadToolbar10() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "50%";
+    innerBar.style.width = "40%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -29,12 +29,12 @@ export function loadToolbar10() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion10() {
+export function loadQuestion8() {
     const body = document.getElementById("assessment-body");
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "10. Open the email app through your browser.";
+    questionTwoBox.innerHTML = "8. Change your browser's theme color to blue.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
@@ -207,131 +207,116 @@ export function loadQuestion10() {
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
 
-    const appForm = document.createElement('form');
-    appForm.classList.add('app-form');
-    appForm.style.visibility = "hidden";
-    browserBox.appendChild(appForm);
+    const customizeForm = document.createElement('form');
+    customizeForm.classList.add('customize-form');
+    customizeForm.style.visibility = "hidden";
+    browserBox.appendChild(customizeForm);
 
-    const userAccContainer = document.createElement('div');
-    userAccContainer.classList.add('user-acc-container');
-    appForm.appendChild(userAccContainer);
+    const customizeCaption = document.createElement('div');
+    customizeCaption.innerHTML = "Appearance";
+    customizeCaption.classList.add('customize-caption');
+    customizeForm.appendChild(customizeCaption);
 
-    const userAccButton = document.createElement('button');
-    userAccButton.setAttribute('id', 'user-acc-button');
-    userAccButton.classList.add('app-button');
-    userAccButton.type = 'button';
-    userAccContainer.appendChild(userAccButton);
+    const lightModeBtn = document.createElement('button');
+    lightModeBtn.type = 'button';
+    lightModeBtn.setAttribute('id', 'light-mode-btn');
+    lightModeBtn.classList.add('answer-button');
+    lightModeBtn.innerHTML = '☼ Light';
+    customizeForm.appendChild(lightModeBtn);
 
-    const userAccText = document.createElement('p');
-    userAccText.classList.add('user-acc-text');
-    userAccText.innerHTML = "Account";
-    userAccContainer.appendChild(userAccText);
+    const darkModeBtn = document.createElement('button');
+    darkModeBtn.type = 'button';
+    darkModeBtn.setAttribute('id', 'dark-mode-btn');
+    darkModeBtn.classList.add('answer-button');
+    darkModeBtn.innerHTML = '☾ Dark';
+    customizeForm.appendChild(darkModeBtn);
 
-    const gpsContainer = document.createElement('div');
-    gpsContainer.classList.add('gps-container');
-    appForm.appendChild(gpsContainer);
+    const themeBtnContainer = document.createElement('div');
+    themeBtnContainer.setAttribute('id', 'theme-btn-container');
+    customizeForm.appendChild(themeBtnContainer);
 
-    const gpsButton = document.createElement('button');
-    gpsButton.setAttribute('id', 'gps-button');
-    gpsButton.classList.add('app-button');
-    gpsButton.type = 'button';
-    gpsContainer.appendChild(gpsButton);
+    const pinkThemeBtn = document.createElement('button');
+    pinkThemeBtn.type = 'button';
+    pinkThemeBtn.setAttribute('id', 'pink-theme-btn');
+    pinkThemeBtn.classList.add('answer-button');
+    pinkThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(pinkThemeBtn);
 
-    const gpsText = document.createElement('p');
-    gpsText.classList.add('gps-text');
-    gpsText.innerHTML = "MooMaps";
-    gpsContainer.appendChild(gpsText);
+    const orangeThemeBtn = document.createElement('button');
+    orangeThemeBtn.type = 'button';
+    orangeThemeBtn.setAttribute('id', 'orange-theme-btn');
+    orangeThemeBtn.classList.add('answer-button');
+    orangeThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(orangeThemeBtn);
 
-    const emailContainer = document.createElement('div');
-    emailContainer.classList.add('email-container');
-    appForm.appendChild(emailContainer);
+    const yellowThemeBtn = document.createElement('button');
+    yellowThemeBtn.type = 'button';
+    yellowThemeBtn.setAttribute('id', 'yellow-theme-btn');
+    yellowThemeBtn.classList.add('answer-button');
+    yellowThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(yellowThemeBtn);
 
-    const emailButton = document.createElement('button');
-    emailButton.setAttribute('id', 'email-button');
-    emailButton.classList.add('app-button');
-    emailButton.type = 'button';
-    emailContainer.appendChild(emailButton);
+    const greenThemeBtn = document.createElement('button');
+    greenThemeBtn.type = 'button';
+    greenThemeBtn.setAttribute('id', 'green-theme-btn');
+    greenThemeBtn.classList.add('answer-button');
+    greenThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(greenThemeBtn);
 
-    const emailText = document.createElement('p');
-    emailText.classList.add('email-text');
-    emailText.innerHTML = "MooMail";
-    emailContainer.appendChild(emailText);
+    const blueThemeBtn = document.createElement('button');
+    blueThemeBtn.type = 'button';
+    blueThemeBtn.setAttribute('id', 'blue-theme-btn');
+    blueThemeBtn.classList.add('answer-button');
+    blueThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(blueThemeBtn);
 
-    const calendarContainer = document.createElement('div');
-    calendarContainer.classList.add('calendar-container');
-    appForm.appendChild(calendarContainer);
+    const purpleThemeBtn = document.createElement('button');
+    purpleThemeBtn.type = 'button';
+    purpleThemeBtn.setAttribute('id', 'purple-theme-btn');
+    purpleThemeBtn.classList.add('answer-button');
+    purpleThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(purpleThemeBtn);
 
-    const calendarButton = document.createElement('button');
-    calendarButton.setAttribute('id', 'calendar-button');
-    calendarButton.classList.add('app-button');
-    calendarButton.type = 'button';
-    calendarContainer.appendChild(calendarButton);
+    const saveThemeButton = document.createElement('button');
+    saveThemeButton.type = 'button';
+    saveThemeButton.setAttribute('id', 'save-theme-button');
+    saveThemeButton.innerHTML = 'Save';
+    customizeForm.appendChild(saveThemeButton);
 
-    const calendarText = document.createElement('p');
-    calendarText.classList.add('calendar-text');
-    calendarText.innerHTML = "Calendar";
-    calendarContainer.appendChild(calendarText);
-
-    const photosContainer = document.createElement('div');
-    photosContainer.classList.add('photos-container');
-    appForm.appendChild(photosContainer);
-
-    const photosButton = document.createElement('button');
-    photosButton.setAttribute('id', 'photos-button');
-    photosButton.classList.add('app-button');
-    photosButton.type = 'button';
-    photosContainer.appendChild(photosButton);
-
-    const photosText = document.createElement('p');
-    photosText.classList.add('photos-text');
-    photosText.innerHTML = "Photos";
-    photosContainer.appendChild(photosText);
-
-    const mootubeContainer = document.createElement('div');
-    mootubeContainer.classList.add('mootube-container');
-    appForm.appendChild(mootubeContainer);
-
-    const mootubeButton = document.createElement('button');
-    mootubeButton.setAttribute('id', 'mootube-button');
-    mootubeButton.classList.add('app-button');
-    mootubeButton.type = 'button';
-    mootubeContainer.appendChild(mootubeButton);
-
-    const mootubeText = document.createElement('p');
-    mootubeText.classList.add('mootube-text');
-    mootubeText.innerHTML = 'MooTube';
-    mootubeContainer.appendChild(mootubeText);
-
-    nineDotsButton.addEventListener('click', function() {
-        appForm.style.visibility = "visible";
+    customizeButton.addEventListener('click', function() {
+        customizeForm.style.visibility = "visible";
     })
 
-    userAccButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
+    saveThemeButton.addEventListener('click', function() {
+        customizeForm.style.visibility = "hidden";
     })
 
-    gpsButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
+    pinkThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "pink";
     })
 
-    emailButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
+    orangeThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(255, 203, 157)";
     })
 
-    calendarButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
+    yellowThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(255, 241, 189)";
     })
 
-    photosButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
+    greenThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(200, 227, 173)";
     })
 
-    mootubeButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
+    blueThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "lightblue";
+    })
+
+    purpleThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(203, 203, 255)";
     })
 }
 
-export function question10Select() {
+export function question8Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -339,9 +324,10 @@ export function question10Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
-    const appButtons = document.querySelectorAll('.app-button');
+    const themeButtons = document.querySelectorAll('.theme-button');
+    const modeButtons = document.querySelectorAll('.mode-button');
 
-    let selectedApp;
+    let selectedMode;
 
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -351,25 +337,30 @@ export function question10Select() {
         })
     })
 
-    appButtons.forEach(button => {
+    themeButtons.forEach(button => {
         button.addEventListener('click', function() {
-            appButtons.forEach(btn => btn.style.backgroundColor = 'transparent')
+            themeButtons.forEach(btn => btn.style.opacity = '0.5');
+            
+            this.style.opacity = '1';
+        })
+    })
 
-            selectedApp = this;
-            this.style.backgroundColor = 'rgb(227, 227, 227)';
+    modeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            modeButtons.forEach(btn => btn.style.opacity = '0.5');
+
+            selectedMode = this;
+            this.style.opacity = '1';
         })
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedApp.id === 'email-button') {
+        if (selectedMode && selectedMode.id === 'dark-mode-btn') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar11();
-        loadQuestion11();
-        question11Select();
     })
 
     hintButton.addEventListener('click', function() {
@@ -379,7 +370,7 @@ export function question10Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>There is a certain menu button that you can click to navigate through important apps/sites.  When you click it, a box should pop up.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Use the same customization menu that you used for Question 8 to change the mode.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
