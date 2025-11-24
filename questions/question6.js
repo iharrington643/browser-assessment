@@ -34,7 +34,7 @@ export function loadQuestion6() {
 
     const questionFourBox = document.createElement('div');
     questionFourBox.classList.add('question-box');
-    questionFourBox.innerHTML = "6. Enter the web address 'https://bluebox.net' in the browser's <b>address bar</b>.";
+    questionFourBox.innerHTML = "6. Enter the address 'https://bluebox.net' in the browser's <b>address bar</b>.";
     body.appendChild(questionFourBox);
 
     const browserBox = document.createElement("div");
