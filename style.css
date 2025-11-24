@@ -175,7 +175,7 @@ button {
     margin-bottom: 1px;
 }
 
-.hide-button {
+#hide-button {
     font-size: 19px;
     font-weight: 300;
 }

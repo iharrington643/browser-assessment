@@ -71,7 +71,7 @@ export function loadQuestion6() {
     tabBar.appendChild(windowButtons);
 
     const hideButton = document.createElement('button');
-    hideButton.classList.add('hide-button');
+    hideButton.setAttribute('id', 'hide-button');
     hideButton.classList.add('answer-button');
     hideButton.innerHTML = "-";
     windowButtons.appendChild(hideButton);

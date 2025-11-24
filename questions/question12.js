@@ -70,7 +70,7 @@ export function loadQuestion12() {
     tabBar.appendChild(windowButtons);
 
     const hideButton = document.createElement('button');
-    hideButton.classList.add('hide-button');
+    hideButton.setAttribute('id', 'hide-button');
     hideButton.classList.add('answer-button');
     hideButton.innerHTML = "-";
     windowButtons.appendChild(hideButton);
@@ -234,9 +234,7 @@ export function question12Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar10();
-        loadQuestion10();
-        question10Select();
+        console.log(userData.userScore);o
     })
 
     hintButton.addEventListener('click', function() {
