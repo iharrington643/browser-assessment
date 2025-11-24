@@ -299,7 +299,29 @@ export function loadQuestion10() {
         appForm.style.visibility = "visible";
     })
 
-    userAccButton.add
+    userAccButton.addEventListener('click', function() {
+        appForm.style.visibility = "hidden";
+    })
+
+    gpsButton.addEventListener('click', function() {
+        appForm.style.visibility = "hidden";
+    })
+
+    emailButton.addEventListener('click', function() {
+        appForm.style.visibility = "hidden";
+    })
+
+    calendarButton.addEventListener('click', function() {
+        appForm.style.visibility = "hidden";
+    })
+
+    photosButton.addEventListener('click', function() {
+        appForm.style.visibility = "hidden";
+    })
+
+    mootubeButton.addEventListener('click', function() {
+        appForm.style.visibility = "hidden";
+    })
 }
 
 export function question10Select() {
