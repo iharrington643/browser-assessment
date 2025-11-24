@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar10, loadQuestion10, question10Select } from './question10.js';
 
-export function loadToolbar9() {
+export function loadToolbar10() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -11,7 +10,7 @@ export function loadToolbar9() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "9 / 20";
+    progressText.innerHTML = "10 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +19,7 @@ export function loadToolbar9() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "45%";
+    innerBar.style.width = "50%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -29,12 +28,12 @@ export function loadToolbar9() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion9() {
+export function loadQuestion10() {
     const body = document.getElementById("assessment-body");
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "9. Select the button to close out of current tab.";
+    questionTwoBox.innerHTML = "10. Open the email app through your browser.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
@@ -206,9 +205,117 @@ export function loadQuestion9() {
     customizeButton.classList.add('answer-button');
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
+
+    const customizeForm = document.createElement('form');
+    customizeForm.classList.add('customize-form');
+    customizeForm.style.visibility = "hidden";
+    browserBox.appendChild(customizeForm);
+
+    const customizeCaption = document.createElement('div');
+    customizeCaption.innerHTML = "Appearance";
+    customizeCaption.classList.add('customize-caption');
+    customizeForm.appendChild(customizeCaption);
+
+    const lightModeBtn = document.createElement('button');
+    lightModeBtn.type = 'button';
+    lightModeBtn.setAttribute('id', 'light-mode-btn');
+    lightModeBtn.classList.add('answer-button');
+    lightModeBtn.innerHTML = '☼ Light';
+    customizeForm.appendChild(lightModeBtn);
+
+    const darkModeBtn = document.createElement('button');
+    darkModeBtn.type = 'button';
+    darkModeBtn.setAttribute('id', 'dark-mode-btn');
+    darkModeBtn.classList.add('answer-button');
+    darkModeBtn.innerHTML = '☾ Dark';
+    customizeForm.appendChild(darkModeBtn);
+
+    const themeBtnContainer = document.createElement('div');
+    themeBtnContainer.setAttribute('id', 'theme-btn-container');
+    customizeForm.appendChild(themeBtnContainer);
+
+    const pinkThemeBtn = document.createElement('button');
+    pinkThemeBtn.type = 'button';
+    pinkThemeBtn.setAttribute('id', 'pink-theme-btn');
+    pinkThemeBtn.classList.add('answer-button');
+    pinkThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(pinkThemeBtn);
+
+    const orangeThemeBtn = document.createElement('button');
+    orangeThemeBtn.type = 'button';
+    orangeThemeBtn.setAttribute('id', 'orange-theme-btn');
+    orangeThemeBtn.classList.add('answer-button');
+    orangeThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(orangeThemeBtn);
+
+    const yellowThemeBtn = document.createElement('button');
+    yellowThemeBtn.type = 'button';
+    yellowThemeBtn.setAttribute('id', 'yellow-theme-btn');
+    yellowThemeBtn.classList.add('answer-button');
+    yellowThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(yellowThemeBtn);
+
+    const greenThemeBtn = document.createElement('button');
+    greenThemeBtn.type = 'button';
+    greenThemeBtn.setAttribute('id', 'green-theme-btn');
+    greenThemeBtn.classList.add('answer-button');
+    greenThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(greenThemeBtn);
+
+    const blueThemeBtn = document.createElement('button');
+    blueThemeBtn.type = 'button';
+    blueThemeBtn.setAttribute('id', 'blue-theme-btn');
+    blueThemeBtn.classList.add('answer-button');
+    blueThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(blueThemeBtn);
+
+    const purpleThemeBtn = document.createElement('button');
+    purpleThemeBtn.type = 'button';
+    purpleThemeBtn.setAttribute('id', 'purple-theme-btn');
+    purpleThemeBtn.classList.add('answer-button');
+    purpleThemeBtn.classList.add('theme-button');
+    themeBtnContainer.appendChild(purpleThemeBtn);
+
+    const saveThemeButton = document.createElement('button');
+    saveThemeButton.type = 'button';
+    saveThemeButton.setAttribute('id', 'save-theme-button');
+    saveThemeButton.innerHTML = 'Save';
+    customizeForm.appendChild(saveThemeButton);
+
+    customizeButton.addEventListener('click', function() {
+        customizeForm.style.visibility = "visible";
+    })
+
+    saveThemeButton.addEventListener('click', function() {
+        customizeForm.style.visibility = "hidden";
+    })
+
+    pinkThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "pink";
+    })
+
+    orangeThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(255, 203, 157)";
+    })
+
+    yellowThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(255, 241, 189)";
+    })
+
+    greenThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(200, 227, 173)";
+    })
+
+    blueThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "lightblue";
+    })
+
+    purpleThemeBtn.addEventListener('click', function() {
+        tabBar.style.backgroundColor = "rgb(203, 203, 255)";
+    })
 }
 
-export function question9Select() {
+export function question10Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -216,28 +323,34 @@ export function question9Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
+    const themeButtons = document.querySelectorAll('.theme-button');
 
-    let selectedButton;
+    let selectedTheme;
 
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
             answerButtons.forEach(btn => btn.classList.remove('active'));
 
             this.classList.add('active');
-            selectedButton = this;
+        })
+    })
+
+    themeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            themeButtons.forEach(btn => btn.style.opacity = '0.5');
+
+            selectedTheme = this;
+            this.style.opacity = '1';
         })
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton.id === 'close-tab-button') {
+        if (selectedTheme.id === 'blue-theme-btn') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar10();
-        loadQuestion10();
-        question10Select();
     })
 
     hintButton.addEventListener('click', function() {
@@ -247,7 +360,7 @@ export function question9Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Again, remember that a tab and a window are two separate things.  A tab is a part of a window.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>There is a certain menu button that you can click to navigate through browser apps.  When you click it, a box should pop up.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
