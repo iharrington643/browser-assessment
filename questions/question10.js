@@ -207,7 +207,7 @@ export function loadQuestion10() {
     customizeBar.appendChild(customizeButton);
 
     const appForm = document.createElement('form');
-    appForm.classList.add('customize-form');
+    appForm.classList.add('app-form');
     appForm.style.visibility = "hidden";
     browserBox.appendChild(appForm);
 
@@ -259,7 +259,7 @@ export function loadQuestion10() {
 
     const calendarButton = document.createElement('button');
     calendarButton.setAttribute('id', 'calendar-button');
-    calendarButton.classList.add('app-button');s
+    calendarButton.classList.add('app-button');
     calendarContainer.appendChild(calendarButton);
 
     const calendarText = document.createElement('p');
@@ -294,6 +294,10 @@ export function loadQuestion10() {
     mootubeText.classList.add('mootube-text');
     mootubeText.innerHTML = 'MooTube';
     mootubeContainer.appendChild(mootubeText);
+
+    nineDotsButton.addEventListener('click', function() {
+        appForm.style.visibility = "visible";
+    })
 }
 
 export function question10Select() {
