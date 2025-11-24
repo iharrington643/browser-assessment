@@ -792,6 +792,13 @@ button.active {
     z-index: 9999;
 }
 
+.user-acc-container, .gps-container, .email-container, .calendar-container, .photos-container, .mootube-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .user-acc-container {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -838,9 +845,35 @@ button.active {
     font-size: 8px;
 }
 
-.user-acc-button, .gps-button, .email-button, .calendar-button, .photos-button, .mootube-button {
-    height: 20px;
-    width: 20px;
+#user-acc-button, #gps-button, #email-button, #calendar-button, #photos-button, #mootube-button {
+    height: 35px;
+    width: 35px;
     background-color: transparent;
     border-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#user-acc-button {
+    background-image: url('./icons/user-profile.svg');
+}
+
+#gps-button {
+    background-image: url('./icons/gps.svg');
+}
+
+#email-button {
+    background-image: url('./icons/email.svg');
+}
+
+#calendar-button {
+    background-image: url('./icons/calendar.svg');
+}
+
+#photos-button {
+    background-image: url('./icons/photos.svg');
+}
+
+#mootube-button {
+    background-image: url('./icons/mootube.svg');
 }
