@@ -10,7 +10,7 @@ export function loadToolbar11() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "8 / 20";
+    progressText.innerHTML = "11 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -19,7 +19,7 @@ export function loadToolbar11() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "40%";
+    innerBar.style.width = "55%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -33,7 +33,7 @@ export function loadQuestion11() {
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "8. Change your browser's theme color to blue.";
+    questionTwoBox.innerHTML = "11. Change your browser's display mode to dark mode.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
