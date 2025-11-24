@@ -218,6 +218,7 @@ export function loadQuestion10() {
     const userAccButton = document.createElement('button');
     userAccButton.setAttribute('id', 'user-acc-button');
     userAccButton.classList.add('app-button');
+    userAccButton.type = 'button';
     userAccContainer.appendChild(userAccButton);
 
     const userAccText = document.createElement('p');
@@ -232,6 +233,7 @@ export function loadQuestion10() {
     const gpsButton = document.createElement('button');
     gpsButton.setAttribute('id', 'gps-button');
     gpsButton.classList.add('app-button');
+    gpsButton.type = 'button';
     gpsContainer.appendChild(gpsButton);
 
     const gpsText = document.createElement('p');
@@ -246,6 +248,7 @@ export function loadQuestion10() {
     const emailButton = document.createElement('button');
     emailButton.setAttribute('id', 'email-button');
     emailButton.classList.add('app-button');
+    emailButton.type = 'button';
     emailContainer.appendChild(emailButton);
 
     const emailText = document.createElement('p');
@@ -260,6 +263,7 @@ export function loadQuestion10() {
     const calendarButton = document.createElement('button');
     calendarButton.setAttribute('id', 'calendar-button');
     calendarButton.classList.add('app-button');
+    calendarButton.type = 'button';
     calendarContainer.appendChild(calendarButton);
 
     const calendarText = document.createElement('p');
@@ -274,6 +278,7 @@ export function loadQuestion10() {
     const photosButton = document.createElement('button');
     photosButton.setAttribute('id', 'photos-button');
     photosButton.classList.add('app-button');
+    photosButton.type = 'button';
     photosContainer.appendChild(photosButton);
 
     const photosText = document.createElement('p');
@@ -288,6 +293,7 @@ export function loadQuestion10() {
     const mootubeButton = document.createElement('button');
     mootubeButton.setAttribute('id', 'mootube-button');
     mootubeButton.classList.add('app-button');
+    mootubeButton.type = 'button';
     mootubeContainer.appendChild(mootubeButton);
 
     const mootubeText = document.createElement('p');
@@ -346,9 +352,10 @@ export function question10Select() {
 
     appButtons.forEach(button => {
         button.addEventListener('click', function() {
-            appButtons.forEach(btn => btn.style.backgroundColor = 'rgb(227, 227, 227)')
+            appButtons.forEach(btn => btn.style.backgroundColor = 'transparent')
 
             selectedApp = this;
+            this.style.backgroundColor = 'rgb(227, 227, 227)';
         })
     })
 
@@ -359,6 +366,7 @@ export function question10Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {
