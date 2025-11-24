@@ -316,12 +316,9 @@ export function question10Select() {
         })
     })
 
-    themeButtons.forEach(button => {
+    appButtons.forEach(button => {
         button.addEventListener('click', function() {
-            themeButtons.forEach(btn => btn.style.opacity = '0.5');
-
-            selectedTheme = this;
-            this.style.opacity = '1';
+            selectedApp = this;
         })
     })
 
