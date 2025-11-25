@@ -331,7 +331,7 @@ export function loadQuestion10() {
     })
 
     const buttons = document.querySelectorAll('button');
-    const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
+    const buttonClickSound = new Audio('../sounds/mouse-click.mp3');
     
     buttons.forEach(button => {
         button.addEventListener('click', function() {
