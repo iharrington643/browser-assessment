@@ -319,10 +319,16 @@ export function loadQuestion11() {
         mooglePage.style.backgroundColor = 'rgb(27, 27, 27)';
         moogleBar.style.backgroundColor = 'rgb(27, 27, 27)';
         customizeBar.style.backgroundColor = 'rgb(27, 27, 27)';
+        customizeButton.style.backgroundColor = 'rgb(47, 47, 47)';
+        searchContainer2.style.backgroundColor = 'rgb(47, 47, 47)';
+        searchInput2.color = 'white';
+        addShortcutButton.style.backgroundColor = 'rgb(47, 47, 47)';
     })
 
     lightModeBtn.addEventListener('click', function() {
         mooglePage.style.backgroundColor = 'white';
+        moogleBar.style.backgroundColor = 'white';
+        customizeBar.style.backgroundColor = 'white';
     })
 }
 
