@@ -60,7 +60,7 @@ export function loadQuestion1() {
     tab.appendChild(closeTabButton);
 
     const plusButton = document.createElement('button');
-    plusButton.classList.add('plus-button');
+    plusButton.setAttribute('id', 'plus-button');
     plusButton.classList.add('answer-button');
     plusButton.innerHTML = "+";
     tabBar.appendChild(plusButton);

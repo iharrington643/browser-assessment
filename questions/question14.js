@@ -60,7 +60,7 @@ export function loadQuestion14() {
     tab.appendChild(closeTabButton);
 
     const plusButton = document.createElement('button');
-    plusButton.classList.add('plus-button');
+    plusButton.setAttribute('id', 'plus-button');
     plusButton.classList.add('answer-button');
     plusButton.innerHTML = "+";
     tabBar.appendChild(plusButton);
@@ -238,7 +238,7 @@ export function question14Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton && selectedButton.id === 'hide-button') {
+        if (selectedButton && selectedButton.id === 'plus-button') {
             userData.userScore += 5;
         }
 

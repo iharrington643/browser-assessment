@@ -140,7 +140,7 @@ button {
     padding-left: 8px;
 }
 
-.plus-button {
+#plus-button {
     font-size: 19px;
     grid-column: 2 / 3;
     height: 25px;
