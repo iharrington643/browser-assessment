@@ -205,6 +205,15 @@ export function loadQuestion1() {
     customizeButton.classList.add('answer-button');
     customizeButton.innerHTML = "✎ Customize"
     customizeBar.appendChild(customizeButton);
+
+    const buttons = document.querySelectorAll('button');
+    const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            buttonClickSound.play();
+        })
+    })
 }
 
 export function question1Select() {
