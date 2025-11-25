@@ -19,12 +19,16 @@ function loadIntroForm() {
     startButton.textContent = "START";
     startButton.classList.add("start-button");
 
+    const mouseClickSound = new Audio('./sounds/mouse-click.mp3');
+
     introForm.appendChild(introText);
     introForm.appendChild(startButton);
 
     body.appendChild(introForm);
 
     startButton.addEventListener('click', function() {
+        mouseClickSound.play();
+        
         body.innerHTML = "";
         loadToolbar1();
         loadQuestion1();
