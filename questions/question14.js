@@ -10,7 +10,7 @@ export function loadToolbar14() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "12 / 20";
+    progressText.innerHTML = "14 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -19,7 +19,7 @@ export function loadToolbar14() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "60%";
+    innerBar.style.width = "70%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -33,7 +33,7 @@ export function loadQuestion14() {
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "12. Select the button to hide your browser window.";
+    questionTwoBox.innerHTML = "14. Select the button to open up a new tab.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
