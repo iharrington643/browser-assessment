@@ -150,7 +150,7 @@ button {
     color: rgb(79, 79, 79);
 }
 
-#plus-button:active {
+#plus-button.active {
     color: rgba(22, 146, 182);
 }
 
