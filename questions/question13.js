@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar11, loadQuestion11, question11Select } from './question11.js';
 
-export function loadToolbar10() {
+export function loadToolbar13() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -11,7 +10,7 @@ export function loadToolbar10() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "10 / 20";
+    progressText.innerHTML = "13 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +19,7 @@ export function loadToolbar10() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "50%";
+    innerBar.style.width = "65%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -29,12 +28,12 @@ export function loadToolbar10() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion10() {
+export function loadQuestion13() {
     const body = document.getElementById("assessment-body");
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "10. Open the email app through your browser.";
+    questionTwoBox.innerHTML = "13. Open the MooTube app through your browser.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
@@ -331,7 +330,7 @@ export function loadQuestion10() {
     })
 }
 
-export function question10Select() {
+export function question13Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -361,15 +360,13 @@ export function question10Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedApp && selectedApp.id === 'email-button') {
+        if (selectedApp && selectedApp.id === 'mootube-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar11();
-        loadQuestion11();
-        question11Select();
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {
@@ -379,7 +376,7 @@ export function question10Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>There is a certain menu button that you can click to navigate through important apps/sites.  When you click it, a box should pop up.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Once again, there's a certain menu button that you can click to navigate through important apps/sites.  When you click it, a box should pop up.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
