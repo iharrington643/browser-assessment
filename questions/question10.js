@@ -329,6 +329,16 @@ export function loadQuestion10() {
     mootubeButton.addEventListener('click', function() {
         appForm.style.visibility = "hidden";
     })
+
+    const buttons = document.querySelectorAll('button');
+    const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            buttonClickSound.currentTime = 0;
+            buttonClickSound.play();
+        })
+    })
 }
 
 export function question10Select() {

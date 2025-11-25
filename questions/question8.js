@@ -314,6 +314,16 @@ export function loadQuestion8() {
     purpleThemeBtn.addEventListener('click', function() {
         tabBar.style.backgroundColor = "rgb(203, 203, 255)";
     })
+
+    const buttons = document.querySelectorAll('button');
+    const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            buttonClickSound.currentTime = 0;
+            buttonClickSound.play();
+        })
+    })
 }
 
 export function question8Select() {

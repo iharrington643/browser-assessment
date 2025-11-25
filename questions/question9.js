@@ -206,6 +206,16 @@ export function loadQuestion9() {
     customizeButton.classList.add('answer-button');
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
+
+    const buttons = document.querySelectorAll('button');
+    const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            buttonClickSound.currentTime = 0;
+            buttonClickSound.play();
+        })
+    })
 }
 
 export function question9Select() {

@@ -148,6 +148,16 @@ export function loadQuestion3() {
     webPage.classList.add('web-page');
     webPage.src = './icons/site-demo.png';
     browserBox.appendChild(webPage);
+
+    const buttons = document.querySelectorAll('button');
+    const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            buttonClickSound.currentTime = 0;
+            buttonClickSound.play();
+        })
+    })
 }
 
 export function question3Select() {
