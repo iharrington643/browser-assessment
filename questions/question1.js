@@ -211,6 +211,7 @@ export function loadQuestion1() {
     
     buttons.forEach(button => {
         button.addEventListener('click', function() {
+            buttonClickSound.currentTime = 0;
             buttonClickSound.play();
         })
     })
