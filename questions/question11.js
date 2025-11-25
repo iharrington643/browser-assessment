@@ -314,6 +314,16 @@ export function loadQuestion11() {
     purpleThemeBtn.addEventListener('click', function() {
         tabBar.style.backgroundColor = "rgb(203, 203, 255)";
     })
+
+    darkModeBtn.addEventListener('click', function() {
+        mooglePage.style.backgroundColor = 'rgb(27, 27, 27)';
+        moogleBar.style.backgroundColor = 'rgb(27, 27, 27)';
+        customizeBar.style.backgroundColor = 'rgb(27, 27, 27)';
+    })
+
+    lightModeBtn.addEventListener('click', function() {
+        mooglePage.style.backgroundColor = 'white';
+    })
 }
 
 export function question11Select() {
