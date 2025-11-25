@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar14, loadQuestion14, question14Select } from './question14.js';
 
-export function loadToolbar13() {
+export function loadToolbar14() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -11,7 +10,7 @@ export function loadToolbar13() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "13 / 20";
+    progressText.innerHTML = "12 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +19,7 @@ export function loadToolbar13() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "65%";
+    innerBar.style.width = "60%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -29,12 +28,12 @@ export function loadToolbar13() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion13() {
+export function loadQuestion14() {
     const body = document.getElementById("assessment-body");
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "13. Open the MooTube app through your browser.";
+    questionTwoBox.innerHTML = "12. Select the button to hide your browser window.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
@@ -207,129 +206,6 @@ export function loadQuestion13() {
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
 
-    const appForm = document.createElement('form');
-    appForm.classList.add('app-form');
-    appForm.style.visibility = "hidden";
-    browserBox.appendChild(appForm);
-
-    const userAccContainer = document.createElement('div');
-    userAccContainer.classList.add('user-acc-container');
-    appForm.appendChild(userAccContainer);
-
-    const userAccButton = document.createElement('button');
-    userAccButton.setAttribute('id', 'user-acc-button');
-    userAccButton.classList.add('app-button');
-    userAccButton.type = 'button';
-    userAccContainer.appendChild(userAccButton);
-
-    const userAccText = document.createElement('p');
-    userAccText.classList.add('user-acc-text');
-    userAccText.innerHTML = "Account";
-    userAccContainer.appendChild(userAccText);
-
-    const gpsContainer = document.createElement('div');
-    gpsContainer.classList.add('gps-container');
-    appForm.appendChild(gpsContainer);
-
-    const gpsButton = document.createElement('button');
-    gpsButton.setAttribute('id', 'gps-button');
-    gpsButton.classList.add('app-button');
-    gpsButton.type = 'button';
-    gpsContainer.appendChild(gpsButton);
-
-    const gpsText = document.createElement('p');
-    gpsText.classList.add('gps-text');
-    gpsText.innerHTML = "MooMaps";
-    gpsContainer.appendChild(gpsText);
-
-    const emailContainer = document.createElement('div');
-    emailContainer.classList.add('email-container');
-    appForm.appendChild(emailContainer);
-
-    const emailButton = document.createElement('button');
-    emailButton.setAttribute('id', 'email-button');
-    emailButton.classList.add('app-button');
-    emailButton.type = 'button';
-    emailContainer.appendChild(emailButton);
-
-    const emailText = document.createElement('p');
-    emailText.classList.add('email-text');
-    emailText.innerHTML = "MooMail";
-    emailContainer.appendChild(emailText);
-
-    const calendarContainer = document.createElement('div');
-    calendarContainer.classList.add('calendar-container');
-    appForm.appendChild(calendarContainer);
-
-    const calendarButton = document.createElement('button');
-    calendarButton.setAttribute('id', 'calendar-button');
-    calendarButton.classList.add('app-button');
-    calendarButton.type = 'button';
-    calendarContainer.appendChild(calendarButton);
-
-    const calendarText = document.createElement('p');
-    calendarText.classList.add('calendar-text');
-    calendarText.innerHTML = "Calendar";
-    calendarContainer.appendChild(calendarText);
-
-    const photosContainer = document.createElement('div');
-    photosContainer.classList.add('photos-container');
-    appForm.appendChild(photosContainer);
-
-    const photosButton = document.createElement('button');
-    photosButton.setAttribute('id', 'photos-button');
-    photosButton.classList.add('app-button');
-    photosButton.type = 'button';
-    photosContainer.appendChild(photosButton);
-
-    const photosText = document.createElement('p');
-    photosText.classList.add('photos-text');
-    photosText.innerHTML = "Photos";
-    photosContainer.appendChild(photosText);
-
-    const mootubeContainer = document.createElement('div');
-    mootubeContainer.classList.add('mootube-container');
-    appForm.appendChild(mootubeContainer);
-
-    const mootubeButton = document.createElement('button');
-    mootubeButton.setAttribute('id', 'mootube-button');
-    mootubeButton.classList.add('app-button');
-    mootubeButton.type = 'button';
-    mootubeContainer.appendChild(mootubeButton);
-
-    const mootubeText = document.createElement('p');
-    mootubeText.classList.add('mootube-text');
-    mootubeText.innerHTML = 'MooTube';
-    mootubeContainer.appendChild(mootubeText);
-
-    nineDotsButton.addEventListener('click', function() {
-        appForm.style.visibility = "visible";
-    })
-
-    userAccButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    gpsButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    emailButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    calendarButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    photosButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    mootubeButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
     const buttons = document.querySelectorAll('button');
     const buttonClickSound = new Audio('../sounds/mouse-click.mp3');
     
@@ -341,7 +217,7 @@ export function loadQuestion13() {
     })
 }
 
-export function question13Select() {
+export function question14Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -349,37 +225,26 @@ export function question13Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
-    const appButtons = document.querySelectorAll('.app-button');
 
-    let selectedApp;
+    let selectedButton;
 
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
             answerButtons.forEach(btn => btn.classList.remove('active'));
 
             this.classList.add('active');
-        })
-    })
-
-    appButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            appButtons.forEach(btn => btn.style.backgroundColor = 'transparent')
-
-            selectedApp = this;
-            this.style.backgroundColor = 'rgb(227, 227, 227)';
+            selectedButton = this;
         })
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedApp && selectedApp.id === 'mootube-button') {
+        if (selectedButton && selectedButton.id === 'hide-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar14();
-        loadQuestion14();
-        question14Select();
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {
@@ -389,7 +254,7 @@ export function question13Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Once again, there's a certain menu button that you can click to navigate through important apps/sites.  When you click it, a box should pop up.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>When you open a new tab, you're <b>adding</b> it to your window.  Look for a symbol that represents addition.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
