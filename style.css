@@ -854,6 +854,10 @@ button.active {
     border-radius: 10px;
 }
 
+#user-acc-button:hover, #gps-button:hover, #email-button:hover, #calendar-button:hover, #photos-button:hover, #mootube-button:hover {
+    background-color: rgb(227, 227, 227);
+}
+
 #user-acc-button {
     background-image: url('./icons/user-acc.svg');
 }
