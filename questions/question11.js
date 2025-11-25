@@ -321,7 +321,6 @@ export function loadQuestion11() {
         customizeBar.style.backgroundColor = 'rgb(27, 27, 27)';
         customizeButton.style.backgroundColor = 'rgb(47, 47, 47)';
         searchContainer2.style.backgroundColor = 'rgb(47, 47, 47)';
-        searchInput2.color = 'white';
         addShortcutButton.style.backgroundColor = 'rgb(47, 47, 47)';
     })
 
@@ -329,6 +328,9 @@ export function loadQuestion11() {
         mooglePage.style.backgroundColor = 'white';
         moogleBar.style.backgroundColor = 'white';
         customizeBar.style.backgroundColor = 'white';
+        customizeButton.style.backgroundColor = 'rgb(227, 227, 227)';
+        searchContainer2.style.backgroundColor = 'rgb(227, 227, 227)';
+        addShortcutButton.style.backgroundColor = 'rgb(227, 227, 227)';
     })
 }
 
