@@ -10,7 +10,7 @@ export function loadToolbar16() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "13 / 20";
+    progressText.innerHTML = "16 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -19,7 +19,7 @@ export function loadToolbar16() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "65%";
+    innerBar.style.width = "80%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -33,7 +33,7 @@ export function loadQuestion16() {
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "13. Open the MooTube app through your browser.";
+    questionTwoBox.innerHTML = "16. Use the image search tool to search for an image.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
@@ -386,7 +386,7 @@ export function question16Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Once again, there's a certain menu button that you can click to navigate through important apps/sites.  When you click it, a box should pop up.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Look for a symbol on your screen that represents an image.  Clicking this will open an image search popup box.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
