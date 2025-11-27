@@ -234,9 +234,9 @@ export function question16Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
-    const appButtons = document.querySelectorAll('.app-button');
+    const searchButtons = document.querySelectorAll('.search-button');
 
-    let selectedApp;
+    let selectedSearchButton;
 
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -246,17 +246,14 @@ export function question16Select() {
         })
     })
 
-    appButtons.forEach(button => {
+    searchButtons.forEach(button => {
         button.addEventListener('click', function() {
-            appButtons.forEach(btn => btn.style.backgroundColor = 'transparent')
-
-            selectedApp = this;
-            this.style.backgroundColor = 'rgb(227, 227, 227)';
+            selectedSearchButton = this;
         })
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedApp && selectedApp.id === 'mootube-button') {
+        if (selectedSearchButton && selectedSearchButton.id === 'img-submit-button') {
             userData.userScore += 5;
         }
 
