@@ -234,9 +234,9 @@ export function question16Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
-    const searchButtons = document.querySelectorAll('.search-button');
+    const imgSubmitButton = document.getElementById('img-submit-button');
 
-    let selectedSearchButton;
+    let submitButtonSelect = false;
 
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -246,14 +246,12 @@ export function question16Select() {
         })
     })
 
-    searchButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            selectedSearchButton = this;
-        })
-    })
+    imgSubmitButton.addEventListener('click', function() {
+        submitButtonSelect = true;
+     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedSearchButton && selectedSearchButton.id === 'img-submit-button') {
+        if (submitButtonSelect == true) {
             userData.userScore += 5;
         }
 
