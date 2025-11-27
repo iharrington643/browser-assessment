@@ -206,127 +206,13 @@ export function loadQuestion16() {
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
 
-    const appForm = document.createElement('form');
-    appForm.classList.add('app-form');
-    appForm.style.visibility = "hidden";
-    browserBox.appendChild(appForm);
+    const imgSearchForm = document.createElement('form');
+    imgSearchForm.classList.add('img-search-form');
+    imgSearchForm.style.visibility = "hidden";
+    browserBox.appendChild(imgSearchForm);
 
-    const userAccContainer = document.createElement('div');
-    userAccContainer.classList.add('user-acc-container');
-    appForm.appendChild(userAccContainer);
-
-    const userAccButton = document.createElement('button');
-    userAccButton.setAttribute('id', 'user-acc-button');
-    userAccButton.classList.add('app-button');
-    userAccButton.type = 'button';
-    userAccContainer.appendChild(userAccButton);
-
-    const userAccText = document.createElement('p');
-    userAccText.classList.add('user-acc-text');
-    userAccText.innerHTML = "Account";
-    userAccContainer.appendChild(userAccText);
-
-    const gpsContainer = document.createElement('div');
-    gpsContainer.classList.add('gps-container');
-    appForm.appendChild(gpsContainer);
-
-    const gpsButton = document.createElement('button');
-    gpsButton.setAttribute('id', 'gps-button');
-    gpsButton.classList.add('app-button');
-    gpsButton.type = 'button';
-    gpsContainer.appendChild(gpsButton);
-
-    const gpsText = document.createElement('p');
-    gpsText.classList.add('gps-text');
-    gpsText.innerHTML = "MooMaps";
-    gpsContainer.appendChild(gpsText);
-
-    const emailContainer = document.createElement('div');
-    emailContainer.classList.add('email-container');
-    appForm.appendChild(emailContainer);
-
-    const emailButton = document.createElement('button');
-    emailButton.setAttribute('id', 'email-button');
-    emailButton.classList.add('app-button');
-    emailButton.type = 'button';
-    emailContainer.appendChild(emailButton);
-
-    const emailText = document.createElement('p');
-    emailText.classList.add('email-text');
-    emailText.innerHTML = "MooMail";
-    emailContainer.appendChild(emailText);
-
-    const calendarContainer = document.createElement('div');
-    calendarContainer.classList.add('calendar-container');
-    appForm.appendChild(calendarContainer);
-
-    const calendarButton = document.createElement('button');
-    calendarButton.setAttribute('id', 'calendar-button');
-    calendarButton.classList.add('app-button');
-    calendarButton.type = 'button';
-    calendarContainer.appendChild(calendarButton);
-
-    const calendarText = document.createElement('p');
-    calendarText.classList.add('calendar-text');
-    calendarText.innerHTML = "Calendar";
-    calendarContainer.appendChild(calendarText);
-
-    const photosContainer = document.createElement('div');
-    photosContainer.classList.add('photos-container');
-    appForm.appendChild(photosContainer);
-
-    const photosButton = document.createElement('button');
-    photosButton.setAttribute('id', 'photos-button');
-    photosButton.classList.add('app-button');
-    photosButton.type = 'button';
-    photosContainer.appendChild(photosButton);
-
-    const photosText = document.createElement('p');
-    photosText.classList.add('photos-text');
-    photosText.innerHTML = "Photos";
-    photosContainer.appendChild(photosText);
-
-    const mootubeContainer = document.createElement('div');
-    mootubeContainer.classList.add('mootube-container');
-    appForm.appendChild(mootubeContainer);
-
-    const mootubeButton = document.createElement('button');
-    mootubeButton.setAttribute('id', 'mootube-button');
-    mootubeButton.classList.add('app-button');
-    mootubeButton.type = 'button';
-    mootubeContainer.appendChild(mootubeButton);
-
-    const mootubeText = document.createElement('p');
-    mootubeText.classList.add('mootube-text');
-    mootubeText.innerHTML = 'MooTube';
-    mootubeContainer.appendChild(mootubeText);
-
-    nineDotsButton.addEventListener('click', function() {
-        appForm.style.visibility = "visible";
-    })
-
-    userAccButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    gpsButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    emailButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    calendarButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    photosButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
-    })
-
-    mootubeButton.addEventListener('click', function() {
-        appForm.style.visibility = "hidden";
+    imgSearchButton.addEventListener('click', function() {
+        imgSearchForm.style.visibility = 'visible';
     })
 
     const buttons = document.querySelectorAll('button');
