@@ -10,7 +10,7 @@ export function loadToolbar15() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "14 / 20";
+    progressText.innerHTML = "15 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -19,7 +19,7 @@ export function loadToolbar15() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "70%";
+    innerBar.style.width = "75%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -33,7 +33,7 @@ export function loadQuestion15() {
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "14. Select the button to open up a new tab.";
+    questionTwoBox.innerHTML = "15. Select the button to resize your browser window.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
@@ -76,7 +76,7 @@ export function loadQuestion15() {
     windowButtons.appendChild(hideButton);
 
     const minButton = document.createElement('button');
-    minButton.classList.add('min-button');
+    minButton.setAttribute('id', 'min-button');
     minButton.classList.add('answer-button');
     minButton.innerHTML = "❐";
     windowButtons.appendChild(minButton);
@@ -238,7 +238,7 @@ export function question15Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton && selectedButton.id === 'plus-button') {
+        if (selectedButton && selectedButton.id === 'min-button') {
             userData.userScore += 5;
         }
 
@@ -254,7 +254,7 @@ export function question15Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>When you open a new tab, you're <b>adding</b> it to your window.  Look for a symbol that represents addition.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>The resize button can be found in the same location as the buttons to close/hide your window.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");

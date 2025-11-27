@@ -77,7 +77,7 @@ export function loadQuestion12() {
     windowButtons.appendChild(hideButton);
 
     const minButton = document.createElement('button');
-    minButton.classList.add('min-button');
+    minButton.setAttribute('id', 'min-button');
     minButton.classList.add('answer-button');
     minButton.innerHTML = "❐";
     windowButtons.appendChild(minButton);
