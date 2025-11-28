@@ -213,7 +213,7 @@ export function loadQuestion16() {
 
     const demoImage = document.createElement('img');
     demoImage.classList.add('demo-image');
-    demoImage.src = '../icons/demo-image.jpg';
+    demoImage.src = './icons/image-drag-box.png';
     imgSearchForm.appendChild(demoImage);
 
     const imgSubmitButton = document.createElement('button');

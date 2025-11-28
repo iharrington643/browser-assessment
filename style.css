@@ -817,10 +817,9 @@ button.active {
 .demo-image {
     grid-row: 2 / 3;
     grid-column: 2 / 4;
-    width: 139px;
+    width: 165px;
     height: 94px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 4px lightgray;
+    border-radius: 5px;
 }
 
 #img-submit-button {
