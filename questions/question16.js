@@ -228,7 +228,6 @@ export function loadQuestion16() {
 
     imgSubmitButton.addEventListener('click', function() {
         imgSearchForm.style.visibility = 'hidden';
-        demoImage.style.opacity = '0.3';
     })
 
     const buttons = document.querySelectorAll('button');
