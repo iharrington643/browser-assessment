@@ -211,6 +211,16 @@ export function loadQuestion16() {
     imgSearchForm.style.visibility = "hidden";
     browserBox.appendChild(imgSearchForm);
 
+    const demoImage = document.createElement('img');
+    demoImage.classList.add('demo-image');
+    demoImage.src = '../icons/demo-image.jpg';
+    imgSearchForm.appendChild(demoImage);
+
+    const imgSubmitButton = document.createElement('button');
+    imgSubmitButton.setAttribute('id', 'img-submit-button');
+    imgSubmitButton.innerHTML = "Search";
+    imgSearchForm.appendChild(imgSubmitButton);
+
     imgSearchButton.addEventListener('click', function() {
         imgSearchForm.style.visibility = 'visible';
     })

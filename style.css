@@ -797,19 +797,42 @@ button.active {
 
 .img-search-form {
     position: absolute;
-    top: 21%;
-    right: 6%;
-    width: 170px;
+    top: 50%;
+    right: 40%;
+    width: 200px;
     height: 150px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 2px gray;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 5fr 2fr 2fr;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     z-index: 9999;
+    row-gap: 10px;
+}
+
+.demo-image {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    width: 135px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+#img-submit-button {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    width: 90px;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 18px;
+    border-color: transparent;
+    background-color: rgba(22, 146, 182);
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .user-acc-container, .gps-container, .email-container, .calendar-container, .photos-container, .mootube-container {
