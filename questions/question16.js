@@ -226,6 +226,10 @@ export function loadQuestion16() {
         imgSearchForm.style.visibility = 'visible';
     })
 
+    imgSubmitButton.addEventListener('click', function() {
+        imgSearchForm.style.visibility = 'hidden';
+    })
+
     const buttons = document.querySelectorAll('button');
     const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
     

@@ -797,8 +797,9 @@ button.active {
 
 .img-search-form {
     position: absolute;
-    top: 50%;
-    right: 40%;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 200px;
     height: 150px;
     border-radius: 10px;
@@ -816,9 +817,10 @@ button.active {
 .demo-image {
     grid-row: 2 / 3;
     grid-column: 2 / 4;
-    width: 135px;
-    height: 90px;
+    width: 137px;
+    height: 92px;
     border-radius: 10px;
+    box-shadow: 0px 0px 4px lightgray;
 }
 
 #img-submit-button {
@@ -833,6 +835,7 @@ button.active {
     color: white;
     margin-bottom: 20px;
     font-weight: bold;
+    margin-left: 15px;
 }
 
 .user-acc-container, .gps-container, .email-container, .calendar-container, .photos-container, .mootube-container {
