@@ -817,8 +817,8 @@ button.active {
 .demo-image {
     grid-row: 2 / 3;
     grid-column: 2 / 4;
-    width: 137px;
-    height: 92px;
+    width: 139px;
+    height: 94px;
     border-radius: 10px;
     box-shadow: 0px 0px 4px lightgray;
 }
