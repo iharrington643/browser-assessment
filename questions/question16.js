@@ -218,6 +218,7 @@ export function loadQuestion16() {
 
     const imgSubmitButton = document.createElement('button');
     imgSubmitButton.setAttribute('id', 'img-submit-button');
+    imgSubmitButton.type = 'button';
     imgSubmitButton.innerHTML = "Search";
     imgSearchForm.appendChild(imgSubmitButton);
 
