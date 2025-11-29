@@ -255,6 +255,7 @@ export function question16Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
+    const imgSearchInput = document.getElementById('img-search-input');
     const imgSubmitButton = document.getElementById('img-submit-button');
 
     let submitButtonSelect = false;
@@ -272,7 +273,7 @@ export function question16Select() {
      })
 
     nextButton.addEventListener('click', function() {
-        if (submitButtonSelect == true) {
+        if (submitButtonSelect == true && imgSearchInput.value.toLowerCase() === 'https://img.test/cat.jpg') {
             userData.userScore += 5;
         }
 
@@ -288,7 +289,7 @@ export function question16Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Look for a symbol on your screen that represents an image.  Clicking this will open an image search popup box.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Look for a symbol on your screen that represents an image.  Clicking this will open an image search menu, where you should enter a link.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
