@@ -33,7 +33,7 @@ export function loadQuestion16() {
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "16. Use the image search tool to search for an image.";
+    questionTwoBox.innerHTML = "16. Enter the link 'https://img.test/cat.jpg' into the image search tool.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
