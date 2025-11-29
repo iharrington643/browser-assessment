@@ -216,6 +216,12 @@ export function loadQuestion16() {
     demoImage.src = './icons/image-drag-box.png';
     imgSearchForm.appendChild(demoImage);
 
+    const imgSearchInput = document.createElement('input');
+    imgSearchInput.type = "search";
+    imgSearchInput.setAttribute('id', 'img-search-input');
+    imgSearchInput.placeholder = "Paste image link...";
+    imgSearchForm.appendChild(imgSearchInput);
+
     const imgSubmitButton = document.createElement('button');
     imgSubmitButton.setAttribute('id', 'img-submit-button');
     imgSubmitButton.type = 'button';

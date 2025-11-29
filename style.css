@@ -822,10 +822,19 @@ button.active {
     border-radius: 5px;
 }
 
+#img-search-input {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    background-color: rgb(227, 227, 227);
+}
+
 #img-submit-button {
     grid-row: 3 / 4;
     grid-column: 3 / 4;
-    width: 90px;
+    width: 100%;
     height: 25px;
     font-size: 12px;
     border-radius: 18px;
