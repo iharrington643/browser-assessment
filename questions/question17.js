@@ -50,7 +50,7 @@ export function loadQuestion17() {
 
     const tabText = document.createElement('p');
     tabText.classList.add('tab-text');
-    tabText.innerHTML = "The Grand Hotel";
+    tabText.innerHTML = "2Bank";
     tab.appendChild(tabText);
 
     const closeTabButton = document.createElement('button');
@@ -120,7 +120,7 @@ export function loadQuestion17() {
     const searchInput = document.createElement('input');
     searchInput.type = "search";
     searchInput.setAttribute('id', 'search-input');
-    searchInput.placeholder = "thegrand.com";
+    searchInput.placeholder = "2bank.com";
     searchContainer.appendChild(searchInput);
 
     const bookmarkButton = document.createElement('button');
