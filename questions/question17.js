@@ -166,9 +166,9 @@ export function loadQuestion17() {
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
-    const travelPage = document.createElement('div');
-    travelPage.classList.add('travel-page');
-    browserBox.appendChild(travelPage);
+    const bankPage = document.createElement('div');
+    bankPage.classList.add('bank-page');
+    browserBox.appendChild(bankPage);
 
     bookmarkButton.addEventListener('click', function() {
         bookmarkForm.style.visibility = "visible";
