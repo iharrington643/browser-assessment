@@ -505,7 +505,15 @@ button.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+}
+
+.shortcut-button-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2px;
+    height: 40px;
 }
 
 #add-shortcut-button {
@@ -532,6 +540,13 @@ button.active {
     font-size: 20px;
     color: rgb(79, 79, 79, 0);
     opacity: 1.0;
+    background-color: rgb(227, 227, 227);
+}
+
+.shortcut-text {
+    font-size: 8px;
+    text-align: center;
+    margin-top: 3px;
 }
 
 #add-shortcut-button.active {
