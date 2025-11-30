@@ -1,5 +1,4 @@
 import { userData } from '../main.js';
-import { loadToolbar19, loadQuestion19, question19Select } from './question19.js';
 
 export function loadToolbar19() {
     const infoBar = document.getElementById("info-bar");
@@ -11,7 +10,7 @@ export function loadToolbar19() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "18 / 20";
+    progressText.innerHTML = "19 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +19,7 @@ export function loadToolbar19() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "90%";
+    innerBar.style.width = "95%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -34,7 +33,7 @@ export function loadQuestion19() {
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "18. Select the button that will take you to your account settings.";
+    questionTwoBox.innerHTML = "19. Select the button that will take you to your <b>browser</b> settings.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
@@ -239,15 +238,12 @@ export function question19Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton && selectedButton.id === 'account-dtl-button') {
+        if (selectedButton && selectedButton.id === 'menu-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
-        infoBar.innerHTML = "";
-        loadToolbar19();
-        loadQuestion19();
-        question19Select();
+        console.log(userData.userScore);
     })
 
     hintButton.addEventListener('click', function() {
@@ -257,7 +253,7 @@ export function question19Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Account profiles are commonly represented by a circular icon with a person inside of it.  Look for this icon.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Settings menus are typically represented by some combination of dots and lines.  Look for an icon fitting this description.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
