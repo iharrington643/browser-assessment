@@ -248,6 +248,7 @@ export function question19Select() {
 
     hintButton.addEventListener('click', function() {
         const body = document.getElementById("assessment-body");
+        const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
     
         const hintForm = document.createElement("form");
         hintForm.classList.add("hint-form");
@@ -267,6 +268,8 @@ export function question19Select() {
         body.appendChild(hintForm);
 
         okayButton.addEventListener('click', function() {
+            buttonClickSound.currentTime = 0;
+            buttonClickSound.play();
             hintForm.remove();
         })
     })
