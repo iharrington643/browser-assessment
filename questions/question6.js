@@ -140,7 +140,7 @@ export function loadQuestion6() {
     navigationBar.appendChild(accountButton);
 
     const menuButton = document.createElement('button');
-    menuButton.classList.add('menu-button');
+    menuButton.setAttribute('id', 'menu-button');
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
