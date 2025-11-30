@@ -505,7 +505,7 @@ button.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 #add-shortcut-button {
@@ -526,7 +526,9 @@ button.active {
     border-radius: 50%;
     border-color: transparent;
     background-image: url('./icons/email.svg');
-    background-size: cover;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
     font-size: 20px;
     color: rgb(79, 79, 79, 0);
     opacity: 1.0;
