@@ -190,6 +190,11 @@ export function loadQuestion20() {
     imgSearchButton.classList.add('answer-button');
     searchContainer2.appendChild(imgSearchButton);
 
+    const shortcutButton = document.createElement('button');
+    shortcutButton.setAttribute('id', 'shortcut-button');
+    shortcutButton.innerHTML = 'x';
+    moogleSearchContainer.appendChild(shortcutButton);
+
     const addShortcutButton = document.createElement('button');
     addShortcutButton.setAttribute('id', 'add-shortcut-button');
     addShortcutButton.classList.add('answer-button');
@@ -205,7 +210,6 @@ export function loadQuestion20() {
     customizeButton.classList.add('answer-button');
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
-
 
     const buttons = document.querySelectorAll('button');
     const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
@@ -226,6 +230,9 @@ export function question20Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
+    const shortcutButton = document.getElementById('shortcut-button');
+
+    let buttonRemoved;
 
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -235,12 +242,12 @@ export function question20Select() {
         })
     })
 
-    imgSubmitButton.addEventListener('click', function() {
-        submitButtonSelect = true;
+    shortcutButton.addEventListener('click', function() {
+        buttonRemoved = true;
      })
 
     nextButton.addEventListener('click', function() {
-        if (submitButtonSelect == true && imgSearchInput.value.toLowerCase() === 'https://img.test/cat.jpg') {
+        if (buttonRemoved == true) {
             userData.userScore += 5;
         }
 
