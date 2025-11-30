@@ -1,7 +1,7 @@
 import { userData } from '../main.js';
 import { loadToolbar19, loadQuestion19, question19Select } from './question19.js';
 
-export function loadToolbar18() {
+export function loadToolbar19() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -29,7 +29,7 @@ export function loadToolbar18() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion18() {
+export function loadQuestion19() {
     const body = document.getElementById("assessment-body");
 
     const questionTwoBox = document.createElement('div');
@@ -218,7 +218,7 @@ export function loadQuestion18() {
     })
 }
 
-export function question18Select() {
+export function question19Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
