@@ -1,4 +1,5 @@
 import { userData } from '../main.js';
+import { loadToolbar20, loadQuestion20, question20Select } from './question20.js';
 
 export function loadToolbar19() {
     const infoBar = document.getElementById("info-bar");
@@ -243,7 +244,9 @@ export function question19Select() {
         }
 
         body.innerHTML = "";
-        console.log(userData.userScore);
+        loadToolbar20();
+        loadQuestion20();
+        question20Select();
     })
 
     hintButton.addEventListener('click', function() {
@@ -254,7 +257,7 @@ export function question19Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Settings menus are typically represented by some combination of dots and lines.  Look for an icon fitting this description.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Settings menus are often represented by a combination of either dots or lines.  Look for an icon fitting this description.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
