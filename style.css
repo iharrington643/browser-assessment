@@ -537,10 +537,7 @@ button.active {
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    font-size: 20px;
-    color: rgb(79, 79, 79, 0);
-    opacity: 1.0;
-    background-color: rgb(227, 227, 227);
+    background-color: rgba(227, 227, 227);
 }
 
 .shortcut-text {
