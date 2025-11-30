@@ -1,7 +1,6 @@
 import { userData } from '../main.js';
-import { loadToolbar18, loadQuestion18, question18Select } from './question18.js';
 
-export function loadToolbar17() {
+export function loadToolbar18() {
     const infoBar = document.getElementById("info-bar");
 
     const hintButton = document.createElement('button');
@@ -11,7 +10,7 @@ export function loadToolbar17() {
 
     const progressText = document.createElement('p');
     progressText.setAttribute('id', 'progress-text');
-    progressText.innerHTML = "17 / 20";
+    progressText.innerHTML = "18 / 20";
     infoBar.appendChild(progressText);
 
     const progressBar = document.createElement('div');
@@ -20,7 +19,7 @@ export function loadToolbar17() {
 
     const innerBar = document.createElement('div');
     innerBar.setAttribute('id', 'inner-bar');
-    innerBar.style.width = "85%";
+    innerBar.style.width = "90%";
     progressBar.appendChild(innerBar);
 
     const nextButton = document.createElement('button');
@@ -29,13 +28,13 @@ export function loadToolbar17() {
     infoBar.appendChild(nextButton);
 }
 
-export function loadQuestion17() {
+export function loadQuestion18() {
     const body = document.getElementById("assessment-body");
 
-    const questionFiveBox = document.createElement('div');
-    questionFiveBox.classList.add('question-box');
-    questionFiveBox.innerHTML = "17. Bookmark the current page with the name 'IMPORTANT', in all capitals.";
-    body.appendChild(questionFiveBox);
+    const questionTwoBox = document.createElement('div');
+    questionTwoBox.classList.add('question-box');
+    questionTwoBox.innerHTML = "18. Select the button that will take you to your account settings.";
+    body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");
     browserBox.setAttribute('id', 'browser-box');
@@ -51,7 +50,7 @@ export function loadQuestion17() {
 
     const tabText = document.createElement('p');
     tabText.classList.add('tab-text');
-    tabText.innerHTML = "2Bank";
+    tabText.innerHTML = "New Tab";
     tab.appendChild(tabText);
 
     const closeTabButton = document.createElement('button');
@@ -121,7 +120,7 @@ export function loadQuestion17() {
     const searchInput = document.createElement('input');
     searchInput.type = "search";
     searchInput.setAttribute('id', 'search-input');
-    searchInput.placeholder = "2bank.com";
+    searchInput.placeholder = "Search Moogle or type a URL";
     searchContainer.appendChild(searchInput);
 
     const bookmarkButton = document.createElement('button');
@@ -129,29 +128,6 @@ export function loadQuestion17() {
     bookmarkButton.classList.add('answer-button');
     bookmarkButton.innerHTML = "☆";
     searchContainer.appendChild(bookmarkButton);
-
-    const bookmarkForm = document.createElement('form');
-    bookmarkForm.classList.add('bookmark-form');
-    bookmarkForm.style.visibility = "hidden";
-    browserBox.appendChild(bookmarkForm);
-
-    const bookmarkInput = document.createElement('input');
-    bookmarkInput.type = "text";
-    bookmarkInput.setAttribute('id', 'bookmark-input');
-    bookmarkInput.placeholder = "Name your bookmark...";
-    bookmarkForm.appendChild(bookmarkInput);
-
-    const removeBookmarkBtn = document.createElement('button');
-    removeBookmarkBtn.type = 'button';
-    removeBookmarkBtn.setAttribute('id', 'remove-bookmark-btn');
-    removeBookmarkBtn.innerHTML = 'Remove';
-    bookmarkForm.appendChild(removeBookmarkBtn);
-
-    const saveBookmarkBtn = document.createElement('button');
-    saveBookmarkBtn.type = 'button';
-    saveBookmarkBtn.setAttribute('id', 'save-bookmark-btn');
-    saveBookmarkBtn.innerHTML = 'Save';
-    bookmarkForm.appendChild(saveBookmarkBtn);
 
     const settingsContainer = document.createElement('div');
     settingsContainer.classList.add('settings-container');
@@ -167,28 +143,68 @@ export function loadQuestion17() {
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
-    const bankPage = document.createElement('div');
-    bankPage.classList.add('bank-page');
-    browserBox.appendChild(bankPage);
+    const moogleBar = document.createElement('div');
+    moogleBar.classList.add('moogle-bar');
+    browserBox.appendChild(moogleBar);
 
-    bookmarkButton.addEventListener('click', function() {
-        bookmarkForm.style.visibility = "visible";
-    })
+    const nineDotsButton = document.createElement('button');
+    nineDotsButton.classList.add('nine-dots-button');
+    nineDotsButton.classList.add('answer-button');
+    moogleBar.appendChild(nineDotsButton);
 
-    saveBookmarkBtn.addEventListener('click', function() {
-        bookmarkForm.style.visibility = 'hidden';
-    })
+    const accountDtlButton = document.createElement('button');
+    accountDtlButton.classList.add('account-dtl-button');
+    accountDtlButton.classList.add('answer-button');
+    moogleBar.appendChild(accountDtlButton);
 
-    removeBookmarkBtn.addEventListener('click', function() {
-        bookmarkForm.style.visibility = 'hidden';
-        bookmarkInput.value = '';
-    })
+    const mooglePage = document.createElement('div');
+    mooglePage.classList.add('moogle-page');
+    browserBox.appendChild(mooglePage);
 
-    bookmarkInput.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') { 
-            event.preventDefault();
-        }
-    });
+    const moogleSearchContainer = document.createElement('div');
+    moogleSearchContainer.classList.add('moogle-search-container');
+    mooglePage.appendChild(moogleSearchContainer);
+
+    const moogleLogo = document.createElement('img');
+    moogleLogo.classList.add('moogle-logo');
+    moogleLogo.src = "./icons/moogle-logo.png";
+    moogleSearchContainer.appendChild(moogleLogo);
+
+    const searchContainer2 = document.createElement('div');
+    searchContainer2.classList.add('search-container2');
+    moogleSearchContainer.appendChild(searchContainer2);
+
+    const searchInput2 = document.createElement('input');
+    searchInput2.type = "search";
+    searchInput2.setAttribute('id', 'search-input2');
+    searchInput2.placeholder = "Search Moogle or type a URL";
+    searchContainer2.appendChild(searchInput2);
+
+    const micButton = document.createElement('button');
+    micButton.classList.add('mic-button');
+    micButton.classList.add('answer-button');
+    searchContainer2.appendChild(micButton);
+
+    const imgSearchButton = document.createElement('button');
+    imgSearchButton.classList.add('img-search-button');
+    imgSearchButton.classList.add('answer-button');
+    searchContainer2.appendChild(imgSearchButton);
+
+    const addShortcutButton = document.createElement('button');
+    addShortcutButton.setAttribute('id', 'add-shortcut-button');
+    addShortcutButton.classList.add('answer-button');
+    addShortcutButton.innerHTML = '+';
+    moogleSearchContainer.appendChild(addShortcutButton);
+
+    const customizeBar = document.createElement('div');
+    customizeBar.classList.add('customize-bar');
+    browserBox.appendChild(customizeBar);
+
+    const customizeButton = document.createElement('button');
+    customizeButton.classList.add('customize-button');
+    customizeButton.classList.add('answer-button');
+    customizeButton.innerHTML = "✎ Customize";
+    customizeBar.appendChild(customizeButton);
 
     const buttons = document.querySelectorAll('button');
     const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
@@ -201,7 +217,7 @@ export function loadQuestion17() {
     })
 }
 
-export function question17Select() {
+export function question18Select() {
     const body = document.getElementById("assessment-body");
     const infoBar = document.getElementById("info-bar");
 
@@ -209,26 +225,28 @@ export function question17Select() {
     const hintButton = document.getElementById('hint-button');
 
     const answerButtons = document.querySelectorAll('.answer-button');
-    const bookmarkInput = document.getElementById('bookmark-input');
+
+    let selectedButton;
 
     answerButtons.forEach(button => {
         button.addEventListener('click', function() {
             answerButtons.forEach(btn => btn.classList.remove('active'));
 
             this.classList.add('active');
+            selectedButton = this;
         })
     })
 
     nextButton.addEventListener('click', function() {
-        if (bookmarkInput.value === 'IMPORTANT') {
+        if (selectedButton && selectedButton.id === 'min-button') {
             userData.userScore += 5;
         }
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadToolbar18();
-        loadQuestion18();
-        question18Select();
+        loadToolbar16();
+        loadQuestion16();
+        question16Select();
     })
 
     hintButton.addEventListener('click', function() {
@@ -238,7 +256,7 @@ export function question17Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>As discussed before, you'll know if you clicked the right button if a text input box pops up.  Remember to type in all capitals.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Account profiles are commonly represented by a circular icon with a person inside of it.  Look for this icon.";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
