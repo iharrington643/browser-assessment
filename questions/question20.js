@@ -203,6 +203,7 @@ export function loadQuestion20() {
     addShortcutButton.setAttribute('id', 'add-shortcut-button');
     addShortcutButton.classList.add('answer-button');
     addShortcutButton.innerHTML = '+';
+    addShortcutButton.style.margin = '0';
     shortcutContainer.appendChild(addShortcutButton);
 
     const customizeBar = document.createElement('div');
