@@ -244,6 +244,7 @@ export function question19Select() {
         }
 
         body.innerHTML = "";
+        infoBar.innerHTML = "";
         loadToolbar20();
         loadQuestion20();
         question20Select();
