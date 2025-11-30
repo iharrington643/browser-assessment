@@ -154,7 +154,7 @@ export function loadQuestion8() {
     moogleBar.appendChild(nineDotsButton);
 
     const accountDtlButton = document.createElement('button');
-    accountDtlButton.classList.add('account-dtl-button');
+    accountDtlButton.setAttribute('id', 'account-dtl-button');
     accountDtlButton.classList.add('answer-button');
     moogleBar.appendChild(accountDtlButton);
 
