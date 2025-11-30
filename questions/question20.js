@@ -206,35 +206,6 @@ export function loadQuestion20() {
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
 
-    const imgSearchForm = document.createElement('form');
-    imgSearchForm.classList.add('img-search-form');
-    imgSearchForm.style.visibility = "hidden";
-    browserBox.appendChild(imgSearchForm);
-
-    const demoImage = document.createElement('img');
-    demoImage.classList.add('demo-image');
-    demoImage.src = './icons/image-drag-box.png';
-    imgSearchForm.appendChild(demoImage);
-
-    const imgSearchInput = document.createElement('input');
-    imgSearchInput.type = "search";
-    imgSearchInput.setAttribute('id', 'img-search-input');
-    imgSearchInput.placeholder = "Paste image link...";
-    imgSearchForm.appendChild(imgSearchInput);
-
-    const imgSubmitButton = document.createElement('button');
-    imgSubmitButton.setAttribute('id', 'img-submit-button');
-    imgSubmitButton.type = 'button';
-    imgSubmitButton.innerHTML = "Search";
-    imgSearchForm.appendChild(imgSubmitButton);
-
-    imgSearchButton.addEventListener('click', function() {
-        imgSearchForm.style.visibility = 'visible';
-    })
-
-    imgSubmitButton.addEventListener('click', function() {
-        imgSearchForm.style.visibility = 'hidden';
-    })
 
     const buttons = document.querySelectorAll('button');
     const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
