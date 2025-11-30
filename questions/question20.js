@@ -194,10 +194,19 @@ export function loadQuestion20() {
     shortcutContainer.classList.add('shortcut-container');
     moogleSearchContainer.appendChild(shortcutContainer);
 
+    const shortcutButtonContainer = document.createElement('div');
+    shortcutButtonContainer.classList.add('shortcut-button-container');
+    shortcutContainer.appendChild(shortcutButtonContainer);
+
     const shortcutButton = document.createElement('button');
     shortcutButton.setAttribute('id', 'shortcut-button');
     shortcutButton.innerHTML = 'x';
-    shortcutContainer.appendChild(shortcutButton);
+    shortcutButtonContainer.appendChild(shortcutButton);
+
+    const shortcutText = document.createElement('p');
+    shortcutText.classList.add('shortcut-text');
+    shortcutText.innerHTML = 'MooMail';
+    shortcutButtonContainer.appendChild(shortcutText);
 
     const addShortcutButton = document.createElement('button');
     addShortcutButton.setAttribute('id', 'add-shortcut-button');
