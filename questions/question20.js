@@ -190,16 +190,20 @@ export function loadQuestion20() {
     imgSearchButton.classList.add('answer-button');
     searchContainer2.appendChild(imgSearchButton);
 
+    const shortcutContainer = document.createElement('div');
+    shortcutContainer.classList.add('shortcut-container');
+    moogleSearchContainer.appendChild(shortcutContainer);
+
     const shortcutButton = document.createElement('button');
     shortcutButton.setAttribute('id', 'shortcut-button');
     shortcutButton.innerHTML = 'x';
-    moogleSearchContainer.appendChild(shortcutButton);
+    shortcutContainer.appendChild(shortcutButton);
 
     const addShortcutButton = document.createElement('button');
     addShortcutButton.setAttribute('id', 'add-shortcut-button');
     addShortcutButton.classList.add('answer-button');
     addShortcutButton.innerHTML = '+';
-    moogleSearchContainer.appendChild(addShortcutButton);
+    shortcutContainer.appendChild(addShortcutButton);
 
     const customizeBar = document.createElement('div');
     customizeBar.classList.add('customize-bar');
