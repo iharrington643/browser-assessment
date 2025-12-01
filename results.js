@@ -1,13 +1,16 @@
 import { userData } from './main.js';
 
-function loadIntroForm() {
+function loadResults() {
+    const result = userData.userScore;
+    const resultOfTwenty = result / 5;
+
     const body = document.getElementById("assessment-body");
     
     const introForm = document.createElement("form");
     introForm.classList.add("intro-form");
 
     const introText = document.createElement("p");
-    introText.textContent = "Welcome to the Moogle Browser Assessment! This is a 20-question-long assessment meant to determine your level of basic browser knowledge. Each question is worth 5 points, but if you don't know the answer to a question, don't panic! There will be a help button available for each question, and if you're still unsure, you can always skip ahead!";
+    introText.textContent = `Congratulations!  You completed the assessment with a score of ${result}.  This means that you answered ${resultOfTwenty} questions correctly!`;
     introText.classList.add("intro-text");
 
     const startButton = document.createElement("button");
