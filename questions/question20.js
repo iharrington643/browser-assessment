@@ -1,4 +1,5 @@
 import { userData } from '../main.js';
+import { loadResults } from '../results.js';
 
 export function loadToolbar20() {
     const infoBar = document.getElementById("info-bar");
@@ -269,6 +270,7 @@ export function question20Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
+        loadResults();
     })
 
     hintButton.addEventListener('click', function() {

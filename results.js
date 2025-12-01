@@ -1,6 +1,6 @@
 import { userData } from './main.js';
 
-function loadResults() {
+export function loadResults() {
     const result = userData.userScore;
     const resultOfTwenty = result / 5;
 
