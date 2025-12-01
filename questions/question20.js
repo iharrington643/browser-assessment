@@ -200,6 +200,7 @@ export function loadQuestion20() {
 
     const shortcutButton = document.createElement('button');
     shortcutButton.setAttribute('id', 'shortcut-button');
+    shortcutButton.innerHTML = 'x';
     shortcutButtonContainer.appendChild(shortcutButton);
 
     const shortcutText = document.createElement('p');
