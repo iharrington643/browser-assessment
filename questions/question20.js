@@ -1,5 +1,4 @@
 import { userData } from '../main.js';
-import { loadResults } from '../results.js';
 
 export function loadToolbar20() {
     const infoBar = document.getElementById("info-bar");
@@ -226,10 +225,6 @@ export function loadQuestion20() {
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
 
-    shortcutButton.addEventListener('click', function() {
-        shortcutButtonContainer.remove();
-     })
-
     const buttons = document.querySelectorAll('button');
     const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
     
@@ -250,6 +245,7 @@ export function question20Select() {
 
     const answerButtons = document.querySelectorAll('.answer-button');
     const shortcutButton = document.getElementById('shortcut-button');
+    const shortcutButtonContainer = document.getElementById('shortcut-button-container');
 
     let buttonRemoved;
 
@@ -263,6 +259,7 @@ export function question20Select() {
 
     shortcutButton.addEventListener('click', function() {
         buttonRemoved = true;
+        shortcutButtonContainer.remove();
      })
 
     nextButton.addEventListener('click', function() {
@@ -272,7 +269,6 @@ export function question20Select() {
 
         body.innerHTML = "";
         infoBar.innerHTML = "";
-        loadResults();
     })
 
     hintButton.addEventListener('click', function() {
