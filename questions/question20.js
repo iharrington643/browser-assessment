@@ -195,7 +195,7 @@ export function loadQuestion20() {
     moogleSearchContainer.appendChild(shortcutContainer);
 
     const shortcutButtonContainer = document.createElement('div');
-    shortcutButtonContainer.classList.add('shortcut-button-container');
+    shortcutButtonContainer.setAttribute('id', 'shortcut-button-container');
     shortcutContainer.appendChild(shortcutButtonContainer);
 
     const shortcutButton = document.createElement('button');
