@@ -225,6 +225,10 @@ export function loadQuestion20() {
     customizeButton.innerHTML = "✎ Customize";
     customizeBar.appendChild(customizeButton);
 
+    shortcutButton.addEventListener('click', function() {
+        shortcutButtonContainer.remove();
+     })
+
     const buttons = document.querySelectorAll('button');
     const buttonClickSound = new Audio('./sounds/mouse-click.mp3');
     
