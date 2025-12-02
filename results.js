@@ -20,6 +20,10 @@ export function loadResults() {
         userMessage.textContent = 'Excellent job!';
     }
 
+    const score = document.createElement('div');
+    score.classList.add('score');
+    score.innerHTML = `${result}%`;
+
     const tryAgainButton = document.createElement("button");
     tryAgainButton.type = "button";
     tryAgainButton.textContent = "TRY AGAIN";
@@ -28,6 +32,7 @@ export function loadResults() {
     const mouseClickSound = new Audio('./sounds/mouse-click.mp3');
 
     resultForm.appendChild(userMessage);
+    resultForm.appendChild(score);
     resultForm.appendChild(tryAgainButton);
 
     body.appendChild(resultForm);

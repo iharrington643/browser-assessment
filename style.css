@@ -1036,3 +1036,17 @@ button.active {
     transform: scaleY(0.98);
     letter-spacing: -0.5px;
 }
+
+.user-message {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.score {
+    
+}
