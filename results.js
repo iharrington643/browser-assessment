@@ -20,10 +20,10 @@ export function loadResults() {
 
     const mouseClickSound = new Audio('./sounds/mouse-click.mp3');
 
-    introForm.appendChild(introText);
-    introForm.appendChild(startButton);
+    resultForm.appendChild(introText);
+    resultForm.appendChild(tryAgainButton);
 
-    body.appendChild(introForm);
+    body.appendChild(resultForm);
 
     tryAgainButton.addEventListener('click', function() {
         mouseClickSound.play();
