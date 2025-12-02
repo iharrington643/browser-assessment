@@ -9,9 +9,16 @@ export function loadResults() {
     const resultForm = document.createElement("form");
     resultForm.classList.add("result-form");
 
-    const introText = document.createElement("p");
-    introText.textContent = `Congratulations!  You completed the assessment with a score of ${result}%.  This means that you answered ${resultOfTwenty} questions correctly!`;
-    introText.classList.add("intro-text");
+    const userMessage = document.createElement("p");
+    userMessage.classList.add("user-message");
+
+    if (result < 50) {
+        userMessage.textContent = 'Better luck next time!';
+    } else if (result >= 50 && result <= 75) {
+        userMessage.textContent = 'Good job!';
+    } else {
+        userMessage.textContent = 'Excellent job!';
+    }
 
     const tryAgainButton = document.createElement("button");
     tryAgainButton.type = "button";
@@ -20,7 +27,7 @@ export function loadResults() {
 
     const mouseClickSound = new Audio('./sounds/mouse-click.mp3');
 
-    resultForm.appendChild(introText);
+    resultForm.appendChild(userMessage);
     resultForm.appendChild(tryAgainButton);
 
     body.appendChild(resultForm);

@@ -34,7 +34,7 @@ export function loadQuestion17() {
 
     const questionFiveBox = document.createElement('div');
     questionFiveBox.classList.add('question-box');
-    questionFiveBox.innerHTML = "17. Bookmark the current page with the name 'IMPORTANT', in all capitals.";
+    questionFiveBox.innerHTML = "17. Bookmark the page with the name 'IMPORTANT', in all capitals.";
     body.appendChild(questionFiveBox);
 
     const browserBox = document.createElement("div");
