@@ -24,6 +24,9 @@ export function loadResults() {
     score.classList.add('score');
     score.innerHTML = `${result}%`;
 
+    const scoreDetails = document.createElement('p');
+    scoreDetails.innerHTML = `You answered ${resultOfTwenty} out of 20 questions correctly.`;
+
     const tryAgainButton = document.createElement("button");
     tryAgainButton.type = "button";
     tryAgainButton.textContent = "TRY AGAIN";
@@ -31,8 +34,9 @@ export function loadResults() {
 
     const mouseClickSound = new Audio('./sounds/mouse-click.mp3');
 
-    resultForm.appendChild(score);
     resultForm.appendChild(userMessage);
+    resultForm.appendChild(score);
+    resultForm.appendChild(scoreDetails);
     resultForm.appendChild(tryAgainButton);
 
     body.appendChild(resultForm);
