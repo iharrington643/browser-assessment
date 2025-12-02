@@ -31,8 +31,8 @@ export function loadResults() {
 
     const mouseClickSound = new Audio('./sounds/mouse-click.mp3');
 
-    resultForm.appendChild(userMessage);
     resultForm.appendChild(score);
+    resultForm.appendChild(userMessage);
     resultForm.appendChild(tryAgainButton);
 
     body.appendChild(resultForm);
