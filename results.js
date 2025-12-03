@@ -13,11 +13,11 @@ export function loadResults() {
     userMessage.classList.add("user-message");
 
     if (result < 50) {
-        userMessage.textContent = 'Better luck next time!';
+        userMessage.innerHTML = 'Better luck next time!';
     } else if (result >= 50 && result <= 75) {
-        userMessage.textContent = 'Good job!';
+        userMessage.innerHTML = 'Good job!';
     } else {
-        userMessage.textContent = 'Excellent job!';
+        userMessage.innerHTML = 'Excellent job!';
     }
 
     const score = document.createElement('div');
@@ -25,6 +25,7 @@ export function loadResults() {
     score.innerHTML = `${result}%`;
 
     const scoreDetails = document.createElement('p');
+    scoreDetails.classList.add('score-details');
     scoreDetails.innerHTML = `You answered ${resultOfTwenty} out of 20 questions correctly.`;
 
     const tryAgainButton = document.createElement("button");
