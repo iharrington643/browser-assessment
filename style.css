@@ -1005,10 +1005,14 @@ button.active {
 }
 
 .result-form {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
-    background-color: white;
     border-top: 30px solid rgba(22, 146, 182);
+    border-left: 4px solid rgba(22, 146, 182);
+    border-right: 4px solid rgba(22, 146, 182);
+    border-bottom: 4px solid rgba(22, 146, 182);
     height: 60%;
     min-width: 550px;
     max-width: 900px;
@@ -1033,6 +1037,7 @@ button.active {
     text-shadow: 1px 1px 2px rgb(17, 110, 136);
     transform: scaleY(0.98);
     letter-spacing: -0.5px;
+    margin-top: 20px;
 }
 
 .user-message {
@@ -1041,6 +1046,8 @@ button.active {
     text-align: center;
     font-weight: 300;
     font-size: 30px;
+    font-weight: bold;
+    color: rgb(79, 79, 79);
 }
 
 .score {
@@ -1056,4 +1063,10 @@ button.active {
     letter-spacing: -0.5px;
     text-align: center;
     padding-top: 10px;
+    margin-top: -20px;
+}
+
+.score-details {
+    font-size: 20px;
+    font-style: italic;
 }
