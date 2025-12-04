@@ -1007,15 +1007,16 @@ button.active {
 .result-form {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     border-radius: 10px;
-    border-top: 30px solid rgba(22, 146, 182);
-    border-left: 4px solid rgba(22, 146, 182);
-    border-right: 4px solid rgba(22, 146, 182);
-    border-bottom: 4px solid rgba(22, 146, 182);
+    background-color: white;
+    border-top: 30px solid rgb(22, 146, 182);
+    border-left: 4px solid rgb(22, 146, 182);
+    border-right: 4px solid rgb(22, 146, 182);
+    border-bottom: 4px solid rgb(22, 146, 182);
     height: 60%;
     min-width: 550px;
-    max-width: 900px;
+    max-width: 700px;
     min-height: 300px;
     max-height: 350px;
     width: 70%;
@@ -1045,9 +1046,9 @@ button.active {
     padding-right: 20px;
     text-align: center;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
-    color: rgb(79, 79, 79);
+    color: rgba(79, 79, 79);
 }
 
 .score {
