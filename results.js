@@ -15,7 +15,7 @@ export function loadResults() {
     if (result < 50) {
         userMessage.innerHTML = 'Better luck next time!';
     } else if (result >= 50 && result <= 75) {
-        userMessage.innerHTML = 'Good job!';
+        userMessage.innerHTML = 'Not too bad!';
     } else {
         userMessage.innerHTML = 'Excellent job!';
     }
