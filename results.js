@@ -26,7 +26,7 @@ export function loadResults() {
 
     const scoreDetails = document.createElement('p');
     scoreDetails.classList.add('score-details');
-    scoreDetails.innerHTML = `You answered ${resultOfTwenty} out of 20 questions correctly.`;
+    scoreDetails.innerHTML = `You answered ${resultOfTwenty} out of 20 questions correctly!  Click 'Try Again' to retake the assessment, or close out of the page if you are happy with your score.`;
 
     const tryAgainButton = document.createElement("button");
     tryAgainButton.type = "button";

@@ -1029,7 +1029,7 @@ button.active {
 .try-again-button {
     height: 70px;
     width: 250px;
-    border-radius: 15px;
+    border-radius: 18px;
     font-size: 35px;
     border: 2px solid rgba(212, 233, 241);
     background-color: rgba(22, 146, 182);
@@ -1038,12 +1038,13 @@ button.active {
     text-shadow: 1px 1px 2px rgb(17, 110, 136);
     transform: scaleY(0.98);
     letter-spacing: -0.5px;
-    margin-top: 20px;
+    margin-top: 13px;
 }
 
 .user-message {
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 15px;
     text-align: center;
     font-weight: 300;
     font-size: 35px;
@@ -1063,11 +1064,14 @@ button.active {
     transform: scaleY(0.98);
     letter-spacing: -0.5px;
     text-align: center;
-    padding-top: 10px;
-    margin-top: -20px;
+    padding-top: 4px;
+    margin-top: -30px;
 }
 
 .score-details {
-    font-size: 20px;
+    font-size: 17px;
     font-style: italic;
+    text-align: center;
+    margin-top: 12px;
+    font-weight: 300;
 }
