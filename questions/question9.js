@@ -34,7 +34,7 @@ export function loadQuestion9() {
 
     const questionTwoBox = document.createElement('div');
     questionTwoBox.classList.add('question-box');
-    questionTwoBox.innerHTML = "9. Select the button to close out of current tab.";
+    questionTwoBox.innerHTML = "9. Select the button to close out of the current tab.";
     body.appendChild(questionTwoBox);
 
     const browserBox = document.createElement("div");

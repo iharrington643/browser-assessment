@@ -374,7 +374,7 @@ export function question8Select() {
         hintForm.classList.add("hint-form");
 
         const hintText = document.createElement("p");
-        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Remember that a tab and a window are two separate things.  Closing out of a tab will not have the same effect as closing a window.";
+        hintText.innerHTML = "<span style='font-size: 24px;'><b>HINT</b></span><br>Changing your browsers theme color is a form of customizing your browser.  Where would you go to customize something?";
         hintText.classList.add("hint-text");
 
         const okayButton = document.createElement("button");
