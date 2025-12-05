@@ -270,6 +270,12 @@ button {
     width: 30px;
     margin-right: 2px;
     font-size: 14.5px;
+    color: rgb(79, 79, 79);
+    font-weight: 300;
+}
+
+#bookmark-button.active {
+    color: rgba(22, 146, 182);
 }
 
 .bookmark-form {
@@ -342,7 +348,7 @@ button.active {
     border-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 160%;
+    background-size: 125%;
     width: auto;
 }
 
