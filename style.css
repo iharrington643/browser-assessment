@@ -228,14 +228,14 @@ button {
 }
 
 #refresh-button {
-    height: 30px;
-    font-size: 21px;
+    height: 25px;
+    font-size: 19px;
     width: 30px;
 }
 
 #back-button, .forward-button {
-    height: 30px;
-    font-size: 21px;
+    height: 25px;
+    font-size: 19px;
     width: 25px;
 }
 
@@ -753,7 +753,7 @@ button.active {
     height: 50px;
     width: 70px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
     border-color: transparent;
     background-color: rgb(27, 27, 27);
     color: white;
@@ -765,7 +765,7 @@ button.active {
 
 #hint-button {
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 20px;
     border-color: transparent;
     background-color: rgb(27, 27, 27);
     color: white;
