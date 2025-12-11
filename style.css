@@ -439,7 +439,9 @@ button.active {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     background-image: url('./icons/hotel-demo.png');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bank-page {
