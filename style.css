@@ -343,7 +343,7 @@ button.active {
     text-shadow: 0px 0px 2px rgb(53, 176, 214);
 }
 
-.account-button, #menu-button {
+#account-button, #menu-button {
     height: 40px;
     width: 40px;
     background-color: transparent;
@@ -354,11 +354,11 @@ button.active {
     width: auto;
 }
 
-.account-button {
+#account-button {
     background-image: url("./icons/user-profile.svg");
 }
 
-.account-button.active {
+#account-button.active {
     background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!--%20Uploaded%20to%3A%20SVG%20Repo%2C%20www.svgrepo.com%2C%20Generator%3A%20SVG%20Repo%20Mixer%20Tools%20--%3E%3Csvg%20width%3D%22800px%22%20height%3D%22800px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M22%2012C22%2017.5228%2017.5228%2022%2012%2022C6.47715%2022%202%2017.5228%202%2012C2%206.47715%206.47715%202%2012%202C17.5228%202%2022%206.47715%2022%2012ZM15%209C15%2010.6569%2013.6569%2012%2012%2012C10.3431%2012%209%2010.6569%209%209C9%207.34315%2010.3431%206%2012%206C13.6569%206%2015%207.34315%2015%209ZM12%2020.5C13.784%2020.5%2015.4397%2019.9504%2016.8069%2019.0112C17.4108%2018.5964%2017.6688%2017.8062%2017.3178%2017.1632C16.59%2015.8303%2015.0902%2015%2011.9999%2015C8.90969%2015%207.40997%2015.8302%206.68214%2017.1632C6.33105%2017.8062%206.5891%2018.5963%207.19296%2019.0111C8.56018%2019.9503%2010.2159%2020.5%2012%2020.5Z%22%20fill%3D%22rgba(22%2C%20146%2C%20182)%22%2F%3E%3C%2Fsvg%3E');
     filter: drop-shadow(0px 0px 2px rgb(53, 176, 214));
 }

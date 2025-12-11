@@ -135,7 +135,7 @@ export function loadQuestion14() {
     navigationBar.appendChild(settingsContainer);
 
     const accountButton = document.createElement('button');
-    accountButton.classList.add('account-button');
+    accountButton.setAttribute('id', 'account-button');
     accountButton.classList.add('answer-button');
     navigationBar.appendChild(accountButton);
 

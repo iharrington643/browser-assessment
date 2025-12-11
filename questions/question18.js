@@ -135,7 +135,7 @@ export function loadQuestion18() {
     navigationBar.appendChild(settingsContainer);
 
     const accountButton = document.createElement('button');
-    accountButton.classList.add('account-button');
+    accountButton.setAttribute('id', 'account-button');
     accountButton.classList.add('answer-button');
     navigationBar.appendChild(accountButton);
 
@@ -239,7 +239,7 @@ export function question18Select() {
     })
 
     nextButton.addEventListener('click', function() {
-        if (selectedButton && selectedButton.id === 'account-dtl-button') {
+        if (selectedButton && (selectedButton.id === 'account-button' || selectedButton.id === 'account-dtl-button')) {
             userData.userScore += 5;
         }
 
