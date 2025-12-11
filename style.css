@@ -135,9 +135,12 @@ button {
     margin-top: 5px;
     height: 25px;
     background-color: white;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
     padding-left: 8px;
+    justify-items: start;
+    align-items: center;
+    line-height: 1px;
 }
 
 #plus-button {
@@ -200,9 +203,8 @@ button {
 }
 
 #close-tab-button {
-    padding-left: clamp(75px, 6vw, 107px);
-    grid-column: 3 / 4;
-    font-size: 19px;
+    grid-column: 2 / 3;
+    font-size: 16px;
     background-color: transparent;
     border-color: transparent;
     color: rgb(79, 79, 79);
