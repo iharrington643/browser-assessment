@@ -228,17 +228,17 @@ button {
 #refresh-button {
     height: 30px;
     font-size: 21px;
-    width: 33%;
+    width: 30px;
 }
 
 #back-button, .forward-button {
     height: 30px;
     font-size: 21px;
-    width: 33%;
+    width: 25px;
 }
 
 .search-container {
-   width: clamp(505px, 38.7vw, 600px);
+   width: clamp(505px, 38.7vw, 850px);
    height: 70%;
    display: flex;
    align-items: center;
