@@ -344,14 +344,14 @@ button.active {
 }
 
 #account-button, #menu-button {
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 20px;
     background-color: transparent;
     border-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 125%;
-    width: auto;
+    background-size: contain;
+    line-height: 0;
 }
 
 #account-button {
