@@ -229,13 +229,13 @@ button {
 
 #refresh-button {
     height: 25px;
-    font-size: 19px;
+    font-size: 21px;
     width: 30px;
 }
 
 #back-button, .forward-button {
     height: 25px;
-    font-size: 19px;
+    font-size: 21px;
     width: 25px;
 }
 
