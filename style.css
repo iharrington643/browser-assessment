@@ -494,7 +494,8 @@ button.active {
 .mic-button, .img-search-button {
     background-color: transparent;
     border-color: transparent;
-    height: 30px;
+    height: 16px;
+    width: 16px;
     border-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
