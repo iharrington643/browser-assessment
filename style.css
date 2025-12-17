@@ -389,14 +389,15 @@ button.active {
     margin-top: 8px;
     background-color: transparent;
     border-color: transparent;
-    height: 100%;
     border-color: transparent;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
 }
 
 .nine-dots-button {
-    background-size: 150%;
+    height: 25px;
+    width: 25px;
     background-image: url("./icons/nine-dots.svg");
 }
 
@@ -406,7 +407,8 @@ button.active {
 }
 
 #account-dtl-button {
-    width: 35px;
+    height: 30px;
+    width: 30px;
     background-size: contain;
     background-image: url("./icons/user-profile.svg");
 }
