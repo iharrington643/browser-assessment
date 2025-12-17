@@ -322,6 +322,7 @@ export function loadQuestion11() {
         customizeButton.style.backgroundColor = 'rgb(47, 47, 47)';
         searchContainer2.style.backgroundColor = 'rgb(47, 47, 47)';
         addShortcutButton.style.backgroundColor = 'rgb(47, 47, 47)';
+        searchInput2.style.color = 'rgb(132, 132, 132)';
     })
 
     lightModeBtn.addEventListener('click', function() {
@@ -331,6 +332,7 @@ export function loadQuestion11() {
         customizeButton.style.backgroundColor = 'rgb(227, 227, 227)';
         searchContainer2.style.backgroundColor = 'rgb(227, 227, 227)';
         addShortcutButton.style.backgroundColor = 'rgb(227, 227, 227)';
+        searchInput2.style.color = 'rgb(79, 79, 79)';
     })
 
     const buttons = document.querySelectorAll('button');

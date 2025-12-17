@@ -254,6 +254,7 @@ button {
     padding-left: 10px;
     border-color: transparent;
     background-color: transparent;
+    color: rgb(79, 79, 79);
 }
 
 #search-input:focus {
@@ -483,6 +484,7 @@ button.active {
     padding-left: 10px;
     border-color: transparent;
     background-color: transparent;
+    color: rgb(79, 79, 79);
 }
 
 #search-input2:focus {
