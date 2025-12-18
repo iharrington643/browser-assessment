@@ -766,11 +766,11 @@ button.active {
     height: 50px;
     width: 70px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 22px;
     border-color: transparent;
     background-color: rgb(27, 27, 27);
     color: white;
-    font-weight: 450;
+    font-weight: 500;
     text-shadow: 1px 1px 2px rgb(17, 110, 136);
     transform: scaleY(0.98);
     letter-spacing: -0.5px;
