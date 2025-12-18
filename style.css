@@ -92,7 +92,7 @@ button {
     height: 70px;
     width: 250px;
     border-radius: 15px;
-    font-size: 35px;
+    font-size: 30px;
     border: 2px solid rgba(212, 233, 241);
     background-color: rgba(22, 146, 182);
     color: white;
@@ -1047,7 +1047,7 @@ button.active {
     height: 70px;
     width: 250px;
     border-radius: 18px;
-    font-size: 35px;
+    font-size: 30px;
     border: 2px solid rgba(212, 233, 241);
     background-color: rgba(22, 146, 182);
     color: white;
