@@ -433,6 +433,10 @@ button.active {
     height: 100%;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    background-image: url('./icons/site-demo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .travel-page {

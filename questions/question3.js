@@ -144,9 +144,8 @@ export function loadQuestion3() {
     menuButton.classList.add('answer-button');
     navigationBar.appendChild(menuButton);
 
-    const webPage = document.createElement('img');
+    const webPage = document.createElement('div');
     webPage.classList.add('web-page');
-    webPage.src = './icons/site-demo.png';
     browserBox.appendChild(webPage);
 
     const buttons = document.querySelectorAll('button');
