@@ -332,7 +332,7 @@ export function loadQuestion11() {
         customizeButton.style.backgroundColor = 'rgb(227, 227, 227)';
         searchContainer2.style.backgroundColor = 'rgb(227, 227, 227)';
         addShortcutButton.style.backgroundColor = 'rgb(227, 227, 227)';
-        searchInput2.style.color = 'rgb(79, 79, 79)';
+        searchInput2.style.color = 'rgb(57, 57, 57)';
     })
 
     const buttons = document.querySelectorAll('button');
