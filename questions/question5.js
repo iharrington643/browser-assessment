@@ -34,7 +34,7 @@ export function loadQuestion5() {
 
     const questionFiveBox = document.createElement('div');
     questionFiveBox.classList.add('question-box');
-    questionFiveBox.innerHTML = "5. Bookmark the current page with the name '<span class='notranslate'>Hotel</span>'.";
+    questionFiveBox.innerHTML = "5. Bookmark the current page with the name <span class='notranslate'>'Hotel'</span>.";
     body.appendChild(questionFiveBox);
 
     const browserBox = document.createElement("div");
