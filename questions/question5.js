@@ -34,7 +34,7 @@ export function loadQuestion5() {
 
     const questionFiveBox = document.createElement('div');
     questionFiveBox.classList.add('question-box');
-    questionFiveBox.innerHTML = "5. Bookmark the current page with the name '<span translate='no'>Hotel</span>'.";
+    questionFiveBox.innerHTML = "5. Bookmark the current page with the name '<span class='notranslate'>Hotel</span>'.";
     body.appendChild(questionFiveBox);
 
     const browserBox = document.createElement("div");
@@ -51,7 +51,7 @@ export function loadQuestion5() {
 
     const tabText = document.createElement('p');
     tabText.classList.add('tab-text');
-    tabText.innerHTML = "<span translate='no'>The Grand Hotel</span>";
+    tabText.innerHTML = "<span class='notranslate'>The Grand Hotel</span>";
     tab.appendChild(tabText);
 
     const closeTabButton = document.createElement('button');
