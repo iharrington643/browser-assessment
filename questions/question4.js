@@ -34,7 +34,7 @@ export function loadQuestion4() {
 
     const questionFourBox = document.createElement('div');
     questionFourBox.classList.add('question-box');
-    questionFourBox.innerHTML = "4. Search for 'dogs' in the browser's <b>search bar</b>.";
+    questionFourBox.innerHTML = "4. Search for '<span translate='no'>dogs</span>' in the browser's <b>search bar</b>.";
     body.appendChild(questionFourBox);
 
     const browserBox = document.createElement("div");
