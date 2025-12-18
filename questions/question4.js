@@ -25,7 +25,7 @@ export function loadToolbar4() {
 
     const nextButton = document.createElement('button');
     nextButton.setAttribute('id', 'next-button');
-    nextButton.innerHTML = "⏭";
+    nextButton.innerHTML = "⇥";
     infoBar.appendChild(nextButton);
 }
 
