@@ -331,6 +331,7 @@ button {
 #remove-bookmark-btn {
     grid-column: 3 / 4;
     background-color: rgb(227, 227, 227);
+    color: rgb(79, 79, 79);
 }
 
 #save-bookmark-btn {
@@ -545,7 +546,7 @@ button.active {
     border-radius: 50%;
     border-color: transparent;
     background-color: rgb(227, 227, 227);
-    font-size: 20px;
+    font-size: 19px;
     color: rgb(79, 79, 79);
 }
 
@@ -647,6 +648,7 @@ button.active {
 #light-mode-btn {
     grid-column: 2 / 3;
     background-color: rgb(227, 227, 227);
+    color: rgb(79, 79, 79);
 }
 
 #dark-mode-btn {
@@ -766,7 +768,7 @@ button.active {
     height: 50px;
     width: 70px;
     border-radius: 10px;
-    font-size: 22px;
+    font-size: 23px;
     border-color: transparent;
     background-color: rgb(27, 27, 27);
     color: white;
