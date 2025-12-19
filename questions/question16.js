@@ -229,6 +229,12 @@ export function loadQuestion16() {
     imgSubmitButton.innerHTML = "Search";
     imgSearchForm.appendChild(imgSubmitButton);
 
+    imgSearchInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') { 
+            event.preventDefault();
+        }
+    });
+
     imgSearchButton.addEventListener('click', function() {
         imgSearchForm.style.visibility = 'visible';
     })
