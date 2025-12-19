@@ -1,6 +1,9 @@
 import { userData } from './main.js';
 
 export function loadResults() {
+    const testCompleteSound = new Audio('./sounds/test-complete.mp3');
+    testCompleteSound.play();
+
     const result = userData.userScore;
     const resultOfTwenty = result / 5;
 
