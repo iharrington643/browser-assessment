@@ -651,6 +651,10 @@ button.active {
     color: rgb(79, 79, 79);
 }
 
+#light-mode-btn.active {
+    color: rgba(22, 146, 182);
+}
+
 #dark-mode-btn {
     grid-column: 3 / 4;
     background-color: rgba(22, 146, 182);
