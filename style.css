@@ -270,10 +270,10 @@ button {
     background-color: transparent;
     border-color: transparent;
     font-weight: bold;
-    height: 100%;
-    width: 30px;
+    height: 110%;
+    width: default;
     margin-right: 2px;
-    font-size: 80%;
+    font-size: 70%;
     color: rgb(79, 79, 79);
     font-weight: 300;
 }
