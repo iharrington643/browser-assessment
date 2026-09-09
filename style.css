@@ -255,6 +255,7 @@ button {
     border-color: transparent;
     background-color: transparent;
     color: rgb(57, 57, 57);
+    font-size: 70%;
 }
 
 #search-input:focus {
@@ -269,10 +270,10 @@ button {
     background-color: transparent;
     border-color: transparent;
     font-weight: bold;
-    height: 30px;
+    height: 100%;
     width: 30px;
     margin-right: 2px;
-    font-size: 14.5px;
+    font-size: 80%;
     color: rgb(79, 79, 79);
     font-weight: 300;
 }
@@ -490,6 +491,7 @@ button.active {
     border-color: transparent;
     background-color: transparent;
     color: rgb(57, 57, 57);
+    font-size: 70%;
 }
 
 #search-input2:focus {
@@ -503,7 +505,7 @@ button.active {
 .mic-button, .img-search-button {
     background-color: transparent;
     border-color: transparent;
-    height: 16px;
+    height: 70%;
     width: 16px;
     border-color: transparent;
     background-repeat: no-repeat;
